@@ -111,7 +111,7 @@ def pct(x):
 def result_figure(s):
     d1, d90 = s["day1"], s["day90"]
     rows1 = [
-        ("Qwen 0.8B, queue list only", "qwen_listed_day1"),
+        ("Qwen 0.8B, queue list, untrained", "qwen_listed_day1"),
         ("Qwen 0.8B + 8 labels a queue", "qwen_k8_day1"),
         ("Qwen 0.8B + 32 labels a queue", "qwen_k32_day1"),
         ("Qwen 0.8B + every label", "qwen_all_day1"),
@@ -123,13 +123,18 @@ def result_figure(s):
         ("Claude Sonnet 5.5, 77 names", "sonnet_day90"),
         ("Day-one Qwen, not retrained", "qwen_all_day1_on_day90"),
         ("Qwen retrained, 8 labels a new queue", "qwen_retrain_day90"),
+        ("Day-one Qwen + Sonnet on new queues*", "watch_sonnet"),
     ]
+    watch = s.get("new_queue_watch_exploratory", {}).get("sonnet_day90")
+    if watch:
+        d90 = dict(d90)
+        d90["watch_sonnet"] = {"old": {"accuracy": watch["accuracy_old"]}, "new": {"accuracy": watch["accuracy_new"]}}
     desc = "; ".join(f"{n}: {pct(d1[a]['accuracy'])}" for n, a in rows1 if a in d1)
     desc += ". Day ninety, old and new queues: " + "; ".join(
         f"{n}: {pct(d90[a]['old']['accuracy'])} old, {pct(d90[a]['new']['accuracy'])} new" for n, a in rows90 if a in d90)
     svg = Svg("Right queue, day one and day ninety", desc)
     svg.head(["BANKING77 test messages, routed once each. Day one: 70 queues, 2,800 messages.",
-              "Day ninety: seven queues added, 280 more messages. 15 October 2026."])
+              "Day ninety: seven queues added, 280 more messages. Run 15 and 16 October 2026."])
     bar_x, bar_w = 300, 300
     svg.text(32, svg.y, "sans label", "DAY ONE, SHARE ROUTED TO THE RIGHT QUEUE")
     svg.y += 22

@@ -37,11 +37,11 @@ class Splits(unittest.TestCase):
             self.assertEqual(len(labels), 70, name)
 
     def test_budgets_are_nested(self):
-        k8 = {(r["text"], r["label"]) for r in read_jsonl(SPLITS / "train_old_k8.jsonl")}
-        k32 = {(r["text"], r["label"]) for r in read_jsonl(SPLITS / "train_old_k32.jsonl")}
-        full = {(r["text"], r["label"]) for r in read_jsonl(SPLITS / "train_old_all.jsonl")}
-        self.assertEqual((len(k8), len(k32)), (560, 2240))
-        self.assertTrue(k8 <= k32 <= full)
+        rows = {n: read_jsonl(SPLITS / f"train_old_{n}.jsonl") for n in ("k8", "k32", "all")}
+        self.assertEqual((len(rows["k8"]), len(rows["k32"])), (560, 2240))
+        # BANKING77 repeats a few messages word for word, so compare as sets.
+        pairs = {n: {(r["text"], r["label"]) for r in v} for n, v in rows.items()}
+        self.assertTrue(pairs["k8"] <= pairs["k32"] <= pairs["all"])
 
     def test_retrain_adds_eight_per_new_queue(self):
         rows = read_jsonl(SPLITS / "train_new_k8.jsonl")

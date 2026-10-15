@@ -1,0 +1,25 @@
+{
+  "model": "Qwen/Qwen3.5-0.8B",
+  "train": "train_all_plus_new_k8.jsonl",
+  "dev": "dev_all.jsonl",
+  "resume": null,
+  "rows": 9080,
+  "updates": 1135,
+  "settings": {
+    "rank": 16,
+    "scale": 2.0,
+    "dropout": 0.05,
+    "num_layers": -1,
+    "batch_size": 4,
+    "grad_accumulation": 4,
+    "learning_rate": 0.0002,
+    "warmup_updates": 20,
+    "epochs": 2,
+    "min_updates": 200,
+    "max_seq_length": 256,
+    "seed": 0
+  },
+  "trainable_parameters": 10822656,
+  "train_seconds": 7826.5,
+  "peak_memory_gb": 6.51
+}

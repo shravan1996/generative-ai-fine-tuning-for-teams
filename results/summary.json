@@ -58,6 +58,16 @@
         0.8813
       ],
       "no_valid_queue": 45
+    },
+    "qwen_all_day1": {
+      "n": 2800,
+      "correct": 2608,
+      "accuracy": 0.9314,
+      "ci95": [
+        0.9215,
+        0.9402
+      ],
+      "no_valid_queue": 4
     }
   },
   "day90": {
@@ -104,6 +114,72 @@
         ],
         "no_valid_queue": 0
       }
+    },
+    "qwen_all_day1_on_day90": {
+      "old": {
+        "n": 2800,
+        "correct": 2608,
+        "accuracy": 0.9314,
+        "ci95": [
+          0.9215,
+          0.9402
+        ],
+        "no_valid_queue": 4
+      },
+      "new": {
+        "n": 280,
+        "correct": 6,
+        "accuracy": 0.0214,
+        "ci95": [
+          0.0099,
+          0.046
+        ],
+        "no_valid_queue": 10
+      }
+    },
+    "qwen_retrain_day90": {
+      "old": {
+        "n": 2800,
+        "correct": 2609,
+        "accuracy": 0.9318,
+        "ci95": [
+          0.9218,
+          0.9405
+        ],
+        "no_valid_queue": 7
+      },
+      "new": {
+        "n": 280,
+        "correct": 170,
+        "accuracy": 0.6071,
+        "ci95": [
+          0.5489,
+          0.6625
+        ],
+        "no_valid_queue": 12
+      }
+    },
+    "qwen_listed_day90": {
+      "old": {
+        "n": 2800,
+        "correct": 1167,
+        "accuracy": 0.4168,
+        "ci95": [
+          0.3986,
+          0.4351
+        ],
+        "no_valid_queue": 35
+      },
+      "new": {
+        "n": 280,
+        "correct": 132,
+        "accuracy": 0.4714,
+        "ci95": [
+          0.4137,
+          0.5299
+        ],
+        "no_valid_queue": 1
+      }
     }
   },
   "day1_vs_haiku": {
@@ -130,6 +206,121 @@
       "only_first_right": 429,
       "only_second_right": 122,
       "p": 0.0
+    },
+    "qwen_all_day1": {
+      "n": 2800,
+      "only_first_right": 536,
+      "only_second_right": 55,
+      "p": 0.0
+    }
+  },
+  "alarm": {
+    "auroc_new_vs_old": 0.8085,
+    "threshold_sending_10pct_old": 0.778801,
+    "new_caught_at_that_threshold": 0.5321,
+    "median_conf_old": 1.0,
+    "median_conf_new": 0.687289,
+    "share_new_at_or_above_0_9": 0.2464,
+    "share_old_at_or_above_0_9": 0.8039,
+    "where_new_messages_went": {
+      "card_linking": [
+        [
+          "activate_my_card",
+          14
+        ],
+        [
+          "card_acceptance",
+          9
+        ],
+        [
+          "card_arrival",
+          5
+        ]
+      ],
+      "contactless_not_working": [
+        [
+          "declined_cash_withdrawal",
+          9
+        ],
+        [
+          "contactless_not_working",
+          6
+        ],
+        [
+          "declined_transfer",
+          4
+        ]
+      ],
+      "country_support": [
+        [
+          "supported_cards_and_currencies",
+          10
+        ],
+        [
+          "card_acceptance",
+          10
+        ],
+        [
+          "order_physical_card",
+          9
+        ]
+      ],
+      "disposable_card_limits": [
+        [
+          "get_disposable_virtual_card",
+          24
+        ],
+        [
+          "getting_spare_card",
+          13
+        ],
+        [
+          "virtual_card_not_working",
+          2
+        ]
+      ],
+      "exchange_charge": [
+        [
+          "exchange_via_app",
+          24
+        ],
+        [
+          "exchange_rate",
+          12
+        ],
+        [
+          null,
+          4
+        ]
+      ],
+      "fiat_currency_support": [
+        [
+          "exchange_via_app",
+          24
+        ],
+        [
+          "supported_cards_and_currencies",
+          14
+        ],
+        [
+          "reverted_card_payment?",
+          1
+        ]
+      ],
+      "getting_virtual_card": [
+        [
+          "get_disposable_virtual_card",
+          33
+        ],
+        [
+          null,
+          3
+        ],
+        [
+          "order_physical_card",
+          2
+        ]
+      ]
     }
   },
   "new_queue_detail": {
@@ -150,6 +341,15 @@
       "exchange_charge": 0.925,
       "fiat_currency_support": 0.775,
       "getting_virtual_card": 0.925
+    },
+    "qwen_retrain_day90": {
+      "card_linking": 0.375,
+      "contactless_not_working": 0.9,
+      "country_support": 0.7,
+      "disposable_card_limits": 0.625,
+      "exchange_charge": 0.9,
+      "fiat_currency_support": 0.3,
+      "getting_virtual_card": 0.45
     }
   },
   "split_exploratory": {
@@ -184,6 +384,116 @@
         "accuracy_old": 0.8511,
         "accuracy_new": null
       }
+    },
+    "qwen_all_day1+haiku_day1": {
+      "0%": {
+        "handed_to_claude": 0.0,
+        "accuracy_all": 0.9314,
+        "accuracy_old": 0.9314,
+        "accuracy_new": null
+      },
+      "5%": {
+        "handed_to_claude": 0.0407,
+        "accuracy_all": 0.93,
+        "accuracy_old": 0.93,
+        "accuracy_new": null
+      },
+      "10%": {
+        "handed_to_claude": 0.0779,
+        "accuracy_all": 0.9261,
+        "accuracy_old": 0.9261,
+        "accuracy_new": null
+      },
+      "20%": {
+        "handed_to_claude": 0.1961,
+        "accuracy_all": 0.8971,
+        "accuracy_old": 0.8971,
+        "accuracy_new": null
+      },
+      "30%": {
+        "handed_to_claude": 0.1961,
+        "accuracy_all": 0.8971,
+        "accuracy_old": 0.8971,
+        "accuracy_new": null
+      }
+    },
+    "qwen_all_day1_on_day90+haiku_day90": {
+      "0%": {
+        "handed_to_claude": 0.0,
+        "accuracy_all": 0.8487,
+        "accuracy_old": 0.9314,
+        "accuracy_new": 0.0214
+      },
+      "5%": {
+        "handed_to_claude": 0.0461,
+        "accuracy_all": 0.8659,
+        "accuracy_old": 0.9304,
+        "accuracy_new": 0.2214
+      },
+      "10%": {
+        "handed_to_claude": 0.0945,
+        "accuracy_all": 0.8782,
+        "accuracy_old": 0.9286,
+        "accuracy_new": 0.375
+      },
+      "20%": {
+        "handed_to_claude": 0.1614,
+        "accuracy_all": 0.8789,
+        "accuracy_old": 0.9171,
+        "accuracy_new": 0.4964
+      },
+      "30%": {
+        "handed_to_claude": 0.2468,
+        "accuracy_all": 0.8656,
+        "accuracy_old": 0.8946,
+        "accuracy_new": 0.575
+      }
+    },
+    "qwen_all_day1_on_day90+sonnet_day90": {
+      "0%": {
+        "handed_to_claude": 0.0,
+        "accuracy_all": 0.8487,
+        "accuracy_old": 0.9314,
+        "accuracy_new": 0.0214
+      },
+      "5%": {
+        "handed_to_claude": 0.0461,
+        "accuracy_all": 0.8682,
+        "accuracy_old": 0.9311,
+        "accuracy_new": 0.2393
+      },
+      "10%": {
+        "handed_to_claude": 0.0945,
+        "accuracy_all": 0.8828,
+        "accuracy_old": 0.9289,
+        "accuracy_new": 0.4214
+      },
+      "20%": {
+        "handed_to_claude": 0.1614,
+        "accuracy_all": 0.8847,
+        "accuracy_old": 0.9175,
+        "accuracy_new": 0.5571
+      },
+      "30%": {
+        "handed_to_claude": 0.2468,
+        "accuracy_all": 0.8744,
+        "accuracy_old": 0.8954,
+        "accuracy_new": 0.6643
+      }
+    }
+  },
+  "new_queue_watch_exploratory": {
+    "haiku_day90": {
+      "accuracy_all": 0.8951,
+      "accuracy_old": 0.9093,
+      "accuracy_new": 0.7536,
+      "old_messages_sent_to_a_new_queue": 67
+    },
+    "sonnet_day90": {
+      "accuracy_all": 0.9055,
+      "accuracy_old": 0.9093,
+      "accuracy_new": 0.8679,
+      "old_messages_sent_to_a_new_queue": 67
     }
   },
   "batching_check": {
@@ -241,9 +551,32 @@
     "qwen_k32_day1": {
       "n": 2800,
       "messages_per_second": 11.43
+    },
+    "qwen_all_day1": {
+      "n": 2800,
+      "messages_per_second": 8.96
+    },
+    "qwen_all_day1_on_day90": {
+      "n": 3080,
+      "messages_per_second": 8.76
+    },
+    "qwen_retrain_day90": {
+      "n": 3080,
+      "messages_per_second": 9.29
+    },
+    "qwen_listed_day90": {
+      "n": 3080,
+      "messages_per_second": 3.83
     }
   },
   "training": {
+    "day1_all": {
+      "rows": 9024,
+      "updates": 1128,
+      "train_seconds": 7095.1,
+      "peak_memory_gb": 6.36,
+      "trainable_parameters": 10822656
+    },
     "day1_k32": {
       "rows": 2240,
       "updates": 280,
@@ -256,6 +589,13 @@
       "updates": 200,
       "train_seconds": 1008.3,
       "peak_memory_gb": 5.55,
+      "trainable_parameters": 10822656
+    },
+    "day90_retrain": {
+      "rows": 9080,
+      "updates": 1135,
+      "train_seconds": 7826.5,
+      "peak_memory_gb": 6.51,
       "trainable_parameters": 10822656
     }
   }

@@ -158,6 +158,22 @@ def main():
         if arms90[small] and arms90[big]:
             out.setdefault("split_exploratory", {})[f"{small}+{big}"] = split(arms90[small], arms90[big], shares)
 
+    # Exploratory, not pre-registered: Claude reads every message with the current list, and
+    # its answer is used only when it names a queue the small model was never trained on.
+    q = arms90["qwen_all_day1_on_day90"]
+    for big_name in ("haiku_day90", "sonnet_day90"):
+        b = arms90[big_name]
+        if q and b:
+            ids = [i for i in q if i in b]
+            pick = lambda i: b[i] if b[i]["pred"] in new else q[i]
+            old_ids = [i for i in ids if is_old(q[i])]
+            new_ids = [i for i in ids if is_new(q[i])]
+            acc = lambda S: round(sum(pick(i)["pred"] == q[i]["label"] for i in S) / len(S), 4)
+            out.setdefault("new_queue_watch_exploratory", {})[big_name] = {
+                "accuracy_all": acc(ids), "accuracy_old": acc(old_ids), "accuracy_new": acc(new_ids),
+                "old_messages_sent_to_a_new_queue": sum(b[i]["pred"] in new for i in old_ids),
+            }
+
     # Batching check: Haiku one message per call against the same messages in batches.
     single, batched = load("haiku_day1_single"), arms["haiku_day1"]
     if single and batched:

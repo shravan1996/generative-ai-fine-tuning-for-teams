@@ -7,16 +7,55 @@
     ],
     "left_w": 210,
     "rows": [
-      ["What did the big model get to see?", "Names, examples, or hand-picked examples. GPT-4 scored 74.2% with three random examples per intent and 83.1% with three an expert chose (Loukas et al., 2023)."],
-      ["How many labels did the small one get?", "Fine-tuned BERT scored 83.4% with 10 labelled messages per intent, 90.0% with 30, and 93.7% with all of them (Casanueva et al., 2020)."],
-      ["Who wrote the answers it learned from?", "Preply's Qwen3.5-0.8B learned from GPT-5.4's annotations, checked and filtered first, then beat prompted GPT-5.4 on tests people had labelled (Celikik et al., 2026)."],
-      ["What happened after training day?", "None of these studies changes the label set after training. Your business will."]
+      [
+        "What did the big model get to see?",
+        "Names, examples, or hand-picked examples. GPT-4 scored 74.2% with three random examples per intent and 83.1% with three an expert chose (Loukas et al., 2023)."
+      ],
+      [
+        "How many labels did the small one get?",
+        "Fine-tuned BERT scored 83.4% with 10 labelled messages per intent, 90.0% with 30, and 93.7% with all of them (Casanueva et al., 2020)."
+      ],
+      [
+        "Who wrote the answers it learned from?",
+        "Preply's Qwen3.5-0.8B learned from GPT-5.4's annotations, checked and filtered first, then beat prompted GPT-5.4 on tests people had labelled (Celikik et al., 2026)."
+      ],
+      [
+        "What happened after training day?",
+        "None of these studies changes the label set after training. In my trial, seven new queues cost the trained model all but 6 of their 280 messages."
+      ]
     ]
   },
-  "result_foot": [],
+  "result_foot": [
+    "* Exploratory, not pre-registered: Sonnet reads every message with the 77 names,",
+    "and its answer is used only when it names one of the seven new queues."
+  ],
   "working_default": {
-    "title": "TBD",
-    "subs": [],
-    "rows": []
+    "title": "Who routes what",
+    "subs": [
+      "A starting point for a contact-centre team, October 2026."
+    ],
+    "left_w": 180,
+    "rows": [
+      [
+        "Queues that rarely change",
+        "A fine-tuned small open model you store yourself, trained on at least 32 closed tickets per queue. Its answer must be a name on the live queue list."
+      ],
+      [
+        "A queue added or renamed",
+        "Add the name to the frontier model's list the same day. Its answer wins whenever it names a queue the small model was never trained on."
+      ],
+      [
+        "Unsure answers",
+        "Send the least confident few percent to the frontier model or a person, and check that handing over more still helps."
+      ],
+      [
+        "Retraining",
+        "From a fresh export, within a week of any queue change and at least monthly. Ship only if it beats the running model on last month's tickets."
+      ],
+      [
+        "Kill switch",
+        "Route everything through the frontier model if a weekly sample of routed tickets falls 3 points below launch accuracy, or a live queue has no training examples."
+      ]
+    ]
   }
 }

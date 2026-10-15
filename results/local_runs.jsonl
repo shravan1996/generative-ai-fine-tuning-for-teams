@@ -1,3 +1,7 @@
 {"arm": "qwen_listed_day1", "test": "test_old.jsonl", "day": 1, "adapter": null, "listed": true, "n": 2800, "wall_seconds": 519.0, "accuracy": 0.4354}
 {"arm": "qwen_k8_day1", "test": "test_old.jsonl", "day": 1, "adapter": "adapters/day1_k8", "listed": false, "n": 2800, "wall_seconds": 249.7, "accuracy": 0.8036}
 {"arm": "qwen_k32_day1", "test": "test_old.jsonl", "day": 1, "adapter": "adapters/day1_k32", "listed": false, "n": 2800, "wall_seconds": 245.0, "accuracy": 0.8693}
+{"arm": "qwen_all_day1", "test": "test_old.jsonl", "day": 1, "adapter": "adapters/day1_all", "listed": false, "n": 2800, "wall_seconds": 312.4, "accuracy": 0.9314}
+{"arm": "qwen_all_day1_on_day90", "test": "test_all.jsonl", "day": 90, "adapter": "adapters/day1_all", "listed": false, "n": 3080, "wall_seconds": 351.7, "accuracy": 0.8487}
+{"arm": "qwen_retrain_day90", "test": "test_all.jsonl", "day": 90, "adapter": "adapters/day90_retrain", "listed": false, "n": 3080, "wall_seconds": 331.7, "accuracy": 0.9023}
+{"arm": "qwen_listed_day90", "test": "test_all.jsonl", "day": 90, "adapter": null, "listed": true, "n": 3080, "wall_seconds": 804.6, "accuracy": 0.4218}

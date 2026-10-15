@@ -6,7 +6,7 @@ frontier model with the list of categories in the prompt? And what happens when 
 categories change?
 
 It is the trial behind the Generative AI article
-[RESULTS_ARTICLE_TITLE](https://shravanpendem.com/blog/generative-ai/operations-llmops/fine-tuning-small-models-for-teams)
+[Seven queues it had never seen](https://shravanpendem.com/blog/generative-ai/operations-llmops/fine-tuning-small-models-for-teams)
 on shravanpendem.com.
 
 ## The job
@@ -28,7 +28,41 @@ before any arm was scored.
 
 ## Results
 
-RESULTS_TABLE
+| Arm | Day one, 70 queues | Day ninety, old queues | Day ninety, new queues |
+| --- | --- | --- | --- |
+| Qwen3.5-0.8B, queue list, untrained | 43.5% |  |  |
+| Claude Haiku 5.5, queue list, low effort | 76.0% | 71.8% | 75.4% |
+| Claude Sonnet 5.5, queue list | 81.5% | 79.5% | 86.8% |
+| Qwen3.5-0.8B + 8 labels per queue | 80.4% |  |  |
+| Qwen3.5-0.8B + 32 labels per queue | 86.9% |  |  |
+| Qwen3.5-0.8B + every label | 93.1% | 93.1% | 2.1% |
+| Qwen3.5-0.8B retrained, + 8 per new queue |  | 93.2% | 60.7% |
+| Qwen3.5-0.8B, queue list, untrained (77 names) |  | 41.7% | 47.1% |
+| Exploratory: every-label Qwen, Sonnet used only for new queues |  | 90.9% | 86.8% |
+
+Accuracy is the share of test messages routed to the right queue: 2,800 messages on day one,
+and on day ninety 2,800 for the old queues and 280 for the seven new ones. Each figure has a
+95% interval of about 1.5 points on day one and about 5 points for the new queues.
+
+What the pre-registered questions came to:
+
+1. **A few days of labels beat Claude given the queue names.** 32 labels per queue scored
+   86.9% against 76.0% for Haiku and 81.5% for Sonnet. 8 per queue (80.4%) was level with
+   Sonnet (paired test p = 0.16).
+2. **The trained model's confidence barely flags new queues.** AUROC 0.81 against a 0.80 bar.
+   A threshold that sends 10% of ordinary messages to a person caught 149 of 280 new-queue
+   messages, and 69 new-queue answers came with 90% confidence or more, all wrong.
+3. **Eight labels per new queue were not enough.** The retrained model kept the old queues
+   (93.2%) but got 60.7% of the new ones, under the 70% bar and under both Claude models.
+
+The exploratory row was worked out after the results, from saved predictions: Claude reads
+every message with the full list, and its answer is used only when it names a queue the
+small model was never trained on. One deviation from the plan, how Claude's replies are
+parsed, is recorded at the end of the pre-registration.
+
+Training on an M4 Pro Mac with 24 GB: 17 minutes for 8 labels per queue, 22 for 32, about two
+hours for every label, peak memory 5.5 to 6.5 GB. At list price, routing 10,000 messages cost
+about $0.38 on Haiku and $4.87 on Sonnet in these runs.
 
 Every number above is in [results/summary.json](results/summary.json), computed by
 `analyze.py` from the saved predictions in `results/preds/`. Raw Claude replies, with the
