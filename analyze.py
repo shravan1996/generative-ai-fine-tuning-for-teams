@@ -128,6 +128,36 @@ def main():
             out.setdefault("new_queue_detail", {})[a] = {
                 q: accuracy(p, lambda r, q=q: r["label"] == q)["accuracy"] for q in sorted(new)}
 
+    # Exploratory, not pre-registered: keep the small model's confident answers and send the
+    # rest to Claude. The threshold is set by the share of traffic handed over, read off the
+    # small model's own confidence on the messages being scored.
+    def split(small, big, shares, keep=None):
+        ids = [i for i in small if i in big and (keep is None or keep(small[i]))]
+        conf = sorted(small[i]["confidence"] for i in ids)
+        rows = {}
+        for share in shares:
+            cut = conf[int(share * len(conf))] if share > 0 else -1.0
+            pick = lambda i: big[i] if small[i]["confidence"] < cut else small[i]
+            handed = sum(small[i]["confidence"] < cut for i in ids)
+            right = lambda keep2: sum(pick(i)["pred"] == pick(i)["label"] for i in ids if keep2(small[i]))
+            n_old = sum(1 for i in ids if is_old(small[i]))
+            n_new = len(ids) - n_old
+            rows[f"{int(share * 100)}%"] = {
+                "handed_to_claude": round(handed / len(ids), 4),
+                "accuracy_all": round(right(lambda r: True) / len(ids), 4),
+                "accuracy_old": round(right(is_old) / n_old, 4) if n_old else None,
+                "accuracy_new": round(right(is_new) / n_new, 4) if n_new else None,
+            }
+        return rows
+
+    shares = [0, 0.05, 0.10, 0.20, 0.30]
+    for small, big in (("qwen_k32_day1", "haiku_day1"), ("qwen_all_day1", "haiku_day1")):
+        if arms[small] and arms[big]:
+            out.setdefault("split_exploratory", {})[f"{small}+{big}"] = split(arms[small], arms[big], shares)
+    for small, big in (("qwen_all_day1_on_day90", "haiku_day90"), ("qwen_all_day1_on_day90", "sonnet_day90")):
+        if arms90[small] and arms90[big]:
+            out.setdefault("split_exploratory", {})[f"{small}+{big}"] = split(arms90[small], arms90[big], shares)
+
     # Batching check: Haiku one message per call against the same messages in batches.
     single, batched = load("haiku_day1_single"), arms["haiku_day1"]
     if single and batched:

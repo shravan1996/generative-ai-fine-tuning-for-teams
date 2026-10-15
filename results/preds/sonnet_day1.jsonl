@@ -20,7 +20,7 @@
 {"i": 19, "text": "My card still hasn't arrived after 2 weeks. Is it lost?", "label": "card_arrival", "raw": "card_arrival", "pred": "card_arrival"}
 {"i": 20, "text": "I did not get my card yet, is it lost?", "label": "card_arrival", "raw": "card_arrival", "pred": "card_arrival"}
 {"i": 21, "text": "Status of the card I ordered.", "label": "card_arrival", "raw": "card_arrival", "pred": "card_arrival"}
-{"i": 22, "text": "How long should my new card take to arrive?", "label": "card_arrival", "raw": null, "pred": null}
+{"i": 22, "text": "How long should my new card take to arrive?", "label": "card_arrival", "raw": "card_delivery_estimate", "pred": "card_delivery_estimate"}
 {"i": 23, "text": "I ordered my card 2 weeks ago and it still isn't here? What do I do?", "label": "card_arrival", "raw": "card_arrival", "pred": "card_arrival"}
 {"i": 24, "text": "My card has not arrived yet, where is it?", "label": "card_arrival", "raw": "card_arrival", "pred": "card_arrival"}
 {"i": 25, "text": "What is the tracking number for my card that was mailed?", "label": "card_arrival", "raw": "card_arrival", "pred": "card_arrival"}
@@ -72,7 +72,7 @@
 {"i": 71, "text": "How are you determining your exchange rates?", "label": "exchange_rate", "raw": "exchange_rate", "pred": "exchange_rate"}
 {"i": 72, "text": "I'm trying to figure out the current exchange rate.", "label": "exchange_rate", "raw": "exchange_rate", "pred": "exchange_rate"}
 {"i": 73, "text": "From where are you getting your exchange rates?", "label": "exchange_rate", "raw": "exchange_rate", "pred": "exchange_rate"}
-{"i": 74, "text": "Can you tell me the foreign exchange rate?", "label": "exchange_rate", "raw": null, "pred": null}
+{"i": 74, "text": "Can you tell me the foreign exchange rate?", "label": "exchange_rate", "raw": "exchange_rate", "pred": "exchange_rate"}
 {"i": 75, "text": "why do your exchange rates change", "label": "exchange_rate", "raw": "exchange_rate", "pred": "exchange_rate"}
 {"i": 76, "text": "What kind of foreign exchange rate will I get when I exchange my money?", "label": "exchange_rate", "raw": "exchange_rate", "pred": "exchange_rate"}
 {"i": 77, "text": "What is my foreign exchange rate?", "label": "exchange_rate", "raw": "exchange_rate", "pred": "exchange_rate"}
@@ -122,7 +122,7 @@
 {"i": 121, "text": "Why is there a fee for an extra pound in my statement?", "label": "extra_charge_on_statement", "raw": "extra_charge_on_statement", "pred": "extra_charge_on_statement"}
 {"i": 122, "text": "I'm not okay with this fee on my statement.", "label": "extra_charge_on_statement", "raw": "extra_charge_on_statement", "pred": "extra_charge_on_statement"}
 {"i": 123, "text": "Why is there an extra dollar charged to my account?", "label": "extra_charge_on_statement", "raw": "extra_charge_on_statement", "pred": "extra_charge_on_statement"}
-{"i": 124, "text": "There is a fee I don't recognize on my statement.", "label": "extra_charge_on_statement", "raw": null, "pred": null}
+{"i": 124, "text": "There is a fee I don't recognize on my statement.", "label": "extra_charge_on_statement", "raw": "extra_charge_on_statement", "pred": "extra_charge_on_statement"}
 {"i": 125, "text": "I would like a refund on the extra pound I was charged.", "label": "extra_charge_on_statement", "raw": "extra_charge_on_statement", "pred": "extra_charge_on_statement"}
 {"i": 126, "text": "Can you explain what this random $1 charge is?", "label": "extra_charge_on_statement", "raw": "extra_charge_on_statement", "pred": "extra_charge_on_statement"}
 {"i": 127, "text": "What is this $1 charge on my statement?", "label": "extra_charge_on_statement", "raw": "extra_charge_on_statement", "pred": "extra_charge_on_statement"}
@@ -135,7 +135,7 @@
 {"i": 134, "text": "I noticed an extra $1 charge on my statement, can you tell me why that is?", "label": "extra_charge_on_statement", "raw": "extra_charge_on_statement", "pred": "extra_charge_on_statement"}
 {"i": 135, "text": "There is an extra $1 charge", "label": "extra_charge_on_statement", "raw": "extra_charge_on_statement", "pred": "extra_charge_on_statement"}
 {"i": 136, "text": "I need information about an extra €1 fee in my statement.", "label": "extra_charge_on_statement", "raw": "extra_charge_on_statement", "pred": "extra_charge_on_statement"}
-{"i": 137, "text": "Why is there an extra 1 pound charge on my card?", "label": "extra_charge_on_statement", "raw": null, "pred": null}
+{"i": 137, "text": "Why is there an extra 1 pound charge on my card?", "label": "extra_charge_on_statement", "raw": "extra_charge_on_statement", "pred": "extra_charge_on_statement"}
 {"i": 138, "text": "Why are there so many fees on my statement?", "label": "extra_charge_on_statement", "raw": "extra_charge_on_statement", "pred": "extra_charge_on_statement"}
 {"i": 139, "text": "What would be the reason there's an extra fee on my statement?", "label": "extra_charge_on_statement", "raw": "extra_charge_on_statement", "pred": "extra_charge_on_statement"}
 {"i": 140, "text": "Where did this 1 euro fee come from?", "label": "extra_charge_on_statement", "raw": "extra_charge_on_statement", "pred": "extra_charge_on_statement"}
@@ -143,7 +143,7 @@
 {"i": 142, "text": "I have a 1 euro fee on my statement.", "label": "extra_charge_on_statement", "raw": "extra_charge_on_statement", "pred": "extra_charge_on_statement"}
 {"i": 143, "text": "Why was I overcharged a pound!?", "label": "extra_charge_on_statement", "raw": "card_payment_fee_charged", "pred": "card_payment_fee_charged"}
 {"i": 144, "text": "Something went wrong, I was charged an extra pound?", "label": "extra_charge_on_statement", "raw": "extra_charge_on_statement", "pred": "extra_charge_on_statement"}
-{"i": 145, "text": "Where did the extra fee on my statement come from?", "label": "extra_charge_on_statement", "raw": null, "pred": null}
+{"i": 145, "text": "Where did the extra fee on my statement come from?", "label": "extra_charge_on_statement", "raw": "extra_charge_on_statement", "pred": "extra_charge_on_statement"}
 {"i": 146, "text": "There is an extra charge on my app that I was not told about or I was aware of!", "label": "extra_charge_on_statement", "raw": "extra_charge_on_statement", "pred": "extra_charge_on_statement"}
 {"i": 147, "text": "I am seeing an extra fee on my statement what is that for?", "label": "extra_charge_on_statement", "raw": "extra_charge_on_statement", "pred": "extra_charge_on_statement"}
 {"i": 148, "text": "What is this €1 fee in my statement?", "label": "extra_charge_on_statement", "raw": "extra_charge_on_statement", "pred": "extra_charge_on_statement"}
@@ -153,14 +153,14 @@
 {"i": 152, "text": "Can you help me with a weird charge?  It's a pound charge that never goes away from the statement view on the app I'm using.  It's not described as anything but \"Pending\", and that status has never changed during the last two days.", "label": "extra_charge_on_statement", "raw": "pending_card_payment", "pred": "pending_card_payment"}
 {"i": 153, "text": "What is the purpose of the extra fee that is showing up on my statement?", "label": "extra_charge_on_statement", "raw": "extra_charge_on_statement", "pred": "extra_charge_on_statement"}
 {"i": 154, "text": "$1 extra has been charged on my statement, why is that?", "label": "extra_charge_on_statement", "raw": "extra_charge_on_statement", "pred": "extra_charge_on_statement"}
-{"i": 155, "text": "What is the extra  €1 fee in my statement", "label": "extra_charge_on_statement", "raw": null, "pred": null}
+{"i": 155, "text": "What is the extra  €1 fee in my statement", "label": "extra_charge_on_statement", "raw": "extra_charge_on_statement", "pred": "extra_charge_on_statement"}
 {"i": 156, "text": "It's been two weeks, why has the transaction for $1.00 not been reversed?", "label": "extra_charge_on_statement", "raw": "reverted_card_payment?", "pred": "reverted_card_payment?"}
 {"i": 157, "text": "What is the €1 fee for?", "label": "extra_charge_on_statement", "raw": "extra_charge_on_statement", "pred": "extra_charge_on_statement"}
 {"i": 158, "text": "I'm quite confused as to what is going on. There is some odd extra pound charge on my statement in the app that's just listed as pending and doesn't go away since a couple days.", "label": "extra_charge_on_statement", "raw": "extra_charge_on_statement", "pred": "extra_charge_on_statement"}
 {"i": 159, "text": "Can you please check why I am having this extra fee on my statement.", "label": "extra_charge_on_statement", "raw": "extra_charge_on_statement", "pred": "extra_charge_on_statement"}
 {"i": 160, "text": "My withdrawl is still pending.  Why?", "label": "pending_cash_withdrawal", "raw": "pending_cash_withdrawal", "pred": "pending_cash_withdrawal"}
 {"i": 161, "text": "My card was denied at an ATM earlier today but the transaction is pending. Please cancel it as I did not receive my money.", "label": "pending_cash_withdrawal", "raw": "declined_cash_withdrawal", "pred": "declined_cash_withdrawal"}
-{"i": 162, "text": "My transaction is still showing that is pending from my cash withdrawal.", "label": "pending_cash_withdrawal", "raw": null, "pred": null}
+{"i": 162, "text": "My transaction is still showing that is pending from my cash withdrawal.", "label": "pending_cash_withdrawal", "raw": "pending_cash_withdrawal", "pred": "pending_cash_withdrawal"}
 {"i": 163, "text": "Hey I tried to get some money out earlier but the machine didn't work. Now just saw the transaction still seems in progress! Can you please check what's going there, seems something is broken, I don't want to be charged for money that I haven't actually received!", "label": "pending_cash_withdrawal", "raw": "pending_cash_withdrawal", "pred": "pending_cash_withdrawal"}
 {"i": 164, "text": "How long does the cash withdrawal take to pend?", "label": "pending_cash_withdrawal", "raw": "pending_cash_withdrawal", "pred": "pending_cash_withdrawal"}
 {"i": 165, "text": "Why is it taking so long for my cash withdrawal to no longer show as pending?", "label": "pending_cash_withdrawal", "raw": "pending_cash_withdrawal", "pred": "pending_cash_withdrawal"}
@@ -180,7 +180,7 @@
 {"i": 179, "text": "Hey, my card was declined at an ATM in the city centre theatre. My account says the transaction is pending, though. I didn't get the money, though, so what does that mean?", "label": "pending_cash_withdrawal", "raw": "pending_cash_withdrawal", "pred": "pending_cash_withdrawal"}
 {"i": 180, "text": "Why do I have a pending cash withdrawal?", "label": "pending_cash_withdrawal", "raw": "pending_cash_withdrawal", "pred": "pending_cash_withdrawal"}
 {"i": 181, "text": "I have a pending cash withdrawal", "label": "pending_cash_withdrawal", "raw": "pending_cash_withdrawal", "pred": "pending_cash_withdrawal"}
-{"i": 182, "text": "I made a withdrawal from my account but it has not posted?", "label": "pending_cash_withdrawal", "raw": null, "pred": null}
+{"i": 182, "text": "I made a withdrawal from my account but it has not posted?", "label": "pending_cash_withdrawal", "raw": "pending_cash_withdrawal", "pred": "pending_cash_withdrawal"}
 {"i": 183, "text": "Is my cash withdrawal pending?", "label": "pending_cash_withdrawal", "raw": "pending_cash_withdrawal", "pred": "pending_cash_withdrawal"}
 {"i": 184, "text": "I'm not quite understanding why my cash withdrawal is showing as pending.", "label": "pending_cash_withdrawal", "raw": "pending_cash_withdrawal", "pred": "pending_cash_withdrawal"}
 {"i": 185, "text": "I made a cash withdrawal but the pending status is taking forever.", "label": "pending_cash_withdrawal", "raw": "pending_cash_withdrawal", "pred": "pending_cash_withdrawal"}
@@ -261,7 +261,7 @@
 {"i": 260, "text": "What's the limit on automatic top-up?", "label": "automatic_top_up", "raw": "top_up_limits", "pred": "top_up_limits"}
 {"i": 261, "text": "If I will be traveling, is there a way to auto top-up my card on certain days?", "label": "automatic_top_up", "raw": "automatic_top_up", "pred": "automatic_top_up"}
 {"i": 262, "text": "Where is the auto top-up option?", "label": "automatic_top_up", "raw": "automatic_top_up", "pred": "automatic_top_up"}
-{"i": 263, "text": "Can I have a auto top-up when my account is short?", "label": "automatic_top_up", "raw": null, "pred": null}
+{"i": 263, "text": "Can I have a auto top-up when my account is short?", "label": "automatic_top_up", "raw": "automatic_top_up", "pred": "automatic_top_up"}
 {"i": 264, "text": "Do you have an auto top-up option?", "label": "automatic_top_up", "raw": "automatic_top_up", "pred": "automatic_top_up"}
 {"i": 265, "text": "Can I space out how often money is transferred along my travels?", "label": "automatic_top_up", "raw": "automatic_top_up", "pred": "automatic_top_up"}
 {"i": 266, "text": "Will it automatically top-up money if there isn't a lot left?", "label": "automatic_top_up", "raw": "automatic_top_up", "pred": "automatic_top_up"}
@@ -296,7 +296,7 @@
 {"i": 295, "text": "Why isn't my card working?", "label": "card_not_working", "raw": "card_not_working", "pred": "card_not_working"}
 {"i": 296, "text": "My card isn't working anymore.", "label": "card_not_working", "raw": "card_not_working", "pred": "card_not_working"}
 {"i": 297, "text": "My card was declined today when eating and I need to know what's wrong.", "label": "card_not_working", "raw": "declined_card_payment", "pred": "declined_card_payment"}
-{"i": 298, "text": "My card doesn't work.", "label": "card_not_working", "raw": null, "pred": null}
+{"i": 298, "text": "My card doesn't work.", "label": "card_not_working", "raw": "card_not_working", "pred": "card_not_working"}
 {"i": 299, "text": "How can I resolve a problem where my card won't go through at all?", "label": "card_not_working", "raw": "card_not_working", "pred": "card_not_working"}
 {"i": 300, "text": "My actual card isn't working.", "label": "card_not_working", "raw": "card_not_working", "pred": "card_not_working"}
 {"i": 301, "text": "Is my card broken?", "label": "card_not_working", "raw": "card_not_working", "pred": "card_not_working"}
@@ -329,7 +329,7 @@
 {"i": 328, "text": "How do I make an exchange from one currency to another?", "label": "exchange_via_app", "raw": "exchange_via_app", "pred": "exchange_via_app"}
 {"i": 329, "text": "How do I interconvert between AUD and GBP?", "label": "exchange_via_app", "raw": "exchange_via_app", "pred": "exchange_via_app"}
 {"i": 330, "text": "What all currencies can be exchanged?", "label": "exchange_via_app", "raw": "supported_cards_and_currencies", "pred": "supported_cards_and_currencies"}
-{"i": 331, "text": "What is the best way to exchange currency between USD and GBP using your app?", "label": "exchange_via_app", "raw": null, "pred": null}
+{"i": 331, "text": "What is the best way to exchange currency between USD and GBP using your app?", "label": "exchange_via_app", "raw": "exchange_via_app", "pred": "exchange_via_app"}
 {"i": 332, "text": "If I wanted to make a change from GBP to AUD what is the process?", "label": "exchange_via_app", "raw": "exchange_via_app", "pred": "exchange_via_app"}
 {"i": 333, "text": "Can I get some money exchanged?", "label": "exchange_via_app", "raw": "exchange_via_app", "pred": "exchange_via_app"}
 {"i": 334, "text": "Is it possible to change to another currency?", "label": "exchange_via_app", "raw": "exchange_via_app", "pred": "exchange_via_app"}
@@ -342,7 +342,7 @@
 {"i": 341, "text": "If I need GBP instead of AUD what do I do?", "label": "exchange_via_app", "raw": "exchange_via_app", "pred": "exchange_via_app"}
 {"i": 342, "text": "I was wondering whether exchanging currencies can be done on this app.", "label": "exchange_via_app", "raw": "exchange_via_app", "pred": "exchange_via_app"}
 {"i": 343, "text": "I might need AUD instead of GBP, how to change?", "label": "exchange_via_app", "raw": "exchange_via_app", "pred": "exchange_via_app"}
-{"i": 344, "text": "How do I go through the process of currency exchange?", "label": "exchange_via_app", "raw": null, "pred": null}
+{"i": 344, "text": "How do I go through the process of currency exchange?", "label": "exchange_via_app", "raw": "exchange_via_app", "pred": "exchange_via_app"}
 {"i": 345, "text": "Change currency", "label": "exchange_via_app", "raw": "exchange_via_app", "pred": "exchange_via_app"}
 {"i": 346, "text": "Can am I able to exchange currencies?", "label": "exchange_via_app", "raw": "exchange_via_app", "pred": "exchange_via_app"}
 {"i": 347, "text": "Where do I go to change GBP?", "label": "exchange_via_app", "raw": "exchange_via_app", "pred": "exchange_via_app"}
@@ -412,7 +412,7 @@
 {"i": 411, "text": "What is the minimum age?", "label": "age_limit", "raw": "age_limit", "pred": "age_limit"}
 {"i": 412, "text": "I am only 17. Can I make an account?", "label": "age_limit", "raw": "age_limit", "pred": "age_limit"}
 {"i": 413, "text": "Could I open an account for my children?", "label": "age_limit", "raw": "age_limit", "pred": "age_limit"}
-{"i": 414, "text": "What is the age to open an account?", "label": "age_limit", "raw": null, "pred": null}
+{"i": 414, "text": "What is the age to open an account?", "label": "age_limit", "raw": "age_limit", "pred": "age_limit"}
 {"i": 415, "text": "How do I open up an account for my child?", "label": "age_limit", "raw": "age_limit", "pred": "age_limit"}
 {"i": 416, "text": "Can I open a bank account for my newborn baby?", "label": "age_limit", "raw": "age_limit", "pred": "age_limit"}
 {"i": 417, "text": "How old do I have to be to open an account?", "label": "age_limit", "raw": "age_limit", "pred": "age_limit"}
@@ -427,18 +427,18 @@
 {"i": 426, "text": "Do my kids have to be a certain age to use this service?", "label": "age_limit", "raw": "age_limit", "pred": "age_limit"}
 {"i": 427, "text": "How old do you have to be to be able to open an account?", "label": "age_limit", "raw": "age_limit", "pred": "age_limit"}
 {"i": 428, "text": "Is there an age limit?", "label": "age_limit", "raw": "age_limit", "pred": "age_limit"}
-{"i": 429, "text": "What are the age requirements for opening an account?", "label": "age_limit", "raw": null, "pred": null}
-{"i": 430, "text": "will i be able to open an account for my daughter", "label": "age_limit", "raw": null, "pred": null}
-{"i": 431, "text": "How old do I need to be to open an account?", "label": "age_limit", "raw": null, "pred": null}
+{"i": 429, "text": "What are the age requirements for opening an account?", "label": "age_limit", "raw": "age_limit", "pred": "age_limit"}
+{"i": 430, "text": "will i be able to open an account for my daughter", "label": "age_limit", "raw": "age_limit", "pred": "age_limit"}
+{"i": 431, "text": "How old do I need to be to open an account?", "label": "age_limit", "raw": "age_limit", "pred": "age_limit"}
 {"i": 432, "text": "What age can sign up for services?", "label": "age_limit", "raw": "age_limit", "pred": "age_limit"}
 {"i": 433, "text": "How old do my kids have to be to use your service?", "label": "age_limit", "raw": "age_limit", "pred": "age_limit"}
 {"i": 434, "text": "What age do my kids need to be to use your service?", "label": "age_limit", "raw": "age_limit", "pred": "age_limit"}
 {"i": 435, "text": "How old do my children need to be to open an account?", "label": "age_limit", "raw": "age_limit", "pred": "age_limit"}
 {"i": 436, "text": "How old does my kids need to be to open an account?", "label": "age_limit", "raw": "age_limit", "pred": "age_limit"}
-{"i": 437, "text": "How young can someone be in order to open an account?", "label": "age_limit", "raw": null, "pred": null}
+{"i": 437, "text": "How young can someone be in order to open an account?", "label": "age_limit", "raw": "age_limit", "pred": "age_limit"}
 {"i": 438, "text": "What is the youngest someone can be to open an account?", "label": "age_limit", "raw": "age_limit", "pred": "age_limit"}
 {"i": 439, "text": "How old does one have to be to have an account with the bank?", "label": "age_limit", "raw": "age_limit", "pred": "age_limit"}
-{"i": 440, "text": "How do I get my PIN unlocked?", "label": "pin_blocked", "raw": null, "pred": null}
+{"i": 440, "text": "How do I get my PIN unlocked?", "label": "pin_blocked", "raw": "pin_blocked", "pred": "pin_blocked"}
 {"i": 441, "text": "Where can I view my PIN?", "label": "pin_blocked", "raw": "change_pin", "pred": "change_pin"}
 {"i": 442, "text": "Will you reinstate my PIN?", "label": "pin_blocked", "raw": "pin_blocked", "pred": "pin_blocked"}
 {"i": 443, "text": "I accidentally blocked my PIN. How do I reset it?", "label": "pin_blocked", "raw": "pin_blocked", "pred": "pin_blocked"}
@@ -460,7 +460,7 @@
 {"i": 459, "text": "I'v exhausted all the of times I can try my PIN", "label": "pin_blocked", "raw": "pin_blocked", "pred": "pin_blocked"}
 {"i": 460, "text": "How can I unlock my pin from too many tries?", "label": "pin_blocked", "raw": "pin_blocked", "pred": "pin_blocked"}
 {"i": 461, "text": "Help! I forgot my PIN and have been locked out of using my card.", "label": "pin_blocked", "raw": "pin_blocked", "pred": "pin_blocked"}
-{"i": 462, "text": "My account is blocked, how do I log in now", "label": "pin_blocked", "raw": null, "pred": null}
+{"i": 462, "text": "My account is blocked, how do I log in now", "label": "pin_blocked", "raw": "passcode_forgotten", "pred": "passcode_forgotten"}
 {"i": 463, "text": "Why did I get blocked?", "label": "pin_blocked", "raw": "pin_blocked", "pred": "pin_blocked"}
 {"i": 464, "text": "Are you able to unblock my pin?", "label": "pin_blocked", "raw": "pin_blocked", "pred": "pin_blocked"}
 {"i": 465, "text": "Can you assist me with unblocking my PIN? I put it in wrong too many times.", "label": "pin_blocked", "raw": "pin_blocked", "pred": "pin_blocked"}
@@ -528,7 +528,7 @@
 {"i": 527, "text": "I've already topped up, but I cannot see the funds being available. What happened?", "label": "pending_top_up", "raw": "balance_not_updated_after_bank_transfer", "pred": "balance_not_updated_after_bank_transfer"}
 {"i": 528, "text": "What is going on? My top-up is still pending. I use your system all the time but now it is just showing as pending.", "label": "pending_top_up", "raw": "pending_top_up", "pred": "pending_top_up"}
 {"i": 529, "text": "I  do not see a top-up processed.", "label": "pending_top_up", "raw": "top_up_failed", "pred": "top_up_failed"}
-{"i": 530, "text": "I topped up but it didn't complete", "label": "pending_top_up", "raw": null, "pred": null}
+{"i": 530, "text": "I topped up but it didn't complete", "label": "pending_top_up", "raw": "top_up_failed", "pred": "top_up_failed"}
 {"i": 531, "text": "So, I am a new customer and attempted to top up for the very first time today. It's already been pending for half an hour and doesn't seem to be working. I need to please get this fixed.", "label": "pending_top_up", "raw": "pending_top_up", "pred": "pending_top_up"}
 {"i": 532, "text": "My top up is pending.", "label": "pending_top_up", "raw": "pending_top_up", "pred": "pending_top_up"}
 {"i": 533, "text": "Can you look into my top up please.  I made it over three hours ago and yet it's still pending.", "label": "pending_top_up", "raw": "pending_top_up", "pred": "pending_top_up"}
@@ -551,7 +551,7 @@
 {"i": 550, "text": "My top up hasn't worked, it's been stuck in pending for the last couple hours", "label": "pending_top_up", "raw": "pending_top_up", "pred": "pending_top_up"}
 {"i": 551, "text": "It doesn't look like the top-up completed.", "label": "pending_top_up", "raw": "top_up_failed", "pred": "top_up_failed"}
 {"i": 552, "text": "Why does my top up say still pending when I used my card to do it.", "label": "pending_top_up", "raw": "pending_top_up", "pred": "pending_top_up"}
-{"i": 553, "text": "Where is the money I topped off with?", "label": "pending_top_up", "raw": null, "pred": null}
+{"i": 553, "text": "Where is the money I topped off with?", "label": "pending_top_up", "raw": "pending_top_up", "pred": "pending_top_up"}
 {"i": 554, "text": "Hi. I'm a new customer to your system and I think something isn't working right - or maybe it is. Maybe you can confirm. I tried to top up today (my first time ever) and it's been stuck at \"pending\" for over an hour now. Is it supposed to do this or is there something wrong in the system?", "label": "pending_top_up", "raw": "pending_top_up", "pred": "pending_top_up"}
 {"i": 555, "text": "Why is my top-up still pending?", "label": "pending_top_up", "raw": "pending_top_up", "pred": "pending_top_up"}
 {"i": 556, "text": "Topping up my card is not working because I believe the top up is pending", "label": "pending_top_up", "raw": "pending_top_up", "pred": "pending_top_up"}
@@ -566,7 +566,7 @@
 {"i": 565, "text": "I need you to cancel a transfer that I made.  It is the wrong account number and the app won't let me stop the transaction.  Please stop it!", "label": "cancel_transfer", "raw": "cancel_transfer", "pred": "cancel_transfer"}
 {"i": 566, "text": "I need to cancel my recent transfer immediately, I made a mistake there, please help quickly before it goes through", "label": "cancel_transfer", "raw": "cancel_transfer", "pred": "cancel_transfer"}
 {"i": 567, "text": "I would like to revert a transaction I did this morning", "label": "cancel_transfer", "raw": "reverted_card_payment?", "pred": "reverted_card_payment?"}
-{"i": 568, "text": "If I make a transaction can I cancel it?", "label": "cancel_transfer", "raw": null, "pred": null}
+{"i": 568, "text": "If I make a transaction can I cancel it?", "label": "cancel_transfer", "raw": "cancel_transfer", "pred": "cancel_transfer"}
 {"i": 569, "text": "How can I cancel a transfer?", "label": "cancel_transfer", "raw": "cancel_transfer", "pred": "cancel_transfer"}
 {"i": 570, "text": "Is there any way to cancel a transfer?", "label": "cancel_transfer", "raw": "cancel_transfer", "pred": "cancel_transfer"}
 {"i": 571, "text": "I accidentally made a transaction to the wrong account.", "label": "cancel_transfer", "raw": "cancel_transfer", "pred": "cancel_transfer"}
@@ -585,7 +585,7 @@
 {"i": 584, "text": "I made a mistake with a transaction!", "label": "cancel_transfer", "raw": "cancel_transfer", "pred": "cancel_transfer"}
 {"i": 585, "text": "I submitted a transaction to the incorrect account.", "label": "cancel_transfer", "raw": "cancel_transfer", "pred": "cancel_transfer"}
 {"i": 586, "text": "The transfer I just made needs to be cancelled right now. It was my mistake. Please help me cancel it before it goes through!", "label": "cancel_transfer", "raw": "cancel_transfer", "pred": "cancel_transfer"}
-{"i": 587, "text": "I want to go back on what I did this morning", "label": "cancel_transfer", "raw": null, "pred": null}
+{"i": 587, "text": "I want to go back on what I did this morning", "label": "cancel_transfer", "raw": "cancel_transfer", "pred": "cancel_transfer"}
 {"i": 588, "text": "Can a transaction be cancelled?", "label": "cancel_transfer", "raw": "cancel_transfer", "pred": "cancel_transfer"}
 {"i": 589, "text": "How do i cancel my transaction?", "label": "cancel_transfer", "raw": "cancel_transfer", "pred": "cancel_transfer"}
 {"i": 590, "text": "My transaction needs to be canceled.", "label": "cancel_transfer", "raw": "cancel_transfer", "pred": "cancel_transfer"}
@@ -690,7 +690,7 @@
 {"i": 689, "text": "Why was I charged an extra fee when paying with my card?", "label": "card_payment_fee_charged", "raw": "card_payment_fee_charged", "pred": "card_payment_fee_charged"}
 {"i": 690, "text": "Why did I have to pay extra because I paid with card?", "label": "card_payment_fee_charged", "raw": "card_payment_fee_charged", "pred": "card_payment_fee_charged"}
 {"i": 691, "text": "Why are there fees for card usage?", "label": "card_payment_fee_charged", "raw": "card_payment_fee_charged", "pred": "card_payment_fee_charged"}
-{"i": 692, "text": "im not sure what this charge is for", "label": "card_payment_fee_charged", "raw": null, "pred": null}
+{"i": 692, "text": "im not sure what this charge is for", "label": "card_payment_fee_charged", "raw": "extra_charge_on_statement", "pred": "extra_charge_on_statement"}
 {"i": 693, "text": "What is the fee charged with this card payment?", "label": "card_payment_fee_charged", "raw": "card_payment_fee_charged", "pred": "card_payment_fee_charged"}
 {"i": 694, "text": "When would my card be charged an extra fee for a transaction?", "label": "card_payment_fee_charged", "raw": "card_payment_fee_charged", "pred": "card_payment_fee_charged"}
 {"i": 695, "text": "Why did I have to pay more when I do it with my card?", "label": "card_payment_fee_charged", "raw": "top_up_by_card_charge", "pred": "top_up_by_card_charge"}
@@ -710,7 +710,7 @@
 {"i": 709, "text": "Someone needs to make me aware when there are extra charges for payments. I happened to be looking at the app earlier and noticed a charge associated to a payment that was extra that no one made me aware of before at all.", "label": "card_payment_fee_charged", "raw": "extra_charge_on_statement", "pred": "extra_charge_on_statement"}
 {"i": 710, "text": "Is using my card free?", "label": "card_payment_fee_charged", "raw": "card_payment_fee_charged", "pred": "card_payment_fee_charged"}
 {"i": 711, "text": "Why was I charged an extra fee when using a card?", "label": "card_payment_fee_charged", "raw": "extra_charge_on_statement", "pred": "extra_charge_on_statement"}
-{"i": 712, "text": "What fees apply when using a card?", "label": "card_payment_fee_charged", "raw": null, "pred": null}
+{"i": 712, "text": "What fees apply when using a card?", "label": "card_payment_fee_charged", "raw": "card_payment_fee_charged", "pred": "card_payment_fee_charged"}
 {"i": 713, "text": "Why do you charge for payments? Why aren't your charges clearly laid out in the agreement?", "label": "card_payment_fee_charged", "raw": "card_payment_fee_charged", "pred": "card_payment_fee_charged"}
 {"i": 714, "text": "Why was I charged a fee when I paid with card?", "label": "card_payment_fee_charged", "raw": "card_payment_fee_charged", "pred": "card_payment_fee_charged"}
 {"i": 715, "text": "There is a fee on my account. Why?", "label": "card_payment_fee_charged", "raw": "extra_charge_on_statement", "pred": "extra_charge_on_statement"}
@@ -735,13 +735,13 @@
 {"i": 734, "text": "I completed a money transaction but the recipient hasn't received it", "label": "transfer_not_received_by_recipient", "raw": "transfer_not_received_by_recipient", "pred": "transfer_not_received_by_recipient"}
 {"i": 735, "text": "The receipient doesn't see my money transfer.", "label": "transfer_not_received_by_recipient", "raw": "transfer_not_received_by_recipient", "pred": "transfer_not_received_by_recipient"}
 {"i": 736, "text": "I transferred the rent payment for my new place a couple days ago but the landlord says it's not there yet, despite showing up as done on my side. I checked the account number I sent it to and it's definitely correct. Can you please verify if the transaction really went through or not?", "label": "transfer_not_received_by_recipient", "raw": "transfer_not_received_by_recipient", "pred": "transfer_not_received_by_recipient"}
-{"i": 737, "text": "I need to find out why my transfer didn't get there.", "label": "transfer_not_received_by_recipient", "raw": null, "pred": null}
+{"i": 737, "text": "I need to find out why my transfer didn't get there.", "label": "transfer_not_received_by_recipient", "raw": "transfer_not_received_by_recipient", "pred": "transfer_not_received_by_recipient"}
 {"i": 738, "text": "I've just moved address from a place in Durham to a place in Walton-On-The-Naze.  I have a new landlord at my new house and they haven't got my payment but I know I sent it on time, can you check they got it please?", "label": "transfer_not_received_by_recipient", "raw": "transfer_not_received_by_recipient", "pred": "transfer_not_received_by_recipient"}
 {"i": 739, "text": "I sent money.  They haven't received it.", "label": "transfer_not_received_by_recipient", "raw": "transfer_not_received_by_recipient", "pred": "transfer_not_received_by_recipient"}
 {"i": 740, "text": "Hey, I need some help figuring out way my transfer is not complete yet. My Landlord hasn't got the money yet.She should have received it by now.", "label": "transfer_not_received_by_recipient", "raw": "pending_transfer", "pred": "pending_transfer"}
 {"i": 741, "text": "The day before yesterday, I performed a transfer which was within this country. It still hasn't gone through. Can you check on that? The account number is definitely correct, as I've checked and double checked.", "label": "transfer_not_received_by_recipient", "raw": "pending_transfer", "pred": "pending_transfer"}
 {"i": 742, "text": "I'm having a problem with a money transfer.  I sent some money to a friend a couple of hours ago, and they haven't received it yet.  Why hasn't it gotten to them? How long do transfers need to go through?", "label": "transfer_not_received_by_recipient", "raw": "transfer_timing", "pred": "transfer_timing"}
-{"i": 743, "text": "I transferred some money but the receiver can't pick it up for some reason.", "label": "transfer_not_received_by_recipient", "raw": null, "pred": null}
+{"i": 743, "text": "I transferred some money but the receiver can't pick it up for some reason.", "label": "transfer_not_received_by_recipient", "raw": "transfer_not_received_by_recipient", "pred": "transfer_not_received_by_recipient"}
 {"i": 744, "text": "Where is the transaction I made to a friend?", "label": "transfer_not_received_by_recipient", "raw": "transfer_not_received_by_recipient", "pred": "transfer_not_received_by_recipient"}
 {"i": 745, "text": "My friend still hasn't gotten a transaction I made.", "label": "transfer_not_received_by_recipient", "raw": "transfer_not_received_by_recipient", "pred": "transfer_not_received_by_recipient"}
 {"i": 746, "text": "Im waiting for my transaction to go through.", "label": "transfer_not_received_by_recipient", "raw": "pending_transfer", "pred": "pending_transfer"}
@@ -765,11 +765,11 @@
 {"i": 764, "text": "What currencies are accepted for adding money?", "label": "supported_cards_and_currencies", "raw": "supported_cards_and_currencies", "pred": "supported_cards_and_currencies"}
 {"i": 765, "text": "What kind of currencies can I use to add money?", "label": "supported_cards_and_currencies", "raw": "supported_cards_and_currencies", "pred": "supported_cards_and_currencies"}
 {"i": 766, "text": "I only own one other credit card from the USA. Will it be accepted?", "label": "supported_cards_and_currencies", "raw": "supported_cards_and_currencies", "pred": "supported_cards_and_currencies"}
-{"i": 767, "text": "If I only have 1 other US card, can you take it?", "label": "supported_cards_and_currencies", "raw": null, "pred": null}
+{"i": 767, "text": "If I only have 1 other US card, can you take it?", "label": "supported_cards_and_currencies", "raw": "supported_cards_and_currencies", "pred": "supported_cards_and_currencies"}
 {"i": 768, "text": "Can I use my American Express to add money to my account?", "label": "supported_cards_and_currencies", "raw": "supported_cards_and_currencies", "pred": "supported_cards_and_currencies"}
 {"i": 769, "text": "can you tell me what cards and currencies you take?", "label": "supported_cards_and_currencies", "raw": "supported_cards_and_currencies", "pred": "supported_cards_and_currencies"}
 {"i": 770, "text": "Can I use American Express to add money into my account?", "label": "supported_cards_and_currencies", "raw": "supported_cards_and_currencies", "pred": "supported_cards_and_currencies"}
-{"i": 771, "text": "Will you accept my other card from the U.S.?", "label": "supported_cards_and_currencies", "raw": null, "pred": null}
+{"i": 771, "text": "Will you accept my other card from the U.S.?", "label": "supported_cards_and_currencies", "raw": "card_acceptance", "pred": "card_acceptance"}
 {"i": 772, "text": "What is accepted in regards to cards and currencies?", "label": "supported_cards_and_currencies", "raw": "supported_cards_and_currencies", "pred": "supported_cards_and_currencies"}
 {"i": 773, "text": "Will you accept my other card?", "label": "supported_cards_and_currencies", "raw": "card_acceptance", "pred": "card_acceptance"}
 {"i": 774, "text": "I would like to add money to my account through my American Express.", "label": "supported_cards_and_currencies", "raw": "topping_up_by_card", "pred": "topping_up_by_card"}
@@ -783,7 +783,7 @@
 {"i": 782, "text": "Are US credit cards accepted?", "label": "supported_cards_and_currencies", "raw": "supported_cards_and_currencies", "pred": "supported_cards_and_currencies"}
 {"i": 783, "text": "I want to add money but don't know what currencies you accept, can you tell me?", "label": "supported_cards_and_currencies", "raw": "supported_cards_and_currencies", "pred": "supported_cards_and_currencies"}
 {"i": 784, "text": "why wouldn't you support american express? its a card i like and use often and i don't want to get a different one", "label": "supported_cards_and_currencies", "raw": "supported_cards_and_currencies", "pred": "supported_cards_and_currencies"}
-{"i": 785, "text": "Tell me which cards and what currency is supported.", "label": "supported_cards_and_currencies", "raw": null, "pred": null}
+{"i": 785, "text": "Tell me which cards and what currency is supported.", "label": "supported_cards_and_currencies", "raw": "supported_cards_and_currencies", "pred": "supported_cards_and_currencies"}
 {"i": 786, "text": "Do you support all cards and currencies?", "label": "supported_cards_and_currencies", "raw": "supported_cards_and_currencies", "pred": "supported_cards_and_currencies"}
 {"i": 787, "text": "Which credit or debit cards can I use to top up?", "label": "supported_cards_and_currencies", "raw": "supported_cards_and_currencies", "pred": "supported_cards_and_currencies"}
 {"i": 788, "text": "What options do I have in regards to payment?", "label": "supported_cards_and_currencies", "raw": "supported_cards_and_currencies", "pred": "supported_cards_and_currencies"}
@@ -864,7 +864,7 @@
 {"i": 863, "text": "When I topped up, the app reverted my funds.", "label": "top_up_reverted", "raw": "top_up_reverted", "pred": "top_up_reverted"}
 {"i": 864, "text": "What happened to where my top-up was canceled?", "label": "top_up_reverted", "raw": "top_up_reverted", "pred": "top_up_reverted"}
 {"i": 865, "text": "I tryed to make a top-up with cryptocurrency but the payment was referted.", "label": "top_up_reverted", "raw": "top_up_reverted", "pred": "top_up_reverted"}
-{"i": 866, "text": "The app reverted my top off.", "label": "top_up_reverted", "raw": null, "pred": null}
+{"i": 866, "text": "The app reverted my top off.", "label": "top_up_reverted", "raw": "top_up_reverted", "pred": "top_up_reverted"}
 {"i": 867, "text": "The app reverted my action when I topped up.", "label": "top_up_reverted", "raw": "top_up_reverted", "pred": "top_up_reverted"}
 {"i": 868, "text": "Was my top up reversed?", "label": "top_up_reverted", "raw": "top_up_reverted", "pred": "top_up_reverted"}
 {"i": 869, "text": "I see my top-up was canceled, but why?", "label": "top_up_reverted", "raw": "top_up_failed", "pred": "top_up_failed"}
@@ -934,7 +934,7 @@
 {"i": 933, "text": "Why would there be a payment on my account I don't recognize?", "label": "card_payment_not_recognised", "raw": "card_payment_not_recognised", "pred": "card_payment_not_recognised"}
 {"i": 934, "text": "I have a payment I didn't do", "label": "card_payment_not_recognised", "raw": "card_payment_not_recognised", "pred": "card_payment_not_recognised"}
 {"i": 935, "text": "There is a payment that is not mine.", "label": "card_payment_not_recognised", "raw": "card_payment_not_recognised", "pred": "card_payment_not_recognised"}
-{"i": 936, "text": "Can you freeze my account?  I just saw there are transactions on my account that I don't recognize.  How can I fix this?", "label": "card_payment_not_recognised", "raw": null, "pred": null}
+{"i": 936, "text": "Can you freeze my account?  I just saw there are transactions on my account that I don't recognize.  How can I fix this?", "label": "card_payment_not_recognised", "raw": "compromised_card", "pred": "compromised_card"}
 {"i": 937, "text": "There is a card payment I do not recognise.", "label": "card_payment_not_recognised", "raw": "card_payment_not_recognised", "pred": "card_payment_not_recognised"}
 {"i": 938, "text": "I don't recognise a card payment", "label": "card_payment_not_recognised", "raw": "card_payment_not_recognised", "pred": "card_payment_not_recognised"}
 {"i": 939, "text": "Payment i did not do", "label": "card_payment_not_recognised", "raw": "card_payment_not_recognised", "pred": "card_payment_not_recognised"}
@@ -1002,7 +1002,7 @@
 {"i": 1001, "text": "I'd rather not verify my identity.", "label": "why_verify_identity", "raw": "verify_my_identity", "pred": "verify_my_identity"}
 {"i": 1002, "text": "do I need to verify my identity every time I log into my account?", "label": "why_verify_identity", "raw": "why_verify_identity", "pred": "why_verify_identity"}
 {"i": 1003, "text": "Why am I required to verify my identity?", "label": "why_verify_identity", "raw": "why_verify_identity", "pred": "why_verify_identity"}
-{"i": 1004, "text": "Can I make transfers before identity verification?", "label": "why_verify_identity", "raw": null, "pred": null}
+{"i": 1004, "text": "Can I make transfers before identity verification?", "label": "why_verify_identity", "raw": "why_verify_identity", "pred": "why_verify_identity"}
 {"i": 1005, "text": "What is the need to verify my identity?", "label": "why_verify_identity", "raw": "why_verify_identity", "pred": "why_verify_identity"}
 {"i": 1006, "text": "Do I have to do the identity check?", "label": "why_verify_identity", "raw": "why_verify_identity", "pred": "why_verify_identity"}
 {"i": 1007, "text": "Can I use my account without verifying my identity?", "label": "why_verify_identity", "raw": "why_verify_identity", "pred": "why_verify_identity"}
@@ -1018,22 +1018,22 @@
 {"i": 1017, "text": "How come you need to know my identity?", "label": "why_verify_identity", "raw": "why_verify_identity", "pred": "why_verify_identity"}
 {"i": 1018, "text": "May I use my account now, even though the identity verification has not gone through yet?", "label": "why_verify_identity", "raw": "why_verify_identity", "pred": "why_verify_identity"}
 {"i": 1019, "text": "Do I need to verify my identity to use my account?", "label": "why_verify_identity", "raw": "why_verify_identity", "pred": "why_verify_identity"}
-{"i": 1020, "text": "Why am I required to do an identity check?", "label": "why_verify_identity", "raw": null, "pred": null}
+{"i": 1020, "text": "Why am I required to do an identity check?", "label": "why_verify_identity", "raw": "why_verify_identity", "pred": "why_verify_identity"}
 {"i": 1021, "text": "Why am I being asked to have an identity check", "label": "why_verify_identity", "raw": "why_verify_identity", "pred": "why_verify_identity"}
 {"i": 1022, "text": "Can i make transactions before identity verification is complete?", "label": "why_verify_identity", "raw": "verify_my_identity", "pred": "verify_my_identity"}
 {"i": 1023, "text": "Do I really need to verify my identity?", "label": "why_verify_identity", "raw": "why_verify_identity", "pred": "why_verify_identity"}
-{"i": 1024, "text": "Why do I have to give you all of my identification details?", "label": "why_verify_identity", "raw": null, "pred": null}
+{"i": 1024, "text": "Why do I have to give you all of my identification details?", "label": "why_verify_identity", "raw": "why_verify_identity", "pred": "why_verify_identity"}
 {"i": 1025, "text": "Why do you require so many identity details?", "label": "why_verify_identity", "raw": "why_verify_identity", "pred": "why_verify_identity"}
 {"i": 1026, "text": "Since my id hasn't been verified, when can I use my account?", "label": "why_verify_identity", "raw": "verify_my_identity", "pred": "verify_my_identity"}
 {"i": 1027, "text": "I won't verify my identity.", "label": "why_verify_identity", "raw": "verify_my_identity", "pred": "verify_my_identity"}
 {"i": 1028, "text": "I want to skip verification of my identity.", "label": "why_verify_identity", "raw": "why_verify_identity", "pred": "why_verify_identity"}
 {"i": 1029, "text": "I do not wish to verify my identity.", "label": "why_verify_identity", "raw": "why_verify_identity", "pred": "why_verify_identity"}
-{"i": 1030, "text": "Why do I have to verify my identity?", "label": "why_verify_identity", "raw": null, "pred": null}
+{"i": 1030, "text": "Why do I have to verify my identity?", "label": "why_verify_identity", "raw": "why_verify_identity", "pred": "why_verify_identity"}
 {"i": 1031, "text": "what is the identity check?", "label": "why_verify_identity", "raw": "verify_my_identity", "pred": "verify_my_identity"}
 {"i": 1032, "text": "What other methods are there to verify my identity?", "label": "why_verify_identity", "raw": "verify_my_identity", "pred": "verify_my_identity"}
 {"i": 1033, "text": "Do I need to verify my identity?", "label": "why_verify_identity", "raw": "verify_my_identity", "pred": "verify_my_identity"}
 {"i": 1034, "text": "Do I need to verify my identity each time I wish to use my account?", "label": "why_verify_identity", "raw": "why_verify_identity", "pred": "why_verify_identity"}
-{"i": 1035, "text": "Can I use my account if the identity verification is not complete?", "label": "why_verify_identity", "raw": null, "pred": null}
+{"i": 1035, "text": "Can I use my account if the identity verification is not complete?", "label": "why_verify_identity", "raw": "why_verify_identity", "pred": "why_verify_identity"}
 {"i": 1036, "text": "Why is it asking me to verify my identity", "label": "why_verify_identity", "raw": "why_verify_identity", "pred": "why_verify_identity"}
 {"i": 1037, "text": "Do I have to verify my identity?", "label": "why_verify_identity", "raw": "why_verify_identity", "pred": "why_verify_identity"}
 {"i": 1038, "text": "Why do you need to know so much about me", "label": "why_verify_identity", "raw": "why_verify_identity", "pred": "why_verify_identity"}
@@ -1068,10 +1068,10 @@
 {"i": 1067, "text": "How do I show this stupid system that this is really my identity?", "label": "unable_to_verify_identity", "raw": "verify_my_identity", "pred": "verify_my_identity"}
 {"i": 1068, "text": "I am experiencing difficulty providing my identity.", "label": "unable_to_verify_identity", "raw": "unable_to_verify_identity", "pred": "unable_to_verify_identity"}
 {"i": 1069, "text": "I a having trouble proving my identity", "label": "unable_to_verify_identity", "raw": "unable_to_verify_identity", "pred": "unable_to_verify_identity"}
-{"i": 1070, "text": "How long will it take for my ID to verify?", "label": "unable_to_verify_identity", "raw": null, "pred": null}
+{"i": 1070, "text": "How long will it take for my ID to verify?", "label": "unable_to_verify_identity", "raw": "verify_my_identity", "pred": "verify_my_identity"}
 {"i": 1071, "text": "Why am I not able to verify my id?", "label": "unable_to_verify_identity", "raw": "unable_to_verify_identity", "pred": "unable_to_verify_identity"}
 {"i": 1072, "text": "It doesn't let me verify my identity.", "label": "unable_to_verify_identity", "raw": "unable_to_verify_identity", "pred": "unable_to_verify_identity"}
-{"i": 1073, "text": "app doesnt think its me", "label": "unable_to_verify_identity", "raw": null, "pred": null}
+{"i": 1073, "text": "app doesnt think its me", "label": "unable_to_verify_identity", "raw": "unable_to_verify_identity", "pred": "unable_to_verify_identity"}
 {"i": 1074, "text": "Why am I having trouble verifying my id?", "label": "unable_to_verify_identity", "raw": "unable_to_verify_identity", "pred": "unable_to_verify_identity"}
 {"i": 1075, "text": "I am having issues with identity verification", "label": "unable_to_verify_identity", "raw": "unable_to_verify_identity", "pred": "unable_to_verify_identity"}
 {"i": 1076, "text": "The app won't let me log in as myself.", "label": "unable_to_verify_identity", "raw": "unable_to_verify_identity", "pred": "unable_to_verify_identity"}
@@ -1085,11 +1085,11 @@
 {"i": 1084, "text": "I cannot seem to find my PIN. Where is it?", "label": "get_physical_card", "raw": "passcode_forgotten", "pred": "passcode_forgotten"}
 {"i": 1085, "text": "How do I set-up my PIN for the new card?", "label": "get_physical_card", "raw": "activate_my_card", "pred": "activate_my_card"}
 {"i": 1086, "text": "How do I find my card PIN?", "label": "get_physical_card", "raw": "change_pin", "pred": "change_pin"}
-{"i": 1087, "text": "is my card PIN saved in the app", "label": "get_physical_card", "raw": null, "pred": null}
+{"i": 1087, "text": "is my card PIN saved in the app", "label": "get_physical_card", "raw": "change_pin", "pred": "change_pin"}
 {"i": 1088, "text": "I don't know where to look to find my PIN.", "label": "get_physical_card", "raw": "change_pin", "pred": "change_pin"}
 {"i": 1089, "text": "where in the app can i find out about my new pin", "label": "get_physical_card", "raw": "change_pin", "pred": "change_pin"}
 {"i": 1090, "text": "Where in the app can I find my PIN?", "label": "get_physical_card", "raw": "change_pin", "pred": "change_pin"}
-{"i": 1091, "text": "I just got my new card but am not sure how to check its PIN.", "label": "get_physical_card", "raw": null, "pred": null}
+{"i": 1091, "text": "I just got my new card but am not sure how to check its PIN.", "label": "get_physical_card", "raw": "activate_my_card", "pred": "activate_my_card"}
 {"i": 1092, "text": "do i need a pin", "label": "get_physical_card", "raw": "change_pin", "pred": "change_pin"}
 {"i": 1093, "text": "If I need a PIN for my card, where is it located?", "label": "get_physical_card", "raw": "change_pin", "pred": "change_pin"}
 {"i": 1094, "text": "what is my card PIN", "label": "get_physical_card", "raw": "change_pin", "pred": "change_pin"}
@@ -1105,13 +1105,13 @@
 {"i": 1104, "text": "Please help in finding my card PIN, thank you!", "label": "get_physical_card", "raw": "change_pin", "pred": "change_pin"}
 {"i": 1105, "text": "Where is my PIN number located?", "label": "get_physical_card", "raw": "change_pin", "pred": "change_pin"}
 {"i": 1106, "text": "I still don't have my pin.", "label": "get_physical_card", "raw": "change_pin", "pred": "change_pin"}
-{"i": 1107, "text": "So what about the card PIN?", "label": "get_physical_card", "raw": null, "pred": null}
+{"i": 1107, "text": "So what about the card PIN?", "label": "get_physical_card", "raw": "change_pin", "pred": "change_pin"}
 {"i": 1108, "text": "I cannot locate the card PIN.", "label": "get_physical_card", "raw": "passcode_forgotten", "pred": "passcode_forgotten"}
 {"i": 1109, "text": "I need my PIN", "label": "get_physical_card", "raw": "change_pin", "pred": "change_pin"}
 {"i": 1110, "text": "Where can I find my PIN?", "label": "get_physical_card", "raw": "change_pin", "pred": "change_pin"}
 {"i": 1111, "text": "When do I receive my PIN", "label": "get_physical_card", "raw": "card_arrival", "pred": "card_arrival"}
 {"i": 1112, "text": "Help me find my card pin!", "label": "get_physical_card", "raw": "change_pin", "pred": "change_pin"}
-{"i": 1113, "text": "Is PIN delivered separately?", "label": "get_physical_card", "raw": null, "pred": null}
+{"i": 1113, "text": "Is PIN delivered separately?", "label": "get_physical_card", "raw": "change_pin", "pred": "change_pin"}
 {"i": 1114, "text": "I can not find my card pin.", "label": "get_physical_card", "raw": "change_pin", "pred": "change_pin"}
 {"i": 1115, "text": "What do I need to do for a PIN?", "label": "get_physical_card", "raw": "change_pin", "pred": "change_pin"}
 {"i": 1116, "text": "Why can't I find my PIN?", "label": "get_physical_card", "raw": "change_pin", "pred": "change_pin"}
@@ -1171,7 +1171,7 @@
 {"i": 1170, "text": "I followed the instructions to transfer money using my card, but then the money disappeared and I don't know what happened.", "label": "topping_up_by_card", "raw": "top_up_reverted", "pred": "top_up_reverted"}
 {"i": 1171, "text": "Where's the money that got charged to my card? It's not showing up in my account balance", "label": "topping_up_by_card", "raw": "pending_card_payment", "pred": "pending_card_payment"}
 {"i": 1172, "text": "how can i top up?", "label": "topping_up_by_card", "raw": "topping_up_by_card", "pred": "topping_up_by_card"}
-{"i": 1173, "text": "I am missing some funds from my account - I tried to transfer them using my credit card number, and it disappeared.", "label": "topping_up_by_card", "raw": null, "pred": null}
+{"i": 1173, "text": "I am missing some funds from my account - I tried to transfer them using my credit card number, and it disappeared.", "label": "topping_up_by_card", "raw": "top_up_failed", "pred": "top_up_failed"}
 {"i": 1174, "text": "I have friends that would like to top-up my account is that possible?", "label": "topping_up_by_card", "raw": "topping_up_by_card", "pred": "topping_up_by_card"}
 {"i": 1175, "text": "How do I transfer money using a credit card?", "label": "topping_up_by_card", "raw": "topping_up_by_card", "pred": "topping_up_by_card"}
 {"i": 1176, "text": "Can I give my friends access to my account so they can top it up for me?", "label": "topping_up_by_card", "raw": "verify_top_up", "pred": "verify_top_up"}
@@ -1179,7 +1179,7 @@
 {"i": 1178, "text": "i know i entered the right info, but my top up isn't in my balance", "label": "topping_up_by_card", "raw": "top_up_failed", "pred": "top_up_failed"}
 {"i": 1179, "text": "Will my friend be able to top off my account?", "label": "topping_up_by_card", "raw": "top_up_by_card_charge", "pred": "top_up_by_card_charge"}
 {"i": 1180, "text": "Is there a way to transfer funds directly from my card?", "label": "topping_up_by_card", "raw": "topping_up_by_card", "pred": "topping_up_by_card"}
-{"i": 1181, "text": "Why isn't my top up showing on my wallet?", "label": "topping_up_by_card", "raw": null, "pred": null}
+{"i": 1181, "text": "Why isn't my top up showing on my wallet?", "label": "topping_up_by_card", "raw": "pending_top_up", "pred": "pending_top_up"}
 {"i": 1182, "text": "I tried to top up using my card, but now the money just disappeared!", "label": "topping_up_by_card", "raw": "top_up_failed", "pred": "top_up_failed"}
 {"i": 1183, "text": "Help me transfer money to my credit card.", "label": "topping_up_by_card", "raw": "transfer_into_account", "pred": "transfer_into_account"}
 {"i": 1184, "text": "I tried to use my card to top up but all of the money has disappeared.", "label": "topping_up_by_card", "raw": "top_up_failed", "pred": "top_up_failed"}
@@ -1208,7 +1208,7 @@
 {"i": 1207, "text": "Can you freeze my card because someone used it while I was out of town. I did not make these purchases.", "label": "compromised_card", "raw": "compromised_card", "pred": "compromised_card"}
 {"i": 1208, "text": "Someone is using my account to do online shopping! Please freeze it asap", "label": "compromised_card", "raw": "compromised_card", "pred": "compromised_card"}
 {"i": 1209, "text": "Someone else may be using my card.  There are transactions I don't recognize.", "label": "compromised_card", "raw": "compromised_card", "pred": "compromised_card"}
-{"i": 1210, "text": "What do I do to stop unauthorized transactions on my card? I was never in the place from which the transactions on my bill were made and I never made them. Please help!", "label": "compromised_card", "raw": null, "pred": null}
+{"i": 1210, "text": "What do I do to stop unauthorized transactions on my card? I was never in the place from which the transactions on my bill were made and I never made them. Please help!", "label": "compromised_card", "raw": "compromised_card", "pred": "compromised_card"}
 {"i": 1211, "text": "What do I do if I think my card was improperly used?", "label": "compromised_card", "raw": "compromised_card", "pred": "compromised_card"}
 {"i": 1212, "text": "How can I stop fraud on my account right now?", "label": "compromised_card", "raw": "compromised_card", "pred": "compromised_card"}
 {"i": 1213, "text": "I think my identity has been stolen, can you check on unauthorized charges?", "label": "compromised_card", "raw": "compromised_card", "pred": "compromised_card"}
@@ -1246,7 +1246,7 @@
 {"i": 1245, "text": "How do I know which ATMs will accept this card?", "label": "atm_support", "raw": "atm_support", "pred": "atm_support"}
 {"i": 1246, "text": "Which ATM's accept my card?", "label": "atm_support", "raw": "atm_support", "pred": "atm_support"}
 {"i": 1247, "text": "Is there any nearby ATM's?", "label": "atm_support", "raw": "atm_support", "pred": "atm_support"}
-{"i": 1248, "text": "Where are the locations of ATMs that accept this card?", "label": "atm_support", "raw": null, "pred": null}
+{"i": 1248, "text": "Where are the locations of ATMs that accept this card?", "label": "atm_support", "raw": "atm_support", "pred": "atm_support"}
 {"i": 1249, "text": "Which ATMs accept this placard ?", "label": "atm_support", "raw": "atm_support", "pred": "atm_support"}
 {"i": 1250, "text": "Help me locate the nearest ATM.", "label": "atm_support", "raw": "atm_support", "pred": "atm_support"}
 {"i": 1251, "text": "What ATMs is the card okay to use at?", "label": "atm_support", "raw": "atm_support", "pred": "atm_support"}
@@ -1272,7 +1272,7 @@
 {"i": 1271, "text": "What are the ATMs that will accept this card?", "label": "atm_support", "raw": "atm_support", "pred": "atm_support"}
 {"i": 1272, "text": "What ATMs will accept this type of card?", "label": "atm_support", "raw": "atm_support", "pred": "atm_support"}
 {"i": 1273, "text": "Where can I find an ATM to use this card?", "label": "atm_support", "raw": "atm_support", "pred": "atm_support"}
-{"i": 1274, "text": "At which ATMs can I use this card?", "label": "atm_support", "raw": null, "pred": null}
+{"i": 1274, "text": "At which ATMs can I use this card?", "label": "atm_support", "raw": "atm_support", "pred": "atm_support"}
 {"i": 1275, "text": "Are there certain ATMs that I can use this card at?", "label": "atm_support", "raw": "atm_support", "pred": "atm_support"}
 {"i": 1276, "text": "Do you know the closest ATM?", "label": "atm_support", "raw": "atm_support", "pred": "atm_support"}
 {"i": 1277, "text": "Can I use this card at an ATM?", "label": "atm_support", "raw": "atm_support", "pred": "atm_support"}
@@ -1287,8 +1287,8 @@
 {"i": 1286, "text": "someone stole my money", "label": "direct_debit_payment_not_recognised", "raw": "compromised_card", "pred": "compromised_card"}
 {"i": 1287, "text": "There's a Direct Debit payment in my account that I didn't make", "label": "direct_debit_payment_not_recognised", "raw": "direct_debit_payment_not_recognised", "pred": "direct_debit_payment_not_recognised"}
 {"i": 1288, "text": "There's a debit on my account that I didn't do.", "label": "direct_debit_payment_not_recognised", "raw": "direct_debit_payment_not_recognised", "pred": "direct_debit_payment_not_recognised"}
-{"i": 1289, "text": "I may have a fraud charge on my debit statement.", "label": "direct_debit_payment_not_recognised", "raw": null, "pred": null}
-{"i": 1290, "text": "Why is there a direct debit payment on my app that is not from me?", "label": "direct_debit_payment_not_recognised", "raw": null, "pred": null}
+{"i": 1289, "text": "I may have a fraud charge on my debit statement.", "label": "direct_debit_payment_not_recognised", "raw": "card_payment_not_recognised", "pred": "card_payment_not_recognised"}
+{"i": 1290, "text": "Why is there a direct debit payment on my app that is not from me?", "label": "direct_debit_payment_not_recognised", "raw": "direct_debit_payment_not_recognised", "pred": "direct_debit_payment_not_recognised"}
 {"i": 1291, "text": "Weird charges are appearing in my debit account.", "label": "direct_debit_payment_not_recognised", "raw": "extra_charge_on_statement", "pred": "extra_charge_on_statement"}
 {"i": 1292, "text": "Even though it's late, I wanted to see about disputing a charge. I was just looking through my transactions over the past couple of months and noticed a pretty large amount that was not completed by me. Is this possibly something I can still do.", "label": "direct_debit_payment_not_recognised", "raw": "card_payment_not_recognised", "pred": "card_payment_not_recognised"}
 {"i": 1293, "text": "There was a transaction from two weeks ago from a business that I don't know. I'm fairly certain it wasn't me who made it, but is it an option to trace it to confirm?", "label": "direct_debit_payment_not_recognised", "raw": "card_payment_not_recognised", "pred": "card_payment_not_recognised"}
@@ -1325,7 +1325,7 @@
 {"i": 1324, "text": "I lost my password", "label": "passcode_forgotten", "raw": "passcode_forgotten", "pred": "passcode_forgotten"}
 {"i": 1325, "text": "My password isn't being accepted and I need to reset it.", "label": "passcode_forgotten", "raw": "passcode_forgotten", "pred": "passcode_forgotten"}
 {"i": 1326, "text": "Something is wrong with my password.", "label": "passcode_forgotten", "raw": "passcode_forgotten", "pred": "passcode_forgotten"}
-{"i": 1327, "text": "Something is wrong with my passcode", "label": "passcode_forgotten", "raw": null, "pred": null}
+{"i": 1327, "text": "Something is wrong with my passcode", "label": "passcode_forgotten", "raw": "passcode_forgotten", "pred": "passcode_forgotten"}
 {"i": 1328, "text": "How do I reset a forgotten passcode, please?", "label": "passcode_forgotten", "raw": "passcode_forgotten", "pred": "passcode_forgotten"}
 {"i": 1329, "text": "I can't recall my passcode and need to reset it.", "label": "passcode_forgotten", "raw": "passcode_forgotten", "pred": "passcode_forgotten"}
 {"i": 1330, "text": "Can I be given a new passcode?", "label": "passcode_forgotten", "raw": "passcode_forgotten", "pred": "passcode_forgotten"}
@@ -1355,7 +1355,7 @@
 {"i": 1354, "text": "My passcode doesn't work", "label": "passcode_forgotten", "raw": "passcode_forgotten", "pred": "passcode_forgotten"}
 {"i": 1355, "text": "Tell me how to reset the passcode.", "label": "passcode_forgotten", "raw": "passcode_forgotten", "pred": "passcode_forgotten"}
 {"i": 1356, "text": "I need a new passcode.", "label": "passcode_forgotten", "raw": "passcode_forgotten", "pred": "passcode_forgotten"}
-{"i": 1357, "text": "I don't have my access code for the app.", "label": "passcode_forgotten", "raw": null, "pred": null}
+{"i": 1357, "text": "I don't have my access code for the app.", "label": "passcode_forgotten", "raw": "passcode_forgotten", "pred": "passcode_forgotten"}
 {"i": 1358, "text": "Can you tell me what to do to reset my passcode?", "label": "passcode_forgotten", "raw": "passcode_forgotten", "pred": "passcode_forgotten"}
 {"i": 1359, "text": "What is the code I need to get into the app?", "label": "passcode_forgotten", "raw": "passcode_forgotten", "pred": "passcode_forgotten"}
 {"i": 1360, "text": "Can you tell me why you won't let me get my own money out of the money machine? I know I used the right PIN.", "label": "declined_cash_withdrawal", "raw": "declined_cash_withdrawal", "pred": "declined_cash_withdrawal"}
@@ -1380,7 +1380,7 @@
 {"i": 1379, "text": "Why did the ATM machine fail to give me a cash withdrawal?", "label": "declined_cash_withdrawal", "raw": "declined_cash_withdrawal", "pred": "declined_cash_withdrawal"}
 {"i": 1380, "text": "My ATM transaction was unsuccessful.", "label": "declined_cash_withdrawal", "raw": "declined_cash_withdrawal", "pred": "declined_cash_withdrawal"}
 {"i": 1381, "text": "I attempted to get cash but was declined.", "label": "declined_cash_withdrawal", "raw": "declined_cash_withdrawal", "pred": "declined_cash_withdrawal"}
-{"i": 1382, "text": "I tried to withdraw money but I was declined!", "label": "declined_cash_withdrawal", "raw": null, "pred": null}
+{"i": 1382, "text": "I tried to withdraw money but I was declined!", "label": "declined_cash_withdrawal", "raw": "declined_cash_withdrawal", "pred": "declined_cash_withdrawal"}
 {"i": 1383, "text": "How come I can't take money out of the ATM?", "label": "declined_cash_withdrawal", "raw": "atm_support", "pred": "atm_support"}
 {"i": 1384, "text": "The ATM keeps declining my card. I tried at two different ATMs. Can you tell me if there's an issue with my account?", "label": "declined_cash_withdrawal", "raw": "declined_cash_withdrawal", "pred": "declined_cash_withdrawal"}
 {"i": 1385, "text": "Why was my cash withdrawal declined?", "label": "declined_cash_withdrawal", "raw": "declined_cash_withdrawal", "pred": "declined_cash_withdrawal"}
@@ -1438,7 +1438,7 @@
 {"i": 1437, "text": "I have paid by my card but payment is still its coming as pending. I think there is some issue please check and let me know when the status will complete.", "label": "pending_card_payment", "raw": "pending_card_payment", "pred": "pending_card_payment"}
 {"i": 1438, "text": "I have a pending payment in my account that I paid a while back ago and it still hasnt gone through. Why would it show pending for so long?", "label": "pending_card_payment", "raw": "pending_card_payment", "pred": "pending_card_payment"}
 {"i": 1439, "text": "I have a pending payment from stuff I bought this morning.", "label": "pending_card_payment", "raw": "pending_card_payment", "pred": "pending_card_payment"}
-{"i": 1440, "text": "My phone was stolen", "label": "lost_or_stolen_phone", "raw": null, "pred": null}
+{"i": 1440, "text": "My phone was stolen", "label": "lost_or_stolen_phone", "raw": "lost_or_stolen_phone", "pred": "lost_or_stolen_phone"}
 {"i": 1441, "text": "My phone was stolen yesterday.  What should I do?", "label": "lost_or_stolen_phone", "raw": "lost_or_stolen_phone", "pred": "lost_or_stolen_phone"}
 {"i": 1442, "text": "If my phone is missing, can I block someone from using the app?", "label": "lost_or_stolen_phone", "raw": "lost_or_stolen_phone", "pred": "lost_or_stolen_phone"}
 {"i": 1443, "text": "I think my phone is either lost or stolen.", "label": "lost_or_stolen_phone", "raw": "lost_or_stolen_phone", "pred": "lost_or_stolen_phone"}
@@ -1492,7 +1492,7 @@
 {"i": 1491, "text": "Please stop my purchase.", "label": "request_refund", "raw": "request_refund", "pred": "request_refund"}
 {"i": 1492, "text": "I want a refund because my package has been taking too long to arrive. How do I go about doing that?", "label": "request_refund", "raw": "request_refund", "pred": "request_refund"}
 {"i": 1493, "text": "How do I apply for a refund?", "label": "request_refund", "raw": "request_refund", "pred": "request_refund"}
-{"i": 1494, "text": "Can I have an item refunded?", "label": "request_refund", "raw": null, "pred": null}
+{"i": 1494, "text": "Can I have an item refunded?", "label": "request_refund", "raw": "request_refund", "pred": "request_refund"}
 {"i": 1495, "text": "I ordered something ages ago online but it's simply not arriving. I've got enough! Give me back my money, I'm not paying these people.", "label": "request_refund", "raw": "request_refund", "pred": "request_refund"}
 {"i": 1496, "text": "What do I need to do to get a refund?", "label": "request_refund", "raw": "request_refund", "pred": "request_refund"}
 {"i": 1497, "text": "I need a refund?", "label": "request_refund", "raw": "request_refund", "pred": "request_refund"}
@@ -1525,7 +1525,7 @@
 {"i": 1524, "text": "What would make a decline message show up during a transfer?", "label": "declined_transfer", "raw": "declined_transfer", "pred": "declined_transfer"}
 {"i": 1525, "text": "Why do you keep declining my transfers?it was always been working really well so far but when I tried to buy something just now the card got declined . I tried couple of times already  but same thing is happening.", "label": "declined_transfer", "raw": "declined_card_payment", "pred": "declined_card_payment"}
 {"i": 1526, "text": "How can I fix my card, it got declined twice.", "label": "declined_transfer", "raw": "declined_card_payment", "pred": "declined_card_payment"}
-{"i": 1527, "text": "Why did a transfer get declined?", "label": "declined_transfer", "raw": null, "pred": null}
+{"i": 1527, "text": "Why did a transfer get declined?", "label": "declined_transfer", "raw": "declined_transfer", "pred": "declined_transfer"}
 {"i": 1528, "text": "My transfers are being declined. IT has always worked for me but now it's declining my card. I've tried several times.", "label": "declined_transfer", "raw": "declined_transfer", "pred": "declined_transfer"}
 {"i": 1529, "text": "Why did my transfer decline", "label": "declined_transfer", "raw": "declined_transfer", "pred": "declined_transfer"}
 {"i": 1530, "text": "The card got declined twice when I tried to use it to buy something online yesterday.", "label": "declined_transfer", "raw": "declined_card_payment", "pred": "declined_card_payment"}
@@ -1534,7 +1534,7 @@
 {"i": 1533, "text": "Why did my my transfer get declined?", "label": "declined_transfer", "raw": "declined_transfer", "pred": "declined_transfer"}
 {"i": 1534, "text": "How do I contact customer support about a transfer?", "label": "declined_transfer", "raw": "transfer_timing", "pred": "transfer_timing"}
 {"i": 1535, "text": "You keep declining my transfers? It's always been working really well so far, but when I tried to buy something just now the card got declined. I tried couple times already but same thing.", "label": "declined_transfer", "raw": "declined_card_payment", "pred": "declined_card_payment"}
-{"i": 1536, "text": "Why was I unable to do a transfer?", "label": "declined_transfer", "raw": null, "pred": null}
+{"i": 1536, "text": "Why was I unable to do a transfer?", "label": "declined_transfer", "raw": "declined_transfer", "pred": "declined_transfer"}
 {"i": 1537, "text": "Trouble transferring transaction contact for help", "label": "declined_transfer", "raw": "failed_transfer", "pred": "failed_transfer"}
 {"i": 1538, "text": "Why could my transfer have been declined?", "label": "declined_transfer", "raw": "declined_transfer", "pred": "declined_transfer"}
 {"i": 1539, "text": "When I try and to buy something using my card it keeps getting declined.", "label": "declined_transfer", "raw": "declined_card_payment", "pred": "declined_card_payment"}
@@ -1572,7 +1572,7 @@
 {"i": 1571, "text": "Why is my refund missing from my  statement?", "label": "Refund_not_showing_up", "raw": "Refund_not_showing_up", "pred": "Refund_not_showing_up"}
 {"i": 1572, "text": "Still waiting on a refund.", "label": "Refund_not_showing_up", "raw": "Refund_not_showing_up", "pred": "Refund_not_showing_up"}
 {"i": 1573, "text": "I requested a refund and it is missing.", "label": "Refund_not_showing_up", "raw": "Refund_not_showing_up", "pred": "Refund_not_showing_up"}
-{"i": 1574, "text": "Hi, As suggested by you, i have asked the seller to initiate the refund, it has been a week and i haven't received my money. Please advise.", "label": "Refund_not_showing_up", "raw": null, "pred": null}
+{"i": 1574, "text": "Hi, As suggested by you, i have asked the seller to initiate the refund, it has been a week and i haven't received my money. Please advise.", "label": "Refund_not_showing_up", "raw": "Refund_not_showing_up", "pred": "Refund_not_showing_up"}
 {"i": 1575, "text": "I bought something and returned it and the money from the return isn't in my account.", "label": "Refund_not_showing_up", "raw": "Refund_not_showing_up", "pred": "Refund_not_showing_up"}
 {"i": 1576, "text": "Do you have any idea on when I will receive my refund? I got my statement and it was not there.", "label": "Refund_not_showing_up", "raw": "Refund_not_showing_up", "pred": "Refund_not_showing_up"}
 {"i": 1577, "text": "Why isn't a recent refund on my statement?", "label": "Refund_not_showing_up", "raw": "Refund_not_showing_up", "pred": "Refund_not_showing_up"}
@@ -1616,7 +1616,7 @@
 {"i": 1615, "text": "I'm really stuck. I don't know why but my card payment has not gone through.", "label": "declined_card_payment", "raw": "declined_card_payment", "pred": "declined_card_payment"}
 {"i": 1616, "text": "I have a card payment that was declined, but why?", "label": "declined_card_payment", "raw": "declined_card_payment", "pred": "declined_card_payment"}
 {"i": 1617, "text": "Do you know why my card payment did not work?", "label": "declined_card_payment", "raw": "declined_card_payment", "pred": "declined_card_payment"}
-{"i": 1618, "text": "Something is wrong with my payment account since it has been declined", "label": "declined_card_payment", "raw": null, "pred": null}
+{"i": 1618, "text": "Something is wrong with my payment account since it has been declined", "label": "declined_card_payment", "raw": "declined_card_payment", "pred": "declined_card_payment"}
 {"i": 1619, "text": "Why are you declining my payment? Everything was fine.", "label": "declined_card_payment", "raw": "declined_card_payment", "pred": "declined_card_payment"}
 {"i": 1620, "text": "I don't know why my payment didn't work.", "label": "declined_card_payment", "raw": "declined_card_payment", "pred": "declined_card_payment"}
 {"i": 1621, "text": "My card payment did not work.", "label": "declined_card_payment", "raw": "declined_card_payment", "pred": "declined_card_payment"}
@@ -1649,7 +1649,7 @@
 {"i": 1648, "text": "I had made a transfer but its still pending.", "label": "pending_transfer", "raw": "pending_transfer", "pred": "pending_transfer"}
 {"i": 1649, "text": "I submitted my transfer but it has been pending for quite a while and I was wondering what takes so long? why hasn't it completed", "label": "pending_transfer", "raw": "pending_transfer", "pred": "pending_transfer"}
 {"i": 1650, "text": "How can I speed up a transfer?  Mine is pending.", "label": "pending_transfer", "raw": "pending_transfer", "pred": "pending_transfer"}
-{"i": 1651, "text": "How long can an EU transfer take?", "label": "pending_transfer", "raw": null, "pred": null}
+{"i": 1651, "text": "How long can an EU transfer take?", "label": "pending_transfer", "raw": "transfer_timing", "pred": "transfer_timing"}
 {"i": 1652, "text": "My transfer is still coming up as pending.", "label": "pending_transfer", "raw": "pending_transfer", "pred": "pending_transfer"}
 {"i": 1653, "text": "I'm trying to transfer money to another country. It's just pending and not sending. My account details are correct. Please help me.", "label": "pending_transfer", "raw": "pending_transfer", "pred": "pending_transfer"}
 {"i": 1654, "text": "My transfer is still pending and I know the account numbers are correct.  Please help.", "label": "pending_transfer", "raw": "pending_transfer", "pred": "pending_transfer"}
@@ -1667,7 +1667,7 @@
 {"i": 1666, "text": "I would like to know why my payment is still pending, can you help?", "label": "pending_transfer", "raw": "pending_card_payment", "pred": "pending_card_payment"}
 {"i": 1667, "text": "Someone transferred money to me and it doesn't show", "label": "pending_transfer", "raw": "transfer_into_account", "pred": "transfer_into_account"}
 {"i": 1668, "text": "How long does a transfer take to be confirmed?", "label": "pending_transfer", "raw": "transfer_timing", "pred": "transfer_timing"}
-{"i": 1669, "text": "I made a transfer 12 hours ago. Why is it still listed as pending?", "label": "pending_transfer", "raw": null, "pred": null}
+{"i": 1669, "text": "I made a transfer 12 hours ago. Why is it still listed as pending?", "label": "pending_transfer", "raw": "pending_transfer", "pred": "pending_transfer"}
 {"i": 1670, "text": "Why does my transfer say \"pending\"?", "label": "pending_transfer", "raw": "pending_transfer", "pred": "pending_transfer"}
 {"i": 1671, "text": "How long can I expect a transfer to pend for?", "label": "pending_transfer", "raw": "transfer_timing", "pred": "transfer_timing"}
 {"i": 1672, "text": "For how long will my transfer be pending?", "label": "pending_transfer", "raw": "pending_transfer", "pred": "pending_transfer"}
@@ -1732,7 +1732,7 @@
 {"i": 1731, "text": "How can I get my card back out?", "label": "card_swallowed", "raw": "card_swallowed", "pred": "card_swallowed"}
 {"i": 1732, "text": "The ATM machine stole my card.", "label": "card_swallowed", "raw": "card_swallowed", "pred": "card_swallowed"}
 {"i": 1733, "text": "The ATM at Metro bank on High St. Kensington swallowed my card. How do I get it back?", "label": "card_swallowed", "raw": "card_swallowed", "pred": "card_swallowed"}
-{"i": 1734, "text": "My ATM got stuck and I'm not sure what to do.", "label": "card_swallowed", "raw": null, "pred": null}
+{"i": 1734, "text": "My ATM got stuck and I'm not sure what to do.", "label": "card_swallowed", "raw": "atm_support", "pred": "atm_support"}
 {"i": 1735, "text": "The ATM ate my card.", "label": "card_swallowed", "raw": "card_swallowed", "pred": "card_swallowed"}
 {"i": 1736, "text": "The ATM won't give me my card back.", "label": "card_swallowed", "raw": "card_swallowed", "pred": "card_swallowed"}
 {"i": 1737, "text": "My card was confiscated by an ATM. How do I get my card back?", "label": "card_swallowed", "raw": "card_swallowed", "pred": "card_swallowed"}
@@ -1773,7 +1773,7 @@
 {"i": 1772, "text": "It appears that I am being double charged for some items that I have purchased this past week.  Please review and correct.", "label": "transaction_charged_twice", "raw": "transaction_charged_twice", "pred": "transaction_charged_twice"}
 {"i": 1773, "text": "It looks like this week I was double charged for a couple things. Is there any way that you can look into this for me and return the double charged items back to my card?", "label": "transaction_charged_twice", "raw": "transaction_charged_twice", "pred": "transaction_charged_twice"}
 {"i": 1774, "text": "I noticed after looking over my transactions that I have been charged twice from an earlier restaurant visit this week. Is it possible that one of these can be removed so I get the money back for the one that is not accurate?", "label": "transaction_charged_twice", "raw": "transaction_charged_twice", "pred": "transaction_charged_twice"}
-{"i": 1775, "text": "I think something may have happened that caused a charge to show up twice.", "label": "transaction_charged_twice", "raw": null, "pred": null}
+{"i": 1775, "text": "I think something may have happened that caused a charge to show up twice.", "label": "transaction_charged_twice", "raw": "transaction_charged_twice", "pred": "transaction_charged_twice"}
 {"i": 1776, "text": "Why is there a transaction that shows multiple times?", "label": "transaction_charged_twice", "raw": "transaction_charged_twice", "pred": "transaction_charged_twice"}
 {"i": 1777, "text": "I see what looks like duplicate charges on account.", "label": "transaction_charged_twice", "raw": "transaction_charged_twice", "pred": "transaction_charged_twice"}
 {"i": 1778, "text": "Why was I charged multiple times for the same thing?", "label": "transaction_charged_twice", "raw": "transaction_charged_twice", "pred": "transaction_charged_twice"}
@@ -1855,7 +1855,7 @@
 {"i": 1854, "text": "If I need to do a quick transfer from China, how long should I expect the transfer to take?", "label": "transfer_timing", "raw": "transfer_timing", "pred": "transfer_timing"}
 {"i": 1855, "text": "When does the money get transferred to my account", "label": "transfer_timing", "raw": "transfer_timing", "pred": "transfer_timing"}
 {"i": 1856, "text": "How long do i have to wait for a transfer to reach my account?", "label": "transfer_timing", "raw": "transfer_timing", "pred": "transfer_timing"}
-{"i": 1857, "text": "How long does it take for funds to come through the US to my account?", "label": "transfer_timing", "raw": null, "pred": null}
+{"i": 1857, "text": "How long does it take for funds to come through the US to my account?", "label": "transfer_timing", "raw": "transfer_timing", "pred": "transfer_timing"}
 {"i": 1858, "text": "How long is my Europe transfer wait?", "label": "transfer_timing", "raw": "transfer_timing", "pred": "transfer_timing"}
 {"i": 1859, "text": "How many days does a transfer from the US take?", "label": "transfer_timing", "raw": "transfer_timing", "pred": "transfer_timing"}
 {"i": 1860, "text": "How long do I have to wait for a transfer from the US?", "label": "transfer_timing", "raw": "transfer_timing", "pred": "transfer_timing"}
@@ -1872,11 +1872,11 @@
 {"i": 1871, "text": "I have to transfer something to China as fast as I can. How long will it take to arrive in China?", "label": "transfer_timing", "raw": "transfer_timing", "pred": "transfer_timing"}
 {"i": 1872, "text": "How long to I have to wait for a transfer to reach my account?", "label": "transfer_timing", "raw": "transfer_timing", "pred": "transfer_timing"}
 {"i": 1873, "text": "How long is it going to take for my funds to show in my account?", "label": "transfer_timing", "raw": "transfer_timing", "pred": "transfer_timing"}
-{"i": 1874, "text": "How long does a transfer take from the point it's sent, to the point it arrives in my account?", "label": "transfer_timing", "raw": null, "pred": null}
+{"i": 1874, "text": "How long does a transfer take from the point it's sent, to the point it arrives in my account?", "label": "transfer_timing", "raw": "transfer_timing", "pred": "transfer_timing"}
 {"i": 1875, "text": "How long will it take for the transfer to reach my account?", "label": "transfer_timing", "raw": "transfer_timing", "pred": "transfer_timing"}
 {"i": 1876, "text": "If my transfer is from Europe how long will it take?", "label": "transfer_timing", "raw": "transfer_timing", "pred": "transfer_timing"}
 {"i": 1877, "text": "There is an important thing from China that I need to transfer. Approximately how long will this take?", "label": "transfer_timing", "raw": "transfer_timing", "pred": "transfer_timing"}
-{"i": 1878, "text": "How long does a transfer take from china?", "label": "transfer_timing", "raw": null, "pred": null}
+{"i": 1878, "text": "How long does a transfer take from china?", "label": "transfer_timing", "raw": "transfer_timing", "pred": "transfer_timing"}
 {"i": 1879, "text": "When will money be available in my account?", "label": "transfer_timing", "raw": "pending_transfer", "pred": "pending_transfer"}
 {"i": 1880, "text": "I think my card payment has been stopped", "label": "reverted_card_payment?", "raw": "declined_card_payment", "pred": "declined_card_payment"}
 {"i": 1881, "text": "My card payment was reverted.  Why?", "label": "reverted_card_payment?", "raw": "reverted_card_payment?", "pred": "reverted_card_payment?"}
@@ -1928,7 +1928,7 @@
 {"i": 1927, "text": "I would like to change my card PIN.", "label": "change_pin", "raw": "change_pin", "pred": "change_pin"}
 {"i": 1928, "text": "I want to set a new PIN", "label": "change_pin", "raw": "change_pin", "pred": "change_pin"}
 {"i": 1929, "text": "I desperately need to change my PIN, but I'm overseas on vacation right now. How can I do this?", "label": "change_pin", "raw": "change_pin", "pred": "change_pin"}
-{"i": 1930, "text": "I need a new Pin how do I go about that?", "label": "change_pin", "raw": null, "pred": null}
+{"i": 1930, "text": "I need a new Pin how do I go about that?", "label": "change_pin", "raw": "change_pin", "pred": "change_pin"}
 {"i": 1931, "text": "Is there a location near me that i can change my PIN?", "label": "change_pin", "raw": "change_pin", "pred": "change_pin"}
 {"i": 1932, "text": "In what ATM can I change my pin?", "label": "change_pin", "raw": "change_pin", "pred": "change_pin"}
 {"i": 1933, "text": "I'd like to make a new PIN selection.", "label": "change_pin", "raw": "change_pin", "pred": "change_pin"}
@@ -1957,7 +1957,7 @@
 {"i": 1956, "text": "Please tell me which cash machines will allow me to change my pin.", "label": "change_pin", "raw": "atm_support", "pred": "atm_support"}
 {"i": 1957, "text": "What steps do I need to take to change my card PIN?", "label": "change_pin", "raw": "change_pin", "pred": "change_pin"}
 {"i": 1958, "text": "How to change the PIN on my card?", "label": "change_pin", "raw": "change_pin", "pred": "change_pin"}
-{"i": 1959, "text": "How can I change the PIN?  Do I have to go to a real bank?", "label": "change_pin", "raw": null, "pred": null}
+{"i": 1959, "text": "How can I change the PIN?  Do I have to go to a real bank?", "label": "change_pin", "raw": "change_pin", "pred": "change_pin"}
 {"i": 1960, "text": "I've tried numerous times to submit a transfer of funds. Why isn't it going through?", "label": "beneficiary_not_allowed", "raw": "failed_transfer", "pred": "failed_transfer"}
 {"i": 1961, "text": "I've transferred money before without issue but now I am encountering an error stating that it isn't possible. Why is that?", "label": "beneficiary_not_allowed", "raw": "declined_transfer", "pred": "declined_transfer"}
 {"i": 1962, "text": "I am not able to do a transfer to an account", "label": "beneficiary_not_allowed", "raw": "failed_transfer", "pred": "failed_transfer"}
@@ -1966,12 +1966,12 @@
 {"i": 1965, "text": "Can you please help me with this exchange?  I am trying to get crypto and the app won't let me.", "label": "beneficiary_not_allowed", "raw": "exchange_via_app", "pred": "exchange_via_app"}
 {"i": 1966, "text": "How do I do a successful transfer to an account?", "label": "beneficiary_not_allowed", "raw": "transfer_into_account", "pred": "transfer_into_account"}
 {"i": 1967, "text": "Why did I get a message saying that my transfer is not possible?  I have done this before no problem.  Please fix.", "label": "beneficiary_not_allowed", "raw": "declined_transfer", "pred": "declined_transfer"}
-{"i": 1968, "text": "Hey I want to buy some crypto but the app doesn't allow me to! What's the issue, I really want to exchange this", "label": "beneficiary_not_allowed", "raw": null, "pred": null}
+{"i": 1968, "text": "Hey I want to buy some crypto but the app doesn't allow me to! What's the issue, I really want to exchange this", "label": "beneficiary_not_allowed", "raw": "exchange_via_app", "pred": "exchange_via_app"}
 {"i": 1969, "text": "I tried to transfer money but it said it wasn't possible? I've done this before and it worked why isn't it working now?", "label": "beneficiary_not_allowed", "raw": "declined_transfer", "pred": "declined_transfer"}
 {"i": 1970, "text": "Why can't I transfer to a beneficiary?", "label": "beneficiary_not_allowed", "raw": "beneficiary_not_allowed", "pred": "beneficiary_not_allowed"}
 {"i": 1971, "text": "I am having problems transferring to a beneficiary.", "label": "beneficiary_not_allowed", "raw": "beneficiary_not_allowed", "pred": "beneficiary_not_allowed"}
 {"i": 1972, "text": "What's the deal with no cryptocurrency on your app?", "label": "beneficiary_not_allowed", "raw": "supported_cards_and_currencies", "pred": "supported_cards_and_currencies"}
-{"i": 1973, "text": "Why isn't my transfer not going through? I keep getting an error message.", "label": "beneficiary_not_allowed", "raw": null, "pred": null}
+{"i": 1973, "text": "Why isn't my transfer not going through? I keep getting an error message.", "label": "beneficiary_not_allowed", "raw": "failed_transfer", "pred": "failed_transfer"}
 {"i": 1974, "text": "What are the rules for transferring to a beneficiary?", "label": "beneficiary_not_allowed", "raw": "beneficiary_not_allowed", "pred": "beneficiary_not_allowed"}
 {"i": 1975, "text": "Can I transfer money to a beneficiery?", "label": "beneficiary_not_allowed", "raw": "beneficiary_not_allowed", "pred": "beneficiary_not_allowed"}
 {"i": 1976, "text": "I have tried transferring money numerous times.  All I keep getting is an error message.  Can you tell me what is going on and how this van be fixed?", "label": "beneficiary_not_allowed", "raw": "failed_transfer", "pred": "failed_transfer"}
@@ -1991,7 +1991,7 @@
 {"i": 1990, "text": "The account transfer I was trying to do failed.", "label": "beneficiary_not_allowed", "raw": "failed_transfer", "pred": "failed_transfer"}
 {"i": 1991, "text": "My beneficiary is not allowed, please may I have answer as to why this is?", "label": "beneficiary_not_allowed", "raw": "beneficiary_not_allowed", "pred": "beneficiary_not_allowed"}
 {"i": 1992, "text": "Why couldn't I do a transfer to a beneficiary?", "label": "beneficiary_not_allowed", "raw": "beneficiary_not_allowed", "pred": "beneficiary_not_allowed"}
-{"i": 1993, "text": "Why would i not be able to do a transfer to a beneficiary?", "label": "beneficiary_not_allowed", "raw": null, "pred": null}
+{"i": 1993, "text": "Why would i not be able to do a transfer to a beneficiary?", "label": "beneficiary_not_allowed", "raw": "beneficiary_not_allowed", "pred": "beneficiary_not_allowed"}
 {"i": 1994, "text": "I want to transfer money to a beneficiery. Why can't I?", "label": "beneficiary_not_allowed", "raw": "beneficiary_not_allowed", "pred": "beneficiary_not_allowed"}
 {"i": 1995, "text": "Can you help with a transfer to an account", "label": "beneficiary_not_allowed", "raw": "transfer_into_account", "pred": "transfer_into_account"}
 {"i": 1996, "text": "why isnt my account allowing transfers", "label": "beneficiary_not_allowed", "raw": "declined_transfer", "pred": "declined_transfer"}
@@ -2042,7 +2042,7 @@
 {"i": 2041, "text": "How can I get paid in a different currency?", "label": "receiving_money", "raw": "receiving_money", "pred": "receiving_money"}
 {"i": 2042, "text": "Can I receive my salary in a currency other than what it is deposited in?", "label": "receiving_money", "raw": "exchange_rate", "pred": "exchange_rate"}
 {"i": 2043, "text": "Can I get my salary through this?", "label": "receiving_money", "raw": "receiving_money", "pred": "receiving_money"}
-{"i": 2044, "text": "How can someone send me money?", "label": "receiving_money", "raw": null, "pred": null}
+{"i": 2044, "text": "How can someone send me money?", "label": "receiving_money", "raw": "receiving_money", "pred": "receiving_money"}
 {"i": 2045, "text": "Is there a problem with receiving my salary in GBP?", "label": "receiving_money", "raw": "receiving_money", "pred": "receiving_money"}
 {"i": 2046, "text": "Do I need to choose GBP to get my salary deposited properly?", "label": "receiving_money", "raw": "receiving_money", "pred": "receiving_money"}
 {"i": 2047, "text": "I get paid in GBP. Should I configure this and if so, where?", "label": "receiving_money", "raw": "exchange_rate", "pred": "exchange_rate"}
@@ -2071,7 +2071,7 @@
 {"i": 2070, "text": "What if I need my salary in a different currency?", "label": "receiving_money", "raw": "exchange_via_app", "pred": "exchange_via_app"}
 {"i": 2071, "text": "I receive my salary in GBP. Do I need to configure this somehwere?", "label": "receiving_money", "raw": "receiving_money", "pred": "receiving_money"}
 {"i": 2072, "text": "Do you know if I can use this for my salary?", "label": "receiving_money", "raw": "supported_cards_and_currencies", "pred": "supported_cards_and_currencies"}
-{"i": 2073, "text": "How do I get my paycheck through this?", "label": "receiving_money", "raw": null, "pred": null}
+{"i": 2073, "text": "How do I get my paycheck through this?", "label": "receiving_money", "raw": "receiving_money", "pred": "receiving_money"}
 {"i": 2074, "text": "can I transfer my salary if it's in a different currency?", "label": "receiving_money", "raw": "transfer_into_account", "pred": "transfer_into_account"}
 {"i": 2075, "text": "Can I get paid in a different currency?", "label": "receiving_money", "raw": "receiving_money", "pred": "receiving_money"}
 {"i": 2076, "text": "Is my salary eligible for this?", "label": "receiving_money", "raw": "age_limit", "pred": "age_limit"}
@@ -2096,9 +2096,9 @@
 {"i": 2095, "text": "Why hasn't my transfer been made?", "label": "failed_transfer", "raw": "pending_transfer", "pred": "pending_transfer"}
 {"i": 2096, "text": "My transfer will not go through.", "label": "failed_transfer", "raw": "failed_transfer", "pred": "failed_transfer"}
 {"i": 2097, "text": "My transfer keeps failing and I just want to transfer the money can you please make it work?", "label": "failed_transfer", "raw": "failed_transfer", "pred": "failed_transfer"}
-{"i": 2098, "text": "The transfer keeps failing , I tried to transfer some money to friends this morning but it keeps getting rejected for some reason, Would you please check the issue ?", "label": "failed_transfer", "raw": null, "pred": null}
+{"i": 2098, "text": "The transfer keeps failing , I tried to transfer some money to friends this morning but it keeps getting rejected for some reason, Would you please check the issue ?", "label": "failed_transfer", "raw": "failed_transfer", "pred": "failed_transfer"}
 {"i": 2099, "text": "Why would a transfer fail?", "label": "failed_transfer", "raw": "failed_transfer", "pred": "failed_transfer"}
-{"i": 2100, "text": "What are your policies for card transfers?", "label": "failed_transfer", "raw": null, "pred": null}
+{"i": 2100, "text": "What are your policies for card transfers?", "label": "failed_transfer", "raw": "supported_cards_and_currencies", "pred": "supported_cards_and_currencies"}
 {"i": 2101, "text": "Is the system down? I've been trying to do a transfer and have failed?", "label": "failed_transfer", "raw": "failed_transfer", "pred": "failed_transfer"}
 {"i": 2102, "text": "I tried to make a transfer but it failed", "label": "failed_transfer", "raw": "failed_transfer", "pred": "failed_transfer"}
 {"i": 2103, "text": "Why couldn't I complete a transfer?", "label": "failed_transfer", "raw": "failed_transfer", "pred": "failed_transfer"}
@@ -2117,7 +2117,7 @@
 {"i": 2116, "text": "Why didn't my transfer go through?", "label": "failed_transfer", "raw": "failed_transfer", "pred": "failed_transfer"}
 {"i": 2117, "text": "I've attempted to do a very standard transfer and have tried 5 times at this point. Can you tell me what the issue is? Is the system down?", "label": "failed_transfer", "raw": "failed_transfer", "pred": "failed_transfer"}
 {"i": 2118, "text": "Can you provide a reason as to why my transfer did not work?", "label": "failed_transfer", "raw": "failed_transfer", "pred": "failed_transfer"}
-{"i": 2119, "text": "I tried to transfer money and it did not work.", "label": "failed_transfer", "raw": null, "pred": null}
+{"i": 2119, "text": "I tried to transfer money and it did not work.", "label": "failed_transfer", "raw": "failed_transfer", "pred": "failed_transfer"}
 {"i": 2120, "text": "Can I do a bank transfer to put additional money in my account because I am out of money?", "label": "transfer_into_account", "raw": "top_up_by_bank_transfer_charge", "pred": "top_up_by_bank_transfer_charge"}
 {"i": 2121, "text": "I'm out of money, can I add money with my bank?", "label": "transfer_into_account", "raw": "top_up_by_bank_transfer_charge", "pred": "top_up_by_bank_transfer_charge"}
 {"i": 2122, "text": "How do I go forth on transferring money into my account?", "label": "transfer_into_account", "raw": "transfer_into_account", "pred": "transfer_into_account"}
@@ -2157,7 +2157,7 @@
 {"i": 2156, "text": "I would like to transfer funds from one account to another.", "label": "transfer_into_account", "raw": "transfer_into_account", "pred": "transfer_into_account"}
 {"i": 2157, "text": "I'm trying to transfer money into my account.", "label": "transfer_into_account", "raw": "transfer_into_account", "pred": "transfer_into_account"}
 {"i": 2158, "text": "I would like to transfer money from my other bank account into this one.", "label": "transfer_into_account", "raw": "transfer_into_account", "pred": "transfer_into_account"}
-{"i": 2159, "text": "Can I use a bank transfer to refill my account?", "label": "transfer_into_account", "raw": null, "pred": null}
+{"i": 2159, "text": "Can I use a bank transfer to refill my account?", "label": "transfer_into_account", "raw": "top_up_by_bank_transfer_charge", "pred": "top_up_by_bank_transfer_charge"}
 {"i": 2160, "text": "What all is needed to verify the top-up card?", "label": "verify_top_up", "raw": "verify_top_up", "pred": "verify_top_up"}
 {"i": 2161, "text": "It wants me to verify the top up. Why?", "label": "verify_top_up", "raw": "verify_top_up", "pred": "verify_top_up"}
 {"i": 2162, "text": "Where can I find the top-up verification code?", "label": "verify_top_up", "raw": "verify_top_up", "pred": "verify_top_up"}
@@ -2208,7 +2208,7 @@
 {"i": 2207, "text": "Can I have a card after my first one?", "label": "getting_spare_card", "raw": "getting_spare_card", "pred": "getting_spare_card"}
 {"i": 2208, "text": "How would I go about getting a second card?", "label": "getting_spare_card", "raw": "getting_spare_card", "pred": "getting_spare_card"}
 {"i": 2209, "text": "I'd like to have another card", "label": "getting_spare_card", "raw": "getting_spare_card", "pred": "getting_spare_card"}
-{"i": 2210, "text": "If I need more cards, are there any fees?", "label": "getting_spare_card", "raw": null, "pred": null}
+{"i": 2210, "text": "If I need more cards, are there any fees?", "label": "getting_spare_card", "raw": "getting_spare_card", "pred": "getting_spare_card"}
 {"i": 2211, "text": "Do you offer multiple cards for the same account?", "label": "getting_spare_card", "raw": "getting_spare_card", "pred": "getting_spare_card"}
 {"i": 2212, "text": "Can I get a spare card for someone else to use?", "label": "getting_spare_card", "raw": "getting_spare_card", "pred": "getting_spare_card"}
 {"i": 2213, "text": "I need to get some more physical cards.", "label": "getting_spare_card", "raw": "order_physical_card", "pred": "order_physical_card"}
@@ -2249,7 +2249,7 @@
 {"i": 2248, "text": "How do I top up my account with a cash payment?", "label": "top_up_by_cash_or_cheque", "raw": "top_up_by_cash_or_cheque", "pred": "top_up_by_cash_or_cheque"}
 {"i": 2249, "text": "I'd like to use cash to top up. How do I find that option?", "label": "top_up_by_cash_or_cheque", "raw": "top_up_by_cash_or_cheque", "pred": "top_up_by_cash_or_cheque"}
 {"i": 2250, "text": "Where do I locate topping up with cash.", "label": "top_up_by_cash_or_cheque", "raw": "top_up_by_cash_or_cheque", "pred": "top_up_by_cash_or_cheque"}
-{"i": 2251, "text": "How do I pay by check?", "label": "top_up_by_cash_or_cheque", "raw": null, "pred": null}
+{"i": 2251, "text": "How do I pay by check?", "label": "top_up_by_cash_or_cheque", "raw": "top_up_by_cash_or_cheque", "pred": "top_up_by_cash_or_cheque"}
 {"i": 2252, "text": "Can I add to my account balance with a cheque?", "label": "top_up_by_cash_or_cheque", "raw": "top_up_by_cash_or_cheque", "pred": "top_up_by_cash_or_cheque"}
 {"i": 2253, "text": "What type of deposits do you accept into my account?", "label": "top_up_by_cash_or_cheque", "raw": "top_up_by_cash_or_cheque", "pred": "top_up_by_cash_or_cheque"}
 {"i": 2254, "text": "Can I top up using a cheque?", "label": "top_up_by_cash_or_cheque", "raw": "top_up_by_cash_or_cheque", "pred": "top_up_by_cash_or_cheque"}
@@ -2265,9 +2265,9 @@
 {"i": 2264, "text": "Will you accept a cheque to top up my account?", "label": "top_up_by_cash_or_cheque", "raw": "top_up_by_cash_or_cheque", "pred": "top_up_by_cash_or_cheque"}
 {"i": 2265, "text": "How can I top up with this cheque I got?", "label": "top_up_by_cash_or_cheque", "raw": "top_up_by_cash_or_cheque", "pred": "top_up_by_cash_or_cheque"}
 {"i": 2266, "text": "What methods can I use to top up my account?", "label": "top_up_by_cash_or_cheque", "raw": "topping_up_by_card", "pred": "topping_up_by_card"}
-{"i": 2267, "text": "Is cash good to top up with?", "label": "top_up_by_cash_or_cheque", "raw": null, "pred": null}
+{"i": 2267, "text": "Is cash good to top up with?", "label": "top_up_by_cash_or_cheque", "raw": "top_up_by_cash_or_cheque", "pred": "top_up_by_cash_or_cheque"}
 {"i": 2268, "text": "how come i can't find anywhere to load using cash", "label": "top_up_by_cash_or_cheque", "raw": "top_up_by_cash_or_cheque", "pred": "top_up_by_cash_or_cheque"}
-{"i": 2269, "text": "What can I pay with? Does cash work?", "label": "top_up_by_cash_or_cheque", "raw": null, "pred": null}
+{"i": 2269, "text": "What can I pay with? Does cash work?", "label": "top_up_by_cash_or_cheque", "raw": "supported_cards_and_currencies", "pred": "supported_cards_and_currencies"}
 {"i": 2270, "text": "How do I deposit cash into my account?", "label": "top_up_by_cash_or_cheque", "raw": "top_up_by_cash_or_cheque", "pred": "top_up_by_cash_or_cheque"}
 {"i": 2271, "text": "Why can't I top up with a cheque?", "label": "top_up_by_cash_or_cheque", "raw": "top_up_by_cash_or_cheque", "pred": "top_up_by_cash_or_cheque"}
 {"i": 2272, "text": "Can I send a cheque to do my top ups?", "label": "top_up_by_cash_or_cheque", "raw": "top_up_by_cash_or_cheque", "pred": "top_up_by_cash_or_cheque"}
@@ -2281,7 +2281,7 @@
 {"i": 2280, "text": "How do I receive my physical card", "label": "order_physical_card", "raw": "order_physical_card", "pred": "order_physical_card"}
 {"i": 2281, "text": "I want a card. What is the procedure?", "label": "order_physical_card", "raw": "order_physical_card", "pred": "order_physical_card"}
 {"i": 2282, "text": "What do you charge for physical cards?", "label": "order_physical_card", "raw": "order_physical_card", "pred": "order_physical_card"}
-{"i": 2283, "text": "Where can I get my card at?", "label": "order_physical_card", "raw": null, "pred": null}
+{"i": 2283, "text": "Where can I get my card at?", "label": "order_physical_card", "raw": "card_arrival", "pred": "card_arrival"}
 {"i": 2284, "text": "price of physical card", "label": "order_physical_card", "raw": "order_physical_card", "pred": "order_physical_card"}
 {"i": 2285, "text": "Please, how do I order a card?", "label": "order_physical_card", "raw": "order_physical_card", "pred": "order_physical_card"}
 {"i": 2286, "text": "Send me a physical card", "label": "order_physical_card", "raw": "order_physical_card", "pred": "order_physical_card"}
@@ -2339,9 +2339,9 @@
 {"i": 2338, "text": "My disposable virtual card has been rejected by the merchant earlier today. What should I do?", "label": "virtual_card_not_working", "raw": "virtual_card_not_working", "pred": "virtual_card_not_working"}
 {"i": 2339, "text": "How can I fix a problem where my virtual card is rejected?", "label": "virtual_card_not_working", "raw": "virtual_card_not_working", "pred": "virtual_card_not_working"}
 {"i": 2340, "text": "My virtual card isn't working. What do I do?", "label": "virtual_card_not_working", "raw": "virtual_card_not_working", "pred": "virtual_card_not_working"}
-{"i": 2341, "text": "What do I do if my virtual card won't work.", "label": "virtual_card_not_working", "raw": null, "pred": null}
+{"i": 2341, "text": "What do I do if my virtual card won't work.", "label": "virtual_card_not_working", "raw": "virtual_card_not_working", "pred": "virtual_card_not_working"}
 {"i": 2342, "text": "Is there a trick to get the disposable virtual card to work?", "label": "virtual_card_not_working", "raw": "get_disposable_virtual_card", "pred": "get_disposable_virtual_card"}
-{"i": 2343, "text": "Why can't I get my virtual card to work?", "label": "virtual_card_not_working", "raw": null, "pred": null}
+{"i": 2343, "text": "Why can't I get my virtual card to work?", "label": "virtual_card_not_working", "raw": "virtual_card_not_working", "pred": "virtual_card_not_working"}
 {"i": 2344, "text": "My card is just not working at this time.", "label": "virtual_card_not_working", "raw": "card_not_working", "pred": "card_not_working"}
 {"i": 2345, "text": "My disposable card seems not to be working am I doing something wrong?", "label": "virtual_card_not_working", "raw": "virtual_card_not_working", "pred": "virtual_card_not_working"}
 {"i": 2346, "text": "My payments from my virtual card keep getting rejected.", "label": "virtual_card_not_working", "raw": "virtual_card_not_working", "pred": "virtual_card_not_working"}
@@ -2351,7 +2351,7 @@
 {"i": 2350, "text": "How do I get my disposable virtual card to work?", "label": "virtual_card_not_working", "raw": "get_disposable_virtual_card", "pred": "get_disposable_virtual_card"}
 {"i": 2351, "text": "How come my disposable virtual card used to pay for a gym subscription got rejected?", "label": "virtual_card_not_working", "raw": "virtual_card_not_working", "pred": "virtual_card_not_working"}
 {"i": 2352, "text": "Payments from my disposable virtual card don't work", "label": "virtual_card_not_working", "raw": "virtual_card_not_working", "pred": "virtual_card_not_working"}
-{"i": 2353, "text": "My disposable virtual card was rejected by the merchant, please help?", "label": "virtual_card_not_working", "raw": null, "pred": null}
+{"i": 2353, "text": "My disposable virtual card was rejected by the merchant, please help?", "label": "virtual_card_not_working", "raw": "virtual_card_not_working", "pred": "virtual_card_not_working"}
 {"i": 2354, "text": "My virtual card won't work.", "label": "virtual_card_not_working", "raw": "virtual_card_not_working", "pred": "virtual_card_not_working"}
 {"i": 2355, "text": "Tell me why my virtual disposable card won't work.", "label": "virtual_card_not_working", "raw": "virtual_card_not_working", "pred": "virtual_card_not_working"}
 {"i": 2356, "text": "I need help getting the virtual card to work.", "label": "virtual_card_not_working", "raw": "virtual_card_not_working", "pred": "virtual_card_not_working"}
@@ -2389,11 +2389,11 @@
 {"i": 2388, "text": "The exchange rate for my withdrawal isn't correct and doesn't match the actual exchange rate.", "label": "wrong_exchange_rate_for_cash_withdrawal", "raw": "wrong_exchange_rate_for_cash_withdrawal", "pred": "wrong_exchange_rate_for_cash_withdrawal"}
 {"i": 2389, "text": "Can you explain your exchange rate policy? I don't think I received the correct amount of cash in my ATM transaction.", "label": "wrong_exchange_rate_for_cash_withdrawal", "raw": "wrong_exchange_rate_for_cash_withdrawal", "pred": "wrong_exchange_rate_for_cash_withdrawal"}
 {"i": 2390, "text": "My ecchange rate was wrong for a cash transaction.", "label": "wrong_exchange_rate_for_cash_withdrawal", "raw": "wrong_exchange_rate_for_cash_withdrawal", "pred": "wrong_exchange_rate_for_cash_withdrawal"}
-{"i": 2391, "text": "I expected a higher exchange rate when I withdrew money. Can you tell me current exchange rates?", "label": "wrong_exchange_rate_for_cash_withdrawal", "raw": null, "pred": null}
+{"i": 2391, "text": "I expected a higher exchange rate when I withdrew money. Can you tell me current exchange rates?", "label": "wrong_exchange_rate_for_cash_withdrawal", "raw": "exchange_rate", "pred": "exchange_rate"}
 {"i": 2392, "text": "The see the rate applied to my transaction was wrong at the atm.", "label": "wrong_exchange_rate_for_cash_withdrawal", "raw": "wrong_exchange_rate_for_cash_withdrawal", "pred": "wrong_exchange_rate_for_cash_withdrawal"}
 {"i": 2393, "text": "The rate of exchange isn't right for my cash withdrawal.", "label": "wrong_exchange_rate_for_cash_withdrawal", "raw": "wrong_exchange_rate_for_cash_withdrawal", "pred": "wrong_exchange_rate_for_cash_withdrawal"}
 {"i": 2394, "text": "I took out cash abroad and the exchange rate isn't correct.", "label": "wrong_exchange_rate_for_cash_withdrawal", "raw": "wrong_exchange_rate_for_cash_withdrawal", "pred": "wrong_exchange_rate_for_cash_withdrawal"}
-{"i": 2395, "text": "I used an ATM in a foreign currency but the rate applied is wrong!", "label": "wrong_exchange_rate_for_cash_withdrawal", "raw": null, "pred": null}
+{"i": 2395, "text": "I used an ATM in a foreign currency but the rate applied is wrong!", "label": "wrong_exchange_rate_for_cash_withdrawal", "raw": "wrong_exchange_rate_for_cash_withdrawal", "pred": "wrong_exchange_rate_for_cash_withdrawal"}
 {"i": 2396, "text": "how do you determine your exchange rates because one of yours was off when i got cash", "label": "wrong_exchange_rate_for_cash_withdrawal", "raw": "exchange_rate", "pred": "exchange_rate"}
 {"i": 2397, "text": "I used the ATM machine to get money out for Holiday shopping and saw the outrageous charges. Why is that? I would not have used the ATM if I had known!", "label": "wrong_exchange_rate_for_cash_withdrawal", "raw": "cash_withdrawal_charge", "pred": "cash_withdrawal_charge"}
 {"i": 2398, "text": "The cash withdrawal exchange rate is not correct.", "label": "wrong_exchange_rate_for_cash_withdrawal", "raw": "wrong_exchange_rate_for_cash_withdrawal", "pred": "wrong_exchange_rate_for_cash_withdrawal"}
@@ -2433,7 +2433,7 @@
 {"i": 2432, "text": "Where can I get a disposable virtual card?", "label": "get_disposable_virtual_card", "raw": "get_disposable_virtual_card", "pred": "get_disposable_virtual_card"}
 {"i": 2433, "text": "Will I be able to get a disposable virtual card as well?", "label": "get_disposable_virtual_card", "raw": "get_disposable_virtual_card", "pred": "get_disposable_virtual_card"}
 {"i": 2434, "text": "Hello! I need to order a disposable virtual card. Where can I do that at?", "label": "get_disposable_virtual_card", "raw": "get_disposable_virtual_card", "pred": "get_disposable_virtual_card"}
-{"i": 2435, "text": "where do I request a disposable virtual card?", "label": "get_disposable_virtual_card", "raw": null, "pred": null}
+{"i": 2435, "text": "where do I request a disposable virtual card?", "label": "get_disposable_virtual_card", "raw": "get_disposable_virtual_card", "pred": "get_disposable_virtual_card"}
 {"i": 2436, "text": "Can i get a throw away card", "label": "get_disposable_virtual_card", "raw": "get_disposable_virtual_card", "pred": "get_disposable_virtual_card"}
 {"i": 2437, "text": "how many transactions can i make with a disposable card", "label": "get_disposable_virtual_card", "raw": "get_disposable_virtual_card", "pred": "get_disposable_virtual_card"}
 {"i": 2438, "text": "What are disposable cards?", "label": "get_disposable_virtual_card", "raw": "get_disposable_virtual_card", "pred": "get_disposable_virtual_card"}
@@ -2449,7 +2449,7 @@
 {"i": 2448, "text": "What reason did my top-up fail for?", "label": "top_up_failed", "raw": "top_up_failed", "pred": "top_up_failed"}
 {"i": 2449, "text": "Why didn`t my topup go through?", "label": "top_up_failed", "raw": "top_up_failed", "pred": "top_up_failed"}
 {"i": 2450, "text": "How can I check to see if my top-up worked?", "label": "top_up_failed", "raw": "verify_top_up", "pred": "verify_top_up"}
-{"i": 2451, "text": "My top up didn't work.", "label": "top_up_failed", "raw": null, "pred": null}
+{"i": 2451, "text": "My top up didn't work.", "label": "top_up_failed", "raw": "top_up_failed", "pred": "top_up_failed"}
 {"i": 2452, "text": "My top up failed.", "label": "top_up_failed", "raw": "top_up_failed", "pred": "top_up_failed"}
 {"i": 2453, "text": "Why would my topup not go through?", "label": "top_up_failed", "raw": "top_up_failed", "pred": "top_up_failed"}
 {"i": 2454, "text": "Why caused my top up to not work?", "label": "top_up_failed", "raw": "top_up_failed", "pred": "top_up_failed"}
@@ -2469,7 +2469,7 @@
 {"i": 2468, "text": "What's the deal? My card was just denied for top up. Why is it not going through?", "label": "top_up_failed", "raw": "top_up_failed", "pred": "top_up_failed"}
 {"i": 2469, "text": "I don't think my top up is working correctly", "label": "top_up_failed", "raw": "top_up_failed", "pred": "top_up_failed"}
 {"i": 2470, "text": "The app won't let me top up my account", "label": "top_up_failed", "raw": "top_up_failed", "pred": "top_up_failed"}
-{"i": 2471, "text": "I'm not sure why my top up request was denied", "label": "top_up_failed", "raw": null, "pred": null}
+{"i": 2471, "text": "I'm not sure why my top up request was denied", "label": "top_up_failed", "raw": "top_up_failed", "pred": "top_up_failed"}
 {"i": 2472, "text": "Why can't I top up?", "label": "top_up_failed", "raw": "top_up_failed", "pred": "top_up_failed"}
 {"i": 2473, "text": "My top-up has failed.", "label": "top_up_failed", "raw": "top_up_failed", "pred": "top_up_failed"}
 {"i": 2474, "text": "Problems with top up", "label": "top_up_failed", "raw": "top_up_failed", "pred": "top_up_failed"}
@@ -2488,7 +2488,7 @@
 {"i": 2487, "text": "When will my transfer be available in my account.", "label": "balance_not_updated_after_bank_transfer", "raw": "transfer_timing", "pred": "transfer_timing"}
 {"i": 2488, "text": "I didn't get the money I transferred", "label": "balance_not_updated_after_bank_transfer", "raw": "transfer_not_received_by_recipient", "pred": "transfer_not_received_by_recipient"}
 {"i": 2489, "text": "I just completed a bank transfer and the balance didn't update", "label": "balance_not_updated_after_bank_transfer", "raw": "balance_not_updated_after_bank_transfer", "pred": "balance_not_updated_after_bank_transfer"}
-{"i": 2490, "text": "I transferred some money but I think it has gotten lost somewhere.", "label": "balance_not_updated_after_bank_transfer", "raw": null, "pred": null}
+{"i": 2490, "text": "I transferred some money but I think it has gotten lost somewhere.", "label": "balance_not_updated_after_bank_transfer", "raw": "transfer_not_received_by_recipient", "pred": "transfer_not_received_by_recipient"}
 {"i": 2491, "text": "How long does a UK transfer take?", "label": "balance_not_updated_after_bank_transfer", "raw": "transfer_timing", "pred": "transfer_timing"}
 {"i": 2492, "text": "Hello I made a bank transfer couple hours ago from my UK account but it doesn't show up yet. Can you please check if everything is alright with it?", "label": "balance_not_updated_after_bank_transfer", "raw": "balance_not_updated_after_bank_transfer", "pred": "balance_not_updated_after_bank_transfer"}
 {"i": 2493, "text": "I made a transfer and am still waiting.", "label": "balance_not_updated_after_bank_transfer", "raw": "pending_transfer", "pred": "pending_transfer"}
@@ -2510,7 +2510,7 @@
 {"i": 2509, "text": "Why doesn't it show that I did a balance transfer?", "label": "balance_not_updated_after_bank_transfer", "raw": "balance_not_updated_after_bank_transfer", "pred": "balance_not_updated_after_bank_transfer"}
 {"i": 2510, "text": "I made a bank transfer a couple of hours ago from my UK account.  It hasn't appeared, can you check to make sure it went through?", "label": "balance_not_updated_after_bank_transfer", "raw": "balance_not_updated_after_bank_transfer", "pred": "balance_not_updated_after_bank_transfer"}
 {"i": 2511, "text": "My transfer is pending.", "label": "balance_not_updated_after_bank_transfer", "raw": "pending_transfer", "pred": "pending_transfer"}
-{"i": 2512, "text": "Hey, I try to make a bank transfer from my UK account a few hours ago, but it haven't show up yet. Please check my account to make sure everything alright with it?", "label": "balance_not_updated_after_bank_transfer", "raw": null, "pred": null}
+{"i": 2512, "text": "Hey, I try to make a bank transfer from my UK account a few hours ago, but it haven't show up yet. Please check my account to make sure everything alright with it?", "label": "balance_not_updated_after_bank_transfer", "raw": "transfer_not_received_by_recipient", "pred": "transfer_not_received_by_recipient"}
 {"i": 2513, "text": "Where is my transfer from [country]?", "label": "balance_not_updated_after_bank_transfer", "raw": "transfer_not_received_by_recipient", "pred": "transfer_not_received_by_recipient"}
 {"i": 2514, "text": "I made a bank transfer and my account balance did not show it.", "label": "balance_not_updated_after_bank_transfer", "raw": "balance_not_updated_after_bank_transfer", "pred": "balance_not_updated_after_bank_transfer"}
 {"i": 2515, "text": "Where is my money? I transfered it and it isn't in my account.", "label": "balance_not_updated_after_bank_transfer", "raw": "balance_not_updated_after_bank_transfer", "pred": "balance_not_updated_after_bank_transfer"}
@@ -2531,7 +2531,7 @@
 {"i": 2530, "text": "How do I freeze my bank card, as there has been a strange withdrawal?", "label": "cash_withdrawal_not_recognised", "raw": "compromised_card", "pred": "compromised_card"}
 {"i": 2531, "text": "I see a cash withdrawal that I did not perform.", "label": "cash_withdrawal_not_recognised", "raw": "cash_withdrawal_not_recognised", "pred": "cash_withdrawal_not_recognised"}
 {"i": 2532, "text": "I checked the app and saw an extra cash withdrawal that I didn't authorize", "label": "cash_withdrawal_not_recognised", "raw": "cash_withdrawal_not_recognised", "pred": "cash_withdrawal_not_recognised"}
-{"i": 2533, "text": "I have a strange cash withdrawal in my statement", "label": "cash_withdrawal_not_recognised", "raw": null, "pred": null}
+{"i": 2533, "text": "I have a strange cash withdrawal in my statement", "label": "cash_withdrawal_not_recognised", "raw": "cash_withdrawal_not_recognised", "pred": "cash_withdrawal_not_recognised"}
 {"i": 2534, "text": "There's a cash withdraw on my statement that I didn't make.", "label": "cash_withdrawal_not_recognised", "raw": "cash_withdrawal_not_recognised", "pred": "cash_withdrawal_not_recognised"}
 {"i": 2535, "text": "i think someone is using my card to withdraw money. Someone stole my wallet. What can I do? it is urgent.", "label": "cash_withdrawal_not_recognised", "raw": "lost_or_stolen_card", "pred": "lost_or_stolen_card"}
 {"i": 2536, "text": "I am seeing in the App a some cash withdrawal that its not mine", "label": "cash_withdrawal_not_recognised", "raw": "cash_withdrawal_not_recognised", "pred": "cash_withdrawal_not_recognised"}
@@ -2585,7 +2585,7 @@
 {"i": 2584, "text": "Will it cost anything to top up a US card?", "label": "top_up_by_card_charge", "raw": "top_up_by_card_charge", "pred": "top_up_by_card_charge"}
 {"i": 2585, "text": "Does topping up my card have a fee?", "label": "top_up_by_card_charge", "raw": "top_up_by_card_charge", "pred": "top_up_by_card_charge"}
 {"i": 2586, "text": "Are there fees for adding money using an international card", "label": "top_up_by_card_charge", "raw": "top_up_by_card_charge", "pred": "top_up_by_card_charge"}
-{"i": 2587, "text": "When using a US card, what is the cost for a top up/off?", "label": "top_up_by_card_charge", "raw": null, "pred": null}
+{"i": 2587, "text": "When using a US card, what is the cost for a top up/off?", "label": "top_up_by_card_charge", "raw": "top_up_by_card_charge", "pred": "top_up_by_card_charge"}
 {"i": 2588, "text": "I need to use a European card for a top up, what will the charge be?", "label": "top_up_by_card_charge", "raw": "top_up_by_card_charge", "pred": "top_up_by_card_charge"}
 {"i": 2589, "text": "Is it okay to use a bank card to top up", "label": "top_up_by_card_charge", "raw": "topping_up_by_card", "pred": "topping_up_by_card"}
 {"i": 2590, "text": "Any fee for topping up?", "label": "top_up_by_card_charge", "raw": "top_up_by_card_charge", "pred": "top_up_by_card_charge"}
@@ -2602,7 +2602,7 @@
 {"i": 2601, "text": "I need to activate my card can you do that now?", "label": "activate_my_card", "raw": "activate_my_card", "pred": "activate_my_card"}
 {"i": 2602, "text": "What do I need to do to activate my new card?", "label": "activate_my_card", "raw": "activate_my_card", "pred": "activate_my_card"}
 {"i": 2603, "text": "Tell me how to go about activating my new card?", "label": "activate_my_card", "raw": "activate_my_card", "pred": "activate_my_card"}
-{"i": 2604, "text": "How can I activate my card so I can start using it?", "label": "activate_my_card", "raw": null, "pred": null}
+{"i": 2604, "text": "How can I activate my card so I can start using it?", "label": "activate_my_card", "raw": "activate_my_card", "pred": "activate_my_card"}
 {"i": 2605, "text": "How long will it take to activate my new card?", "label": "activate_my_card", "raw": "activate_my_card", "pred": "activate_my_card"}
 {"i": 2606, "text": "What's the right way to activate my card?", "label": "activate_my_card", "raw": "activate_my_card", "pred": "activate_my_card"}
 {"i": 2607, "text": "I received my new card, how is it activated?", "label": "activate_my_card", "raw": "activate_my_card", "pred": "activate_my_card"}
@@ -2616,7 +2616,7 @@
 {"i": 2615, "text": "I need help activating my new card.", "label": "activate_my_card", "raw": "activate_my_card", "pred": "activate_my_card"}
 {"i": 2616, "text": "how to activate card?", "label": "activate_my_card", "raw": "activate_my_card", "pred": "activate_my_card"}
 {"i": 2617, "text": "Please, activate my card", "label": "activate_my_card", "raw": "activate_my_card", "pred": "activate_my_card"}
-{"i": 2618, "text": "I tried activating my bill of fare and it didn't workplace", "label": "activate_my_card", "raw": null, "pred": null}
+{"i": 2618, "text": "I tried activating my bill of fare and it didn't workplace", "label": "activate_my_card", "raw": "activate_my_card", "pred": "activate_my_card"}
 {"i": 2619, "text": "I just got my card and want to use it, how do I activate my card?", "label": "activate_my_card", "raw": "activate_my_card", "pred": "activate_my_card"}
 {"i": 2620, "text": "I have a new card and I want to activate it", "label": "activate_my_card", "raw": "activate_my_card", "pred": "activate_my_card"}
 {"i": 2621, "text": "Assist me please with card activation.", "label": "activate_my_card", "raw": "activate_my_card", "pred": "activate_my_card"}
@@ -2720,9 +2720,9 @@
 {"i": 2719, "text": "I need to know the cost and when I will receive a new card to replace an old one.", "label": "card_about_to_expire", "raw": "card_delivery_estimate", "pred": "card_delivery_estimate"}
 {"i": 2720, "text": "Is the top up feature available on the Apple Watch?", "label": "apple_pay_or_google_pay", "raw": "apple_pay_or_google_pay", "pred": "apple_pay_or_google_pay"}
 {"i": 2721, "text": "Can I use the system Google Pay for top-ups?", "label": "apple_pay_or_google_pay", "raw": "apple_pay_or_google_pay", "pred": "apple_pay_or_google_pay"}
-{"i": 2722, "text": "My top-up for Google Pay isn't working", "label": "apple_pay_or_google_pay", "raw": null, "pred": null}
+{"i": 2722, "text": "My top-up for Google Pay isn't working", "label": "apple_pay_or_google_pay", "raw": "apple_pay_or_google_pay", "pred": "apple_pay_or_google_pay"}
 {"i": 2723, "text": "Can I add money with Apple Pay?", "label": "apple_pay_or_google_pay", "raw": "apple_pay_or_google_pay", "pred": "apple_pay_or_google_pay"}
-{"i": 2724, "text": "Can I use my Apple Watch to to top up?", "label": "apple_pay_or_google_pay", "raw": null, "pred": null}
+{"i": 2724, "text": "Can I use my Apple Watch to to top up?", "label": "apple_pay_or_google_pay", "raw": "apple_pay_or_google_pay", "pred": "apple_pay_or_google_pay"}
 {"i": 2725, "text": "Does Apple Pay give the option to top up?", "label": "apple_pay_or_google_pay", "raw": "apple_pay_or_google_pay", "pred": "apple_pay_or_google_pay"}
 {"i": 2726, "text": "Top up on my Google Pay isn't working.", "label": "apple_pay_or_google_pay", "raw": "apple_pay_or_google_pay", "pred": "apple_pay_or_google_pay"}
 {"i": 2727, "text": "Is it possible to top up with Apple Pay?", "label": "apple_pay_or_google_pay", "raw": "apple_pay_or_google_pay", "pred": "apple_pay_or_google_pay"}
@@ -2736,13 +2736,13 @@
 {"i": 2735, "text": "how do i add money with my apple watch", "label": "apple_pay_or_google_pay", "raw": "apple_pay_or_google_pay", "pred": "apple_pay_or_google_pay"}
 {"i": 2736, "text": "If I want to top up, can I use Apple Pay?", "label": "apple_pay_or_google_pay", "raw": "apple_pay_or_google_pay", "pred": "apple_pay_or_google_pay"}
 {"i": 2737, "text": "can i top up with apple pay", "label": "apple_pay_or_google_pay", "raw": "apple_pay_or_google_pay", "pred": "apple_pay_or_google_pay"}
-{"i": 2738, "text": "My American express is experiencing a problem with apple play with top up, can you fix it?", "label": "apple_pay_or_google_pay", "raw": null, "pred": null}
+{"i": 2738, "text": "My American express is experiencing a problem with apple play with top up, can you fix it?", "label": "apple_pay_or_google_pay", "raw": "apple_pay_or_google_pay", "pred": "apple_pay_or_google_pay"}
 {"i": 2739, "text": "My top up is not working in Apple Pay.", "label": "apple_pay_or_google_pay", "raw": "apple_pay_or_google_pay", "pred": "apple_pay_or_google_pay"}
 {"i": 2740, "text": "Is Apple Pay a possible top up option?", "label": "apple_pay_or_google_pay", "raw": "apple_pay_or_google_pay", "pred": "apple_pay_or_google_pay"}
 {"i": 2741, "text": "I don't know how to top up my Google pay.", "label": "apple_pay_or_google_pay", "raw": "apple_pay_or_google_pay", "pred": "apple_pay_or_google_pay"}
 {"i": 2742, "text": "Can I top up from my Apple Watch?", "label": "apple_pay_or_google_pay", "raw": "apple_pay_or_google_pay", "pred": "apple_pay_or_google_pay"}
 {"i": 2743, "text": "Can I use my American Express stored in Apple Pay to top up?", "label": "apple_pay_or_google_pay", "raw": "apple_pay_or_google_pay", "pred": "apple_pay_or_google_pay"}
-{"i": 2744, "text": "is apple pay costly?", "label": "apple_pay_or_google_pay", "raw": null, "pred": null}
+{"i": 2744, "text": "is apple pay costly?", "label": "apple_pay_or_google_pay", "raw": "apple_pay_or_google_pay", "pred": "apple_pay_or_google_pay"}
 {"i": 2745, "text": "How can I top up with Google Pay?", "label": "apple_pay_or_google_pay", "raw": "apple_pay_or_google_pay", "pred": "apple_pay_or_google_pay"}
 {"i": 2746, "text": "I can't top up my account using my American Express with Apple Pay.", "label": "apple_pay_or_google_pay", "raw": "apple_pay_or_google_pay", "pred": "apple_pay_or_google_pay"}
 {"i": 2747, "text": "I got my American Express in Apple Pay, why is top up not working?", "label": "apple_pay_or_google_pay", "raw": "apple_pay_or_google_pay", "pred": "apple_pay_or_google_pay"}

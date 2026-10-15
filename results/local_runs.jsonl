@@ -1,1 +1,3 @@
 {"arm": "qwen_listed_day1", "test": "test_old.jsonl", "day": 1, "adapter": null, "listed": true, "n": 2800, "wall_seconds": 519.0, "accuracy": 0.4354}
+{"arm": "qwen_k8_day1", "test": "test_old.jsonl", "day": 1, "adapter": "adapters/day1_k8", "listed": false, "n": 2800, "wall_seconds": 249.7, "accuracy": 0.8036}
+{"arm": "qwen_k32_day1", "test": "test_old.jsonl", "day": 1, "adapter": "adapters/day1_k32", "listed": false, "n": 2800, "wall_seconds": 245.0, "accuracy": 0.8693}

@@ -1,0 +1,262 @@
+{
+  "new_queues": [
+    "card_linking",
+    "contactless_not_working",
+    "country_support",
+    "disposable_card_limits",
+    "exchange_charge",
+    "fiat_currency_support",
+    "getting_virtual_card"
+  ],
+  "day1": {
+    "haiku_day1": {
+      "n": 2800,
+      "correct": 2127,
+      "accuracy": 0.7596,
+      "ci95": [
+        0.7435,
+        0.7751
+      ],
+      "no_valid_queue": 8
+    },
+    "sonnet_day1": {
+      "n": 2800,
+      "correct": 2283,
+      "accuracy": 0.8154,
+      "ci95": [
+        0.8006,
+        0.8293
+      ],
+      "no_valid_queue": 0
+    },
+    "qwen_listed_day1": {
+      "n": 2800,
+      "correct": 1219,
+      "accuracy": 0.4354,
+      "ci95": [
+        0.4171,
+        0.4538
+      ],
+      "no_valid_queue": 45
+    },
+    "qwen_k8_day1": {
+      "n": 2800,
+      "correct": 2250,
+      "accuracy": 0.8036,
+      "ci95": [
+        0.7884,
+        0.8179
+      ],
+      "no_valid_queue": 128
+    },
+    "qwen_k32_day1": {
+      "n": 2800,
+      "correct": 2434,
+      "accuracy": 0.8693,
+      "ci95": [
+        0.8563,
+        0.8813
+      ],
+      "no_valid_queue": 45
+    }
+  },
+  "day90": {
+    "haiku_day90": {
+      "old": {
+        "n": 2800,
+        "correct": 2009,
+        "accuracy": 0.7175,
+        "ci95": [
+          0.7005,
+          0.7339
+        ],
+        "no_valid_queue": 10
+      },
+      "new": {
+        "n": 280,
+        "correct": 211,
+        "accuracy": 0.7536,
+        "ci95": [
+          0.6999,
+          0.8004
+        ],
+        "no_valid_queue": 0
+      }
+    },
+    "sonnet_day90": {
+      "old": {
+        "n": 2800,
+        "correct": 2226,
+        "accuracy": 0.795,
+        "ci95": [
+          0.7796,
+          0.8095
+        ],
+        "no_valid_queue": 0
+      },
+      "new": {
+        "n": 280,
+        "correct": 243,
+        "accuracy": 0.8679,
+        "ci95": [
+          0.8232,
+          0.9026
+        ],
+        "no_valid_queue": 0
+      }
+    }
+  },
+  "day1_vs_haiku": {
+    "sonnet_day1": {
+      "n": 2800,
+      "only_first_right": 259,
+      "only_second_right": 103,
+      "p": 0.0
+    },
+    "qwen_listed_day1": {
+      "n": 2800,
+      "only_first_right": 98,
+      "only_second_right": 1006,
+      "p": 0.0
+    },
+    "qwen_k8_day1": {
+      "n": 2800,
+      "only_first_right": 360,
+      "only_second_right": 237,
+      "p": 1e-06
+    },
+    "qwen_k32_day1": {
+      "n": 2800,
+      "only_first_right": 429,
+      "only_second_right": 122,
+      "p": 0.0
+    }
+  },
+  "new_queue_detail": {
+    "haiku_day90": {
+      "card_linking": 0.775,
+      "contactless_not_working": 0.875,
+      "country_support": 0.6,
+      "disposable_card_limits": 0.75,
+      "exchange_charge": 0.825,
+      "fiat_currency_support": 0.55,
+      "getting_virtual_card": 0.9
+    },
+    "sonnet_day90": {
+      "card_linking": 0.825,
+      "contactless_not_working": 0.925,
+      "country_support": 0.775,
+      "disposable_card_limits": 0.925,
+      "exchange_charge": 0.925,
+      "fiat_currency_support": 0.775,
+      "getting_virtual_card": 0.925
+    }
+  },
+  "split_exploratory": {
+    "qwen_k32_day1+haiku_day1": {
+      "0%": {
+        "handed_to_claude": 0.0,
+        "accuracy_all": 0.8693,
+        "accuracy_old": 0.8693,
+        "accuracy_new": null
+      },
+      "5%": {
+        "handed_to_claude": 0.0418,
+        "accuracy_all": 0.8818,
+        "accuracy_old": 0.8818,
+        "accuracy_new": null
+      },
+      "10%": {
+        "handed_to_claude": 0.0896,
+        "accuracy_all": 0.8825,
+        "accuracy_old": 0.8825,
+        "accuracy_new": null
+      },
+      "20%": {
+        "handed_to_claude": 0.1568,
+        "accuracy_all": 0.8696,
+        "accuracy_old": 0.8696,
+        "accuracy_new": null
+      },
+      "30%": {
+        "handed_to_claude": 0.2843,
+        "accuracy_all": 0.8511,
+        "accuracy_old": 0.8511,
+        "accuracy_new": null
+      }
+    }
+  },
+  "batching_check": {
+    "n": 200,
+    "single_accuracy": 0.705,
+    "batched_accuracy": 0.755,
+    "agree": 0.73
+  },
+  "claude_cost": {
+    "haiku_day1": {
+      "messages": 2800,
+      "calls": 146,
+      "input_tokens_per_message": 100.6,
+      "output_tokens_per_message": 36.4,
+      "list_usd_per_10k_messages": 0.38
+    },
+    "haiku_day1_single": {
+      "messages": 200,
+      "calls": 201,
+      "input_tokens_per_message": 1520.8,
+      "output_tokens_per_message": 30.4,
+      "list_usd_per_10k_messages": 3.18
+    },
+    "haiku_day90": {
+      "messages": 3080,
+      "calls": 157,
+      "input_tokens_per_message": 100.8,
+      "output_tokens_per_message": 33.3,
+      "list_usd_per_10k_messages": 0.37
+    },
+    "sonnet_day1": {
+      "messages": 2800,
+      "calls": 141,
+      "input_tokens_per_message": 97.3,
+      "output_tokens_per_message": 10.0,
+      "list_usd_per_10k_messages": 4.87
+    },
+    "sonnet_day90": {
+      "messages": 3080,
+      "calls": 154,
+      "input_tokens_per_message": 99.0,
+      "output_tokens_per_message": 9.7,
+      "list_usd_per_10k_messages": 4.92
+    }
+  },
+  "local_scoring": {
+    "qwen_listed_day1": {
+      "n": 2800,
+      "messages_per_second": 5.39
+    },
+    "qwen_k8_day1": {
+      "n": 2800,
+      "messages_per_second": 11.21
+    },
+    "qwen_k32_day1": {
+      "n": 2800,
+      "messages_per_second": 11.43
+    }
+  },
+  "training": {
+    "day1_k32": {
+      "rows": 2240,
+      "updates": 280,
+      "train_seconds": 1341.0,
+      "peak_memory_gb": 5.5,
+      "trainable_parameters": 10822656
+    },
+    "day1_k8": {
+      "rows": 560,
+      "updates": 200,
+      "train_seconds": 1008.3,
+      "peak_memory_gb": 5.55,
+      "trainable_parameters": 10822656
+    }
+  }
+}
