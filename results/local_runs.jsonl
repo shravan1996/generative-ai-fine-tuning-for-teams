@@ -1,0 +1,1 @@
+{"arm": "qwen_listed_day1", "test": "test_old.jsonl", "day": 1, "adapter": null, "listed": true, "n": 2800, "wall_seconds": 519.0, "accuracy": 0.4354}

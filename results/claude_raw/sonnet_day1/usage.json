@@ -1,0 +1,11 @@
+{
+  "arm": "sonnet_day1",
+  "n": 2800,
+  "calls": 140,
+  "input": 280,
+  "cache_write": 270248,
+  "cache_read": 0,
+  "output": 27879,
+  "cost_usd_list": 1.3603,
+  "api_ms": 349450
+}

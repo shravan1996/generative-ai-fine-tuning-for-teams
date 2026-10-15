@@ -78,3 +78,20 @@ reports.
 - Claude routes 20 messages per call; the small model routes one. A check of 200 messages
   one at a time on Haiku will be reported beside the batched number.
 - One seed, one split, one dataset. These are clean, short, English messages from one bank.
+
+## Deviations
+
+**15 October 2026, 22:50 IST: how Claude's replies are read.** The plan above did not say how
+a reply is turned into 20 answers. The first parser took everything from the first `[` to the
+last `]`. After `haiku_day1` and `sonnet_day1` finished, and before any fine-tuned arm had
+been scored, I found two kinds of reply it misread:
+
+- five Sonnet replies printed a list, then a line such as "Wait, I need to correct that", then
+  a second list; the parser failed and counted all 20 messages as unanswered;
+- three Haiku replies held a single queue name for 20 messages.
+
+The parser now reads the last list in a reply that has exactly one name per message, and a
+reply without one is asked again, up to twice. Every reply, first or retried, is kept under
+`results/claude_raw/`, and its tokens count toward cost. The change can only raise Claude's
+scores, which works against the fine-tuned arms. `usage.json` for each arm records how many
+batches were retried and how many never produced a complete list.

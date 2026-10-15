@@ -72,7 +72,7 @@ def main():
             out, logp = greedy(model, eos, ids)
             raw = tok.decode(out)
             f.write(json.dumps({
-                "text": r["text"], "label": r["label"], "raw": raw,
+                "i": i, "text": r["text"], "label": r["label"], "raw": raw,
                 "pred": normalise(raw, allowed_set), "confidence": round(math.exp(logp), 6),
                 "prompt_tokens": len(ids), "seconds": round(time.time() - s, 4),
             }, ensure_ascii=False) + "\n")

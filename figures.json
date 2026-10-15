@@ -1,0 +1,22 @@
+{
+  "reading_rule": {
+    "title": "Four questions before you believe it",
+    "subs": [
+      "Any claim that a small fine-tuned model beat a big prompted one,",
+      "checked against six years of BANKING77 results."
+    ],
+    "left_w": 210,
+    "rows": [
+      ["What did the big model get to see?", "Names, examples, or hand-picked examples. GPT-4 scored 74.2% with three random examples per intent and 83.1% with three an expert chose (Loukas et al., 2023)."],
+      ["How many labels did the small one get?", "Fine-tuned BERT scored 83.4% with 10 labelled messages per intent, 90.0% with 30, and 93.7% with all of them (Casanueva et al., 2020)."],
+      ["Who wrote the answers it learned from?", "Preply's Qwen3.5-0.8B learned from GPT-5.4's annotations, checked and filtered first, then beat prompted GPT-5.4 on tests people had labelled (Celikik et al., 2026)."],
+      ["What happened after training day?", "None of these studies changes the label set after training. Your business will."]
+    ]
+  },
+  "result_foot": [],
+  "working_default": {
+    "title": "TBD",
+    "subs": [],
+    "rows": []
+  }
+}

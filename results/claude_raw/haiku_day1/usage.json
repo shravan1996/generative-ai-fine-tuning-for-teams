@@ -1,0 +1,11 @@
+{
+  "arm": "haiku_day1",
+  "n": 2800,
+  "calls": 140,
+  "input": 280,
+  "cache_write": 267176,
+  "cache_read": 2796,
+  "output": 98331,
+  "cost_usd_list": 0.1027,
+  "api_ms": 496452
+}

@@ -19,6 +19,7 @@ import time
 from pathlib import Path
 
 import mlx.core as mx
+import numpy as np
 import mlx.optimizers as optim
 from mlx.utils import tree_flatten
 from mlx_lm import load
@@ -68,6 +69,7 @@ def main():
 
     s = SETTINGS
     mx.random.seed(s["seed"])
+    np.random.seed(s["seed"])  # mlx-lm shuffles batches with numpy
     model, tokenizer = load(MODEL)
     model.freeze()
     linear_to_lora_layers(model, s["num_layers"], {k: s[k] for k in ("rank", "scale", "dropout")})
