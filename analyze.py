@@ -18,6 +18,13 @@ PREDS = RESULTS / "preds"
 
 DAY1 = ["haiku_day1", "sonnet_day1", "qwen_listed_day1", "qwen_k8_day1", "qwen_k32_day1", "qwen_all_day1"]
 DAY90 = ["haiku_day90", "sonnet_day90", "qwen_all_day1_on_day90", "qwen_retrain_day90", "qwen_listed_day90"]
+# Follow-up, pre-registered on 16 October: the day-one Claude prompts with a line on each
+# queue, or three training messages under each. The draft's verdict flips if any of them
+# comes within FLIP_POINTS of the 32-label model.
+CONTEXT_ARMS = ["haiku_day1_described", "sonnet_day1_described", "haiku_day1_examples", "sonnet_day1_examples"]
+FLIP_POINTS = 2
+PER_QUEUE_ARMS = ["haiku_day1", "haiku_day1_described", "haiku_day1_examples", "sonnet_day1",
+                  "sonnet_day1_described", "sonnet_day1_examples", "qwen_k8_day1", "qwen_k32_day1"]
 
 
 def load(arm):
@@ -75,6 +82,56 @@ def auroc(pos, neg):
     return (rank_sum - n1 * (n1 + 1) / 2) / (n1 * n0)
 
 
+def right(preds, keep=None):
+    return sum(r["pred"] == r["label"] for r in preds.values() if keep is None or keep(r))
+
+
+def queue_context(arms, ctx):
+    """The follow-up arms against the 32-label model and their own names-only prompt."""
+    ref = arms["qwen_k32_day1"]
+    n, ref_right = len(ref), right(ref)
+    need = ref_right - FLIP_POINTS * n // 100
+    out = {"reference": "qwen_k32_day1", "n": n, "reference_correct": ref_right,
+           "flip_if_correct_at_least": need, "arms": {}}
+    every = {**arms, **ctx}
+    labels = sorted({r["label"] for r in ref.values()})
+    per_queue = {q: {"messages": sum(r["label"] == q for r in ref.values()),
+                     **{a: right(every[a], lambda r, q=q: r["label"] == q)
+                        for a in PER_QUEUE_ARMS if every.get(a)}}
+                 for q in labels}
+    for a, p in ctx.items():
+        if not p:
+            continue
+        names_only = a.split("_day1")[0] + "_day1"
+        k = right(p)
+        moves = sorted(((per_queue[q][a] - per_queue[q][names_only], q) for q in labels), reverse=True)
+        out["arms"][a] = {
+            "correct": k, "accuracy": round(k / len(p), 4),
+            "points_behind_reference": round(100 * (ref_right - k) / n, 2),
+            "flips_verdict": len(p) == n and k >= need,
+            "vs_qwen_k32_day1": mcnemar(p, ref),
+            "vs_names_only": {"arm": names_only, **mcnemar(p, arms[names_only])},
+            # Right answers out of each queue's messages: [queue, names-only, this arm].
+            "biggest_gains": [[q, per_queue[q][names_only], per_queue[q][a]] for d, q in moves[:8] if d > 0],
+            "biggest_losses": [[q, per_queue[q][names_only], per_queue[q][a]]
+                               for d, q in reversed(moves[-5:]) if d < 0],
+        }
+    out["flip_condition_met"] = any(v["flips_verdict"] for v in out["arms"].values())
+    out["get_physical_card"] = {
+        a: {"correct": per_queue["get_physical_card"][a],
+            "sent_to": Counter(r["pred"] for r in every[a].values()
+                               if r["label"] == "get_physical_card").most_common(3)}
+        for a in PER_QUEUE_ARMS if every.get(a)}
+    raw = ROOT / "data" / "context" / "descriptions_raw.json"
+    if raw.exists():
+        tries = json.loads(raw.read_text())
+        out["descriptions_written"] = {
+            "model": tries[-1]["model"], "calls": len(tries),
+            "list_usd": round(sum(t["response"].get("total_cost_usd", 0.0) for t in tries), 4)}
+    out["per_queue_correct"] = per_queue
+    return out
+
+
 def main():
     m = meta()
     new = set(m["new_queues"])
@@ -90,6 +147,12 @@ def main():
     if arms["haiku_day1"]:
         out["day1_vs_haiku"] = {a: mcnemar(arms[a], arms["haiku_day1"])
                                 for a in DAY1[1:] if arms[a]}
+    ctx = {a: load(a) for a in CONTEXT_ARMS}
+    for a, p in ctx.items():
+        if p:
+            out["day1"][a] = accuracy(p)
+    if arms["qwen_k32_day1"] and any(ctx.values()):
+        out["queue_context"] = queue_context(arms, ctx)
 
     # Day ninety: seventy-seven queues, old and new messages apart.
     arms90 = {a: load(a) for a in DAY90}

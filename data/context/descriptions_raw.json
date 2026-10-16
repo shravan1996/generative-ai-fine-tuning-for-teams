@@ -1,0 +1,105 @@
+[
+ {
+  "attempt": 0,
+  "model": "claude-opus-5-5",
+  "response": {
+   "duration_api_ms": 45141,
+   "stop_reason": "end_turn",
+   "session_id": "04dfad25-b1f2-4f7c-8d26-799092cdf33d",
+   "total_cost_usd": 0.49972,
+   "usage": {
+    "input_tokens": 2,
+    "cache_creation_input_tokens": 49299,
+    "cache_read_input_tokens": 0,
+    "output_tokens": 5266,
+    "output_tokens_details": {
+     "thinking_tokens": 2718
+    },
+    "server_tool_use": {
+     "web_search_requests": 0,
+     "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+     "ephemeral_1h_input_tokens": 49299,
+     "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "global",
+    "iterations": [
+     {
+      "input_tokens": 2,
+      "output_tokens": 5266,
+      "cache_read_input_tokens": 0,
+      "cache_creation_input_tokens": 49299,
+      "cache_creation": {
+       "ephemeral_5m_input_tokens": 0,
+       "ephemeral_1h_input_tokens": 49299
+      },
+      "type": "message"
+     }
+    ],
+    "speed": "standard",
+    "fallback_credit": null
+   },
+   "modelUsage": {
+    "claude-opus-5-5": {
+     "inputTokens": 2,
+     "outputTokens": 5266,
+     "cacheReadInputTokens": 0,
+     "cacheCreationInputTokens": 49299,
+     "webSearchRequests": 0,
+     "costUSD": 0.49972,
+     "contextWindow": 1000000,
+     "maxOutputTokens": 128000,
+     "thinkingTokens": 2718,
+     "canonicalModel": "claude-opus-5-5",
+     "provider": "firstParty",
+     "costBasis": "list"
+    }
+   },
+   "permission_denials": [],
+   "terminal_reason": "completed",
+   "fast_mode_state": "off",
+   "fast_mode_disabled_reason": "sdk_opt_in_required",
+   "subagent_stats": {
+    "spawned": 0,
+    "requested": {
+     "background": 0,
+     "foreground": 0,
+     "unset": 0
+    },
+    "started_in_background": 0,
+    "max_depth": 0,
+    "spawned_by_subagents": 0,
+    "completed": 0,
+    "failed": 0,
+    "killed": {
+     "parent": 0,
+     "user": 0,
+     "system": 0
+    },
+    "refused": {
+     "depth_limit": 0,
+     "concurrency_limit": 0,
+     "budget": 0
+    },
+    "by_type": {}
+   },
+   "safety_stops": 0,
+   "is_error": false,
+   "num_turns": 1,
+   "subtype": "success",
+   "api_error_status": null,
+   "result": "{\"Refund_not_showing_up\":\"A refund the merchant promised or the customer requested has not yet appeared in the account; asking where it is.\",\"activate_my_card\":\"Customer has a new card and asks how to activate it, or activation failed.\",\"age_limit\":\"Minimum age to open an account, or opening accounts for children and teens.\",\"apple_pay_or_google_pay\":\"Setting up or topping up through Apple Pay, Google Pay or Apple Watch, including when it fails.\",\"atm_support\":\"Which ATMs accept the card or where cash can be withdrawn; not fees, declines or ATM problems.\",\"automatic_top_up\":\"Whether automatic top up exists, how to set it up, and its limits.\",\"balance_not_updated_after_bank_transfer\":\"Money the customer sent into their own account by bank transfer has not shown up in the balance yet.\",\"balance_not_updated_after_cheque_or_cash_deposit\":\"A cheque or cash deposited into the account is not yet showing in the balance.\",\"beneficiary_not_allowed\":\"Transfer blocked because the beneficiary or recipient account is not allowed, or an error says transfer not possible.\",\"cancel_transfer\":\"Customer wants to cancel, reverse or redirect a transfer or payment they made, often to the wrong account.\",\"card_about_to_expire\":\"Card is expiring or expired; how to get a replacement, its cost and delivery, including abroad.\",\"card_acceptance\":\"Which shops, businesses or websites accept the card for payments; not ATMs.\",\"card_arrival\":\"A card already ordered is late or missing, or the customer wants to track its delivery.\",\"card_delivery_estimate\":\"General questions on how long card delivery takes, US shipping, or picking a delivery date; nothing overdue yet.\",\"card_not_working\":\"Card has stopped working everywhere or is broken; a general card failure, not one declined payment.\",\"card_payment_fee_charged\":\"Unexpected fee added to a purchase paid by card, not a cash withdrawal or transfer.\",\"card_payment_not_recognised\":\"A card payment appears that the customer did not make or recognise; focused on the payment itself.\",\"card_payment_wrong_exchange_rate\":\"Wrong or poor exchange rate applied to a card purchase in a foreign currency; not cash withdrawals.\",\"card_swallowed\":\"An ATM kept or swallowed the card and the customer wants it back or replaced.\",\"cash_withdrawal_charge\":\"Fee charged on an ATM cash withdrawal, or what withdrawals cost.\",\"cash_withdrawal_not_recognised\":\"A cash withdrawal appears that the customer did not make, often after losing their wallet.\",\"change_pin\":\"How or where to change the card PIN, including at ATMs or abroad; PIN is not blocked.\",\"compromised_card\":\"Customer believes someone else has their card or details and wants it frozen or secured.\",\"declined_card_payment\":\"A card payment in a shop or online was declined.\",\"declined_cash_withdrawal\":\"An ATM refused or declined a cash withdrawal and gave no cash.\",\"declined_transfer\":\"A transfer or online checkout returned a declined message even though details are correct.\",\"direct_debit_payment_not_recognised\":\"Unknown or unauthorised direct debit or debit payment on the account; customer wants to dispute it.\",\"edit_personal_details\":\"Changing address, name, contact or other personal details.\",\"exchange_rate\":\"General questions about which exchange rates are used and how they are set; no specific transaction complaint.\",\"exchange_via_app\":\"How to exchange or convert money between currencies in the app.\",\"extra_charge_on_statement\":\"An unexplained small extra charge, usually one pound, euro or dollar, on the statement.\",\"failed_transfer\":\"An outgoing transfer failed or errored and did not go through, without a declined or beneficiary message.\",\"get_disposable_virtual_card\":\"How to get a disposable virtual card or what such cards are for.\",\"get_physical_card\":\"Where to find the PIN for a new card, or when and how it arrives.\",\"getting_spare_card\":\"Ordering an additional or second card on the same account, and any fees for extra cards.\",\"lost_or_stolen_card\":\"Card is lost or stolen; how to block, report and replace it.\",\"lost_or_stolen_phone\":\"Phone is lost or stolen so the app is inaccessible or the account may be at risk.\",\"order_physical_card\":\"How to order a first physical card, where it ships, and what it costs.\",\"passcode_forgotten\":\"Forgot or needs to reset the app passcode or password; not the card PIN.\",\"pending_card_payment\":\"A card purchase is still showing as pending.\",\"pending_cash_withdrawal\":\"An ATM withdrawal still shows as pending, including when the machine gave no cash.\",\"pending_top_up\":\"A top up is still pending or has not gone through yet.\",\"pending_transfer\":\"An outgoing transfer is still showing as pending or processing.\",\"pin_blocked\":\"PIN is blocked after too many wrong attempts; how to unblock it.\",\"receiving_money\":\"How to receive money from others or a salary, including in other currencies.\",\"request_refund\":\"Customer wants a refund or to cancel a purchase with a merchant; refund not yet requested or issued.\",\"reverted_card_payment?\":\"A completed card payment was reverted or cancelled and the money returned to the account.\",\"supported_cards_and_currencies\":\"Which cards, such as US credit or American Express, and currencies can be used to add money.\",\"terminate_account\":\"Customer wants to close or delete their account.\",\"top_up_by_bank_transfer_charge\":\"Fees for topping up or receiving money by bank transfer, including SEPA or SWIFT.\",\"top_up_by_card_charge\":\"Fees for topping up with a card, such as US, European or international cards.\",\"top_up_by_cash_or_cheque\":\"Whether and how to top up the account with cash or a cheque.\",\"top_up_failed\":\"A top up attempt failed, was declined or did not work.\",\"top_up_limits\":\"Maximum amount or number of top ups allowed.\",\"top_up_reverted\":\"A top up went through, then was reverted or cancelled and the money disappeared.\",\"topping_up_by_card\":\"How to top up using a card or letting friends top up, or a card top up missing from the wallet.\",\"transaction_charged_twice\":\"The same transaction was charged twice or appears duplicated.\",\"transfer_fee_charged\":\"A fee was charged on an outgoing transfer, or the recipient got less than was sent.\",\"transfer_into_account\":\"How to add money to this account by bank transfer from another account.\",\"transfer_not_received_by_recipient\":\"Outgoing transfer shows completed but the recipient says they have not received it.\",\"transfer_timing\":\"General questions on how long transfers take to arrive, by country or method; no specific missing transfer.\",\"unable_to_verify_identity\":\"Identity verification is failing or the app will not accept the customer's identity.\",\"verify_my_identity\":\"How to complete identity verification and which documents are needed.\",\"verify_source_of_funds\":\"Verifying or checking where the money in the account came from.\",\"verify_top_up\":\"Top up card verification: where to find the verification code and why it is needed.\",\"virtual_card_not_working\":\"A virtual or disposable virtual card is rejected or not working.\",\"visa_or_mastercard\":\"Whether the customer can choose or get a Visa or a Mastercard.\",\"why_verify_identity\":\"Why identity verification is required, and whether the account can be used before it is done.\",\"wrong_amount_of_cash_received\":\"ATM gave less cash than requested or than was deducted from the account.\",\"wrong_exchange_rate_for_cash_withdrawal\":\"Wrong exchange rate or high charges on cash withdrawn abroad or in a foreign currency.\"}",
+   "ttft_ms": 25699,
+   "type": "result",
+   "duration_ms": 48221,
+   "uuid": "ff2251b3-1859-4b1d-aba3-b507ba70fd37",
+   "ttft_stream_ms": 1222,
+   "time_to_request_ms": 33,
+   "first_content_frame_ms": 1222,
+   "queued_turn_count": 0,
+   "result_index": 0
+  }
+ }
+]

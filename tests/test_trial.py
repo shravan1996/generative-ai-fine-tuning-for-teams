@@ -3,6 +3,7 @@
     python3 -m unittest discover -s tests -t .
 """
 
+import hashlib
 import json
 import subprocess
 import sys
@@ -15,9 +16,11 @@ sys.path.insert(0, str(ROOT))
 
 import analyze  # noqa: E402
 from route import normalise, queues, read_jsonl  # noqa: E402
-from score_claude import batches, parse  # noqa: E402
+import write_context  # noqa: E402
+from score_claude import batches, build_prompt, parse  # noqa: E402
 
 SPLITS = ROOT / "data" / "splits"
+CONTEXT = ROOT / "data" / "context"
 
 
 class Splits(unittest.TestCase):
@@ -77,6 +80,52 @@ class Matching(unittest.TestCase):
         self.assertEqual(len(plan), 140)
 
 
+class QueueContext(unittest.TestCase):
+    """The follow-up arms change the queue list and nothing else."""
+
+    def test_names_prompt_is_what_the_first_arms_saw(self):
+        rows = read_jsonl(SPLITS / "test_old.jsonl")
+        texts = [rows[j]["text"] for j in batches(rows, 20)[0]]
+        prompt = build_prompt("names", queues(1), texts)
+        self.assertEqual(hashlib.sha256(prompt.encode()).hexdigest(),
+                         "cccae23bda04b1ed2fb5fe31863563c1e416bf8671c0d683ca402293e3307d53")
+
+    def test_examples_follow_the_seed_from_eight_label_data(self):
+        path = CONTEXT / "examples.json"
+        if not path.exists():
+            self.skipTest("no examples written yet")
+        saved = json.loads(path.read_text())["examples"]
+        self.assertEqual(saved, write_context.draw_examples(queues(1)))
+        k8 = {(r["label"], r["text"]) for r in read_jsonl(SPLITS / "train_old_k8.jsonl")}
+        for q, texts in saved.items():
+            self.assertEqual(len(texts), 3, q)
+            self.assertTrue(all((q, t) in k8 for t in texts), q)
+
+    def test_descriptions_cover_every_queue_in_one_short_line(self):
+        path = CONTEXT / "descriptions.json"
+        if not path.exists():
+            self.skipTest("no descriptions written yet")
+        lines = json.loads(path.read_text())["descriptions"]
+        self.assertEqual(list(lines), queues(1))
+        test_texts = {r["text"].strip().lower() for r in read_jsonl(SPLITS / "test_old.jsonl")}
+        for q, line in lines.items():
+            self.assertLessEqual(len(line.split()), write_context.MAX_WORDS, q)
+            self.assertEqual("\n" in line, False, q)
+            self.assertFalse(any(b in line for b in write_context.BANNED), q)
+            # No test message is quoted, word for word, in a description.
+            self.assertFalse([t for t in test_texts if len(t) >= 25 and t in line.lower()], q)
+        prompt = build_prompt("descriptions", queues(1), ["hello"])
+        self.assertTrue(all(f"{q}: {line}" in prompt for q, line in lines.items()))
+
+    def test_description_reply_checks(self):
+        allowed = ["a", "b"]
+        good = '{"a": "one line", "b": "another line"}'
+        self.assertEqual(write_context.usable("Sure.\n" + good, allowed), {"a": "one line", "b": "another line"})
+        self.assertIsNone(write_context.usable('{"a": "one line"}', allowed))
+        self.assertIsNone(write_context.usable('{"a": "x", "b": "' + "word " * 26 + '"}', allowed))
+        self.assertIsNone(write_context.usable('{"a": "x", "b": "y ' + write_context.BANNED[0] + ' z"}', allowed))
+
+
 class Statistics(unittest.TestCase):
     def test_auroc(self):
         self.assertEqual(analyze.auroc([3, 4], [1, 2]), 1.0)
@@ -106,6 +155,18 @@ class RecordedResults(unittest.TestCase):
             rows = read_jsonl(ROOT / "results" / "preds" / f"{arm}.jsonl")
             right = sum(r["pred"] == r["label"] for r in rows)
             self.assertEqual((stats["n"], stats["correct"]), (len(rows), right), arm)
+
+    def test_flip_rule_follows_the_counts(self):
+        summary = json.loads((ROOT / "results" / "summary.json").read_text())
+        ctx = summary.get("queue_context")
+        if not ctx:
+            self.skipTest("no follow-up arms scored yet")
+        self.assertEqual(ctx["reference_correct"], summary["day1"]["qwen_k32_day1"]["correct"])
+        self.assertEqual(ctx["flip_if_correct_at_least"], ctx["reference_correct"] - 2 * ctx["n"] // 100)
+        for arm, stats in ctx["arms"].items():
+            self.assertEqual(stats["correct"], summary["day1"][arm]["correct"], arm)
+            self.assertEqual(stats["flips_verdict"], stats["correct"] >= ctx["flip_if_correct_at_least"], arm)
+        self.assertEqual(ctx["flip_condition_met"], any(s["flips_verdict"] for s in ctx["arms"].values()))
 
     def test_analysis_reruns_offline(self):
         if not (ROOT / "results" / "summary.json").exists():
