@@ -68,6 +68,46 @@
         0.9402
       ],
       "no_valid_queue": 4
+    },
+    "haiku_day1_described": {
+      "n": 2800,
+      "correct": 2321,
+      "accuracy": 0.8289,
+      "ci95": [
+        0.8145,
+        0.8424
+      ],
+      "no_valid_queue": 6
+    },
+    "sonnet_day1_described": {
+      "n": 2800,
+      "correct": 2472,
+      "accuracy": 0.8829,
+      "ci95": [
+        0.8704,
+        0.8942
+      ],
+      "no_valid_queue": 0
+    },
+    "haiku_day1_examples": {
+      "n": 2800,
+      "correct": 2083,
+      "accuracy": 0.7439,
+      "ci95": [
+        0.7274,
+        0.7598
+      ],
+      "no_valid_queue": 36
+    },
+    "sonnet_day1_examples": {
+      "n": 2800,
+      "correct": 2451,
+      "accuracy": 0.8754,
+      "ci95": [
+        0.8626,
+        0.8871
+      ],
+      "no_valid_queue": 0
     }
   },
   "day90": {
@@ -212,6 +252,1270 @@
       "only_first_right": 536,
       "only_second_right": 55,
       "p": 0.0
+    }
+  },
+  "queue_context": {
+    "reference": "qwen_k32_day1",
+    "n": 2800,
+    "reference_correct": 2434,
+    "flip_if_correct_at_least": 2378,
+    "arms": {
+      "haiku_day1_described": {
+        "correct": 2321,
+        "accuracy": 0.8289,
+        "points_behind_reference": 4.04,
+        "flips_verdict": false,
+        "vs_qwen_k32_day1": {
+          "n": 2800,
+          "only_first_right": 161,
+          "only_second_right": 274,
+          "p": 0.0
+        },
+        "vs_names_only": {
+          "arm": "haiku_day1",
+          "n": 2800,
+          "only_first_right": 366,
+          "only_second_right": 172,
+          "p": 0.0
+        },
+        "biggest_gains": [
+          [
+            "get_physical_card",
+            0,
+            25
+          ],
+          [
+            "order_physical_card",
+            8,
+            25
+          ],
+          [
+            "transfer_into_account",
+            21,
+            33
+          ],
+          [
+            "top_up_by_bank_transfer_charge",
+            10,
+            22
+          ],
+          [
+            "getting_spare_card",
+            26,
+            37
+          ],
+          [
+            "card_acceptance",
+            28,
+            38
+          ],
+          [
+            "cancel_transfer",
+            30,
+            40
+          ],
+          [
+            "beneficiary_not_allowed",
+            15,
+            25
+          ]
+        ],
+        "biggest_losses": [
+          [
+            "exchange_rate",
+            39,
+            35
+          ],
+          [
+            "visa_or_mastercard",
+            36,
+            32
+          ],
+          [
+            "declined_transfer",
+            26,
+            23
+          ],
+          [
+            "get_disposable_virtual_card",
+            39,
+            36
+          ],
+          [
+            "lost_or_stolen_card",
+            38,
+            35
+          ]
+        ]
+      },
+      "sonnet_day1_described": {
+        "correct": 2472,
+        "accuracy": 0.8829,
+        "points_behind_reference": -1.36,
+        "flips_verdict": true,
+        "vs_qwen_k32_day1": {
+          "n": 2800,
+          "only_first_right": 178,
+          "only_second_right": 140,
+          "p": 0.037833
+        },
+        "vs_names_only": {
+          "arm": "sonnet_day1",
+          "n": 2800,
+          "only_first_right": 240,
+          "only_second_right": 51,
+          "p": 0.0
+        },
+        "biggest_gains": [
+          [
+            "get_physical_card",
+            0,
+            34
+          ],
+          [
+            "top_up_by_bank_transfer_charge",
+            10,
+            30
+          ],
+          [
+            "topping_up_by_card",
+            10,
+            24
+          ],
+          [
+            "receiving_money",
+            22,
+            34
+          ],
+          [
+            "transfer_into_account",
+            25,
+            34
+          ],
+          [
+            "order_physical_card",
+            20,
+            29
+          ],
+          [
+            "verify_my_identity",
+            30,
+            38
+          ],
+          [
+            "top_up_reverted",
+            26,
+            34
+          ]
+        ],
+        "biggest_losses": [
+          [
+            "failed_transfer",
+            37,
+            33
+          ],
+          [
+            "card_payment_not_recognised",
+            34,
+            32
+          ],
+          [
+            "declined_transfer",
+            27,
+            25
+          ],
+          [
+            "top_up_by_card_charge",
+            37,
+            35
+          ],
+          [
+            "card_arrival",
+            36,
+            35
+          ]
+        ]
+      },
+      "haiku_day1_examples": {
+        "correct": 2083,
+        "accuracy": 0.7439,
+        "points_behind_reference": 12.54,
+        "flips_verdict": false,
+        "vs_qwen_k32_day1": {
+          "n": 2800,
+          "only_first_right": 149,
+          "only_second_right": 500,
+          "p": 0.0
+        },
+        "vs_names_only": {
+          "arm": "haiku_day1",
+          "n": 2800,
+          "only_first_right": 300,
+          "only_second_right": 344,
+          "p": 0.090104
+        },
+        "biggest_gains": [
+          [
+            "get_physical_card",
+            0,
+            30
+          ],
+          [
+            "order_physical_card",
+            8,
+            18
+          ],
+          [
+            "getting_spare_card",
+            26,
+            36
+          ],
+          [
+            "compromised_card",
+            24,
+            34
+          ],
+          [
+            "exchange_via_app",
+            29,
+            35
+          ],
+          [
+            "balance_not_updated_after_bank_transfer",
+            20,
+            26
+          ],
+          [
+            "topping_up_by_card",
+            17,
+            22
+          ],
+          [
+            "card_delivery_estimate",
+            21,
+            26
+          ]
+        ],
+        "biggest_losses": [
+          [
+            "why_verify_identity",
+            30,
+            20
+          ],
+          [
+            "card_payment_not_recognised",
+            33,
+            24
+          ],
+          [
+            "get_disposable_virtual_card",
+            39,
+            30
+          ],
+          [
+            "visa_or_mastercard",
+            36,
+            27
+          ],
+          [
+            "declined_cash_withdrawal",
+            31,
+            23
+          ]
+        ]
+      },
+      "sonnet_day1_examples": {
+        "correct": 2451,
+        "accuracy": 0.8754,
+        "points_behind_reference": -0.61,
+        "flips_verdict": true,
+        "vs_qwen_k32_day1": {
+          "n": 2800,
+          "only_first_right": 180,
+          "only_second_right": 163,
+          "p": 0.387662
+        },
+        "vs_names_only": {
+          "arm": "sonnet_day1",
+          "n": 2800,
+          "only_first_right": 247,
+          "only_second_right": 79,
+          "p": 0.0
+        },
+        "biggest_gains": [
+          [
+            "get_physical_card",
+            0,
+            39
+          ],
+          [
+            "transfer_into_account",
+            25,
+            36
+          ],
+          [
+            "topping_up_by_card",
+            10,
+            21
+          ],
+          [
+            "order_physical_card",
+            20,
+            31
+          ],
+          [
+            "wrong_exchange_rate_for_cash_withdrawal",
+            26,
+            36
+          ],
+          [
+            "receiving_money",
+            22,
+            31
+          ],
+          [
+            "top_up_reverted",
+            26,
+            34
+          ],
+          [
+            "balance_not_updated_after_bank_transfer",
+            21,
+            28
+          ]
+        ],
+        "biggest_losses": [
+          [
+            "card_payment_not_recognised",
+            34,
+            29
+          ],
+          [
+            "failed_transfer",
+            37,
+            33
+          ],
+          [
+            "card_delivery_estimate",
+            28,
+            26
+          ],
+          [
+            "direct_debit_payment_not_recognised",
+            22,
+            20
+          ],
+          [
+            "Refund_not_showing_up",
+            37,
+            36
+          ]
+        ]
+      }
+    },
+    "flip_condition_met": true,
+    "get_physical_card": {
+      "haiku_day1": {
+        "correct": 0,
+        "sent_to": [
+          [
+            "change_pin",
+            34
+          ],
+          [
+            "card_arrival",
+            4
+          ],
+          [
+            "passcode_forgotten",
+            1
+          ]
+        ]
+      },
+      "haiku_day1_described": {
+        "correct": 25,
+        "sent_to": [
+          [
+            "get_physical_card",
+            25
+          ],
+          [
+            "change_pin",
+            11
+          ],
+          [
+            "pin_blocked",
+            1
+          ]
+        ]
+      },
+      "haiku_day1_examples": {
+        "correct": 30,
+        "sent_to": [
+          [
+            "get_physical_card",
+            30
+          ],
+          [
+            "change_pin",
+            5
+          ],
+          [
+            "pin_blocked",
+            3
+          ]
+        ]
+      },
+      "sonnet_day1": {
+        "correct": 0,
+        "sent_to": [
+          [
+            "change_pin",
+            32
+          ],
+          [
+            "card_arrival",
+            3
+          ],
+          [
+            "passcode_forgotten",
+            2
+          ]
+        ]
+      },
+      "sonnet_day1_described": {
+        "correct": 34,
+        "sent_to": [
+          [
+            "get_physical_card",
+            34
+          ],
+          [
+            "change_pin",
+            6
+          ]
+        ]
+      },
+      "sonnet_day1_examples": {
+        "correct": 39,
+        "sent_to": [
+          [
+            "get_physical_card",
+            39
+          ],
+          [
+            "unable_to_verify_identity",
+            1
+          ]
+        ]
+      },
+      "qwen_k8_day1": {
+        "correct": 33,
+        "sent_to": [
+          [
+            "get_physical_card",
+            33
+          ],
+          [
+            "card_delivery_estimate",
+            2
+          ],
+          [
+            "pin_blocked",
+            2
+          ]
+        ]
+      },
+      "qwen_k32_day1": {
+        "correct": 38,
+        "sent_to": [
+          [
+            "get_physical_card",
+            38
+          ],
+          [
+            "change_pin",
+            2
+          ]
+        ]
+      }
+    },
+    "descriptions_written": {
+      "model": "claude-opus-5-5",
+      "calls": 1,
+      "list_usd": 0.4997
+    },
+    "per_queue_correct": {
+      "Refund_not_showing_up": {
+        "messages": 40,
+        "haiku_day1": 34,
+        "haiku_day1_described": 36,
+        "haiku_day1_examples": 30,
+        "sonnet_day1": 37,
+        "sonnet_day1_described": 39,
+        "sonnet_day1_examples": 36,
+        "qwen_k8_day1": 35,
+        "qwen_k32_day1": 36
+      },
+      "activate_my_card": {
+        "messages": 40,
+        "haiku_day1": 36,
+        "haiku_day1_described": 37,
+        "haiku_day1_examples": 36,
+        "sonnet_day1": 38,
+        "sonnet_day1_described": 38,
+        "sonnet_day1_examples": 38,
+        "qwen_k8_day1": 39,
+        "qwen_k32_day1": 38
+      },
+      "age_limit": {
+        "messages": 40,
+        "haiku_day1": 38,
+        "haiku_day1_described": 37,
+        "haiku_day1_examples": 36,
+        "sonnet_day1": 39,
+        "sonnet_day1_described": 40,
+        "sonnet_day1_examples": 38,
+        "qwen_k8_day1": 40,
+        "qwen_k32_day1": 40
+      },
+      "apple_pay_or_google_pay": {
+        "messages": 40,
+        "haiku_day1": 37,
+        "haiku_day1_described": 38,
+        "haiku_day1_examples": 36,
+        "sonnet_day1": 38,
+        "sonnet_day1_described": 39,
+        "sonnet_day1_examples": 39,
+        "qwen_k8_day1": 39,
+        "qwen_k32_day1": 40
+      },
+      "atm_support": {
+        "messages": 40,
+        "haiku_day1": 37,
+        "haiku_day1_described": 38,
+        "haiku_day1_examples": 34,
+        "sonnet_day1": 40,
+        "sonnet_day1_described": 40,
+        "sonnet_day1_examples": 40,
+        "qwen_k8_day1": 37,
+        "qwen_k32_day1": 39
+      },
+      "automatic_top_up": {
+        "messages": 40,
+        "haiku_day1": 31,
+        "haiku_day1_described": 37,
+        "haiku_day1_examples": 30,
+        "sonnet_day1": 35,
+        "sonnet_day1_described": 38,
+        "sonnet_day1_examples": 39,
+        "qwen_k8_day1": 35,
+        "qwen_k32_day1": 35
+      },
+      "balance_not_updated_after_bank_transfer": {
+        "messages": 40,
+        "haiku_day1": 20,
+        "haiku_day1_described": 27,
+        "haiku_day1_examples": 26,
+        "sonnet_day1": 21,
+        "sonnet_day1_described": 24,
+        "sonnet_day1_examples": 28,
+        "qwen_k8_day1": 23,
+        "qwen_k32_day1": 32
+      },
+      "balance_not_updated_after_cheque_or_cash_deposit": {
+        "messages": 40,
+        "haiku_day1": 37,
+        "haiku_day1_described": 36,
+        "haiku_day1_examples": 35,
+        "sonnet_day1": 35,
+        "sonnet_day1_described": 36,
+        "sonnet_day1_examples": 37,
+        "qwen_k8_day1": 30,
+        "qwen_k32_day1": 33
+      },
+      "beneficiary_not_allowed": {
+        "messages": 40,
+        "haiku_day1": 15,
+        "haiku_day1_described": 25,
+        "haiku_day1_examples": 17,
+        "sonnet_day1": 14,
+        "sonnet_day1_described": 22,
+        "sonnet_day1_examples": 18,
+        "qwen_k8_day1": 20,
+        "qwen_k32_day1": 29
+      },
+      "cancel_transfer": {
+        "messages": 40,
+        "haiku_day1": 30,
+        "haiku_day1_described": 40,
+        "haiku_day1_examples": 35,
+        "sonnet_day1": 35,
+        "sonnet_day1_described": 38,
+        "sonnet_day1_examples": 38,
+        "qwen_k8_day1": 34,
+        "qwen_k32_day1": 38
+      },
+      "card_about_to_expire": {
+        "messages": 40,
+        "haiku_day1": 31,
+        "haiku_day1_described": 32,
+        "haiku_day1_examples": 32,
+        "sonnet_day1": 33,
+        "sonnet_day1_described": 37,
+        "sonnet_day1_examples": 34,
+        "qwen_k8_day1": 38,
+        "qwen_k32_day1": 39
+      },
+      "card_acceptance": {
+        "messages": 40,
+        "haiku_day1": 28,
+        "haiku_day1_described": 38,
+        "haiku_day1_examples": 29,
+        "sonnet_day1": 36,
+        "sonnet_day1_described": 38,
+        "sonnet_day1_examples": 37,
+        "qwen_k8_day1": 37,
+        "qwen_k32_day1": 37
+      },
+      "card_arrival": {
+        "messages": 40,
+        "haiku_day1": 30,
+        "haiku_day1_described": 37,
+        "haiku_day1_examples": 31,
+        "sonnet_day1": 36,
+        "sonnet_day1_described": 35,
+        "sonnet_day1_examples": 37,
+        "qwen_k8_day1": 30,
+        "qwen_k32_day1": 35
+      },
+      "card_delivery_estimate": {
+        "messages": 40,
+        "haiku_day1": 21,
+        "haiku_day1_described": 23,
+        "haiku_day1_examples": 26,
+        "sonnet_day1": 28,
+        "sonnet_day1_described": 28,
+        "sonnet_day1_examples": 26,
+        "qwen_k8_day1": 31,
+        "qwen_k32_day1": 36
+      },
+      "card_not_working": {
+        "messages": 40,
+        "haiku_day1": 37,
+        "haiku_day1_described": 35,
+        "haiku_day1_examples": 35,
+        "sonnet_day1": 36,
+        "sonnet_day1_described": 36,
+        "sonnet_day1_examples": 36,
+        "qwen_k8_day1": 37,
+        "qwen_k32_day1": 36
+      },
+      "card_payment_fee_charged": {
+        "messages": 40,
+        "haiku_day1": 31,
+        "haiku_day1_described": 35,
+        "haiku_day1_examples": 32,
+        "sonnet_day1": 31,
+        "sonnet_day1_described": 36,
+        "sonnet_day1_examples": 34,
+        "qwen_k8_day1": 28,
+        "qwen_k32_day1": 35
+      },
+      "card_payment_not_recognised": {
+        "messages": 40,
+        "haiku_day1": 33,
+        "haiku_day1_described": 31,
+        "haiku_day1_examples": 24,
+        "sonnet_day1": 34,
+        "sonnet_day1_described": 32,
+        "sonnet_day1_examples": 29,
+        "qwen_k8_day1": 27,
+        "qwen_k32_day1": 31
+      },
+      "card_payment_wrong_exchange_rate": {
+        "messages": 40,
+        "haiku_day1": 35,
+        "haiku_day1_described": 34,
+        "haiku_day1_examples": 30,
+        "sonnet_day1": 33,
+        "sonnet_day1_described": 34,
+        "sonnet_day1_examples": 38,
+        "qwen_k8_day1": 38,
+        "qwen_k32_day1": 38
+      },
+      "card_swallowed": {
+        "messages": 40,
+        "haiku_day1": 34,
+        "haiku_day1_described": 35,
+        "haiku_day1_examples": 33,
+        "sonnet_day1": 39,
+        "sonnet_day1_described": 38,
+        "sonnet_day1_examples": 39,
+        "qwen_k8_day1": 38,
+        "qwen_k32_day1": 36
+      },
+      "cash_withdrawal_charge": {
+        "messages": 40,
+        "haiku_day1": 36,
+        "haiku_day1_described": 38,
+        "haiku_day1_examples": 34,
+        "sonnet_day1": 37,
+        "sonnet_day1_described": 38,
+        "sonnet_day1_examples": 38,
+        "qwen_k8_day1": 35,
+        "qwen_k32_day1": 37
+      },
+      "cash_withdrawal_not_recognised": {
+        "messages": 40,
+        "haiku_day1": 27,
+        "haiku_day1_described": 32,
+        "haiku_day1_examples": 25,
+        "sonnet_day1": 29,
+        "sonnet_day1_described": 32,
+        "sonnet_day1_examples": 30,
+        "qwen_k8_day1": 32,
+        "qwen_k32_day1": 28
+      },
+      "change_pin": {
+        "messages": 40,
+        "haiku_day1": 37,
+        "haiku_day1_described": 39,
+        "haiku_day1_examples": 35,
+        "sonnet_day1": 37,
+        "sonnet_day1_described": 38,
+        "sonnet_day1_examples": 38,
+        "qwen_k8_day1": 39,
+        "qwen_k32_day1": 40
+      },
+      "compromised_card": {
+        "messages": 40,
+        "haiku_day1": 24,
+        "haiku_day1_described": 26,
+        "haiku_day1_examples": 34,
+        "sonnet_day1": 38,
+        "sonnet_day1_described": 37,
+        "sonnet_day1_examples": 39,
+        "qwen_k8_day1": 31,
+        "qwen_k32_day1": 36
+      },
+      "declined_card_payment": {
+        "messages": 40,
+        "haiku_day1": 30,
+        "haiku_day1_described": 32,
+        "haiku_day1_examples": 30,
+        "sonnet_day1": 36,
+        "sonnet_day1_described": 38,
+        "sonnet_day1_examples": 36,
+        "qwen_k8_day1": 30,
+        "qwen_k32_day1": 35
+      },
+      "declined_cash_withdrawal": {
+        "messages": 40,
+        "haiku_day1": 31,
+        "haiku_day1_described": 30,
+        "haiku_day1_examples": 23,
+        "sonnet_day1": 38,
+        "sonnet_day1_described": 39,
+        "sonnet_day1_examples": 39,
+        "qwen_k8_day1": 32,
+        "qwen_k32_day1": 35
+      },
+      "declined_transfer": {
+        "messages": 40,
+        "haiku_day1": 26,
+        "haiku_day1_described": 23,
+        "haiku_day1_examples": 24,
+        "sonnet_day1": 27,
+        "sonnet_day1_described": 25,
+        "sonnet_day1_examples": 26,
+        "qwen_k8_day1": 31,
+        "qwen_k32_day1": 29
+      },
+      "direct_debit_payment_not_recognised": {
+        "messages": 40,
+        "haiku_day1": 18,
+        "haiku_day1_described": 27,
+        "haiku_day1_examples": 21,
+        "sonnet_day1": 22,
+        "sonnet_day1_described": 23,
+        "sonnet_day1_examples": 20,
+        "qwen_k8_day1": 22,
+        "qwen_k32_day1": 26
+      },
+      "edit_personal_details": {
+        "messages": 40,
+        "haiku_day1": 38,
+        "haiku_day1_described": 36,
+        "haiku_day1_examples": 37,
+        "sonnet_day1": 40,
+        "sonnet_day1_described": 39,
+        "sonnet_day1_examples": 40,
+        "qwen_k8_day1": 38,
+        "qwen_k32_day1": 40
+      },
+      "exchange_rate": {
+        "messages": 40,
+        "haiku_day1": 39,
+        "haiku_day1_described": 35,
+        "haiku_day1_examples": 37,
+        "sonnet_day1": 40,
+        "sonnet_day1_described": 40,
+        "sonnet_day1_examples": 39,
+        "qwen_k8_day1": 38,
+        "qwen_k32_day1": 38
+      },
+      "exchange_via_app": {
+        "messages": 40,
+        "haiku_day1": 29,
+        "haiku_day1_described": 37,
+        "haiku_day1_examples": 35,
+        "sonnet_day1": 35,
+        "sonnet_day1_described": 37,
+        "sonnet_day1_examples": 38,
+        "qwen_k8_day1": 34,
+        "qwen_k32_day1": 39
+      },
+      "extra_charge_on_statement": {
+        "messages": 40,
+        "haiku_day1": 31,
+        "haiku_day1_described": 37,
+        "haiku_day1_examples": 30,
+        "sonnet_day1": 34,
+        "sonnet_day1_described": 40,
+        "sonnet_day1_examples": 37,
+        "qwen_k8_day1": 34,
+        "qwen_k32_day1": 33
+      },
+      "failed_transfer": {
+        "messages": 40,
+        "haiku_day1": 30,
+        "haiku_day1_described": 31,
+        "haiku_day1_examples": 23,
+        "sonnet_day1": 37,
+        "sonnet_day1_described": 33,
+        "sonnet_day1_examples": 33,
+        "qwen_k8_day1": 29,
+        "qwen_k32_day1": 35
+      },
+      "get_disposable_virtual_card": {
+        "messages": 40,
+        "haiku_day1": 39,
+        "haiku_day1_described": 36,
+        "haiku_day1_examples": 30,
+        "sonnet_day1": 40,
+        "sonnet_day1_described": 39,
+        "sonnet_day1_examples": 39,
+        "qwen_k8_day1": 35,
+        "qwen_k32_day1": 37
+      },
+      "get_physical_card": {
+        "messages": 40,
+        "haiku_day1": 0,
+        "haiku_day1_described": 25,
+        "haiku_day1_examples": 30,
+        "sonnet_day1": 0,
+        "sonnet_day1_described": 34,
+        "sonnet_day1_examples": 39,
+        "qwen_k8_day1": 33,
+        "qwen_k32_day1": 38
+      },
+      "getting_spare_card": {
+        "messages": 40,
+        "haiku_day1": 26,
+        "haiku_day1_described": 37,
+        "haiku_day1_examples": 36,
+        "sonnet_day1": 35,
+        "sonnet_day1_described": 38,
+        "sonnet_day1_examples": 39,
+        "qwen_k8_day1": 34,
+        "qwen_k32_day1": 29
+      },
+      "lost_or_stolen_card": {
+        "messages": 40,
+        "haiku_day1": 38,
+        "haiku_day1_described": 35,
+        "haiku_day1_examples": 34,
+        "sonnet_day1": 37,
+        "sonnet_day1_described": 39,
+        "sonnet_day1_examples": 38,
+        "qwen_k8_day1": 35,
+        "qwen_k32_day1": 37
+      },
+      "lost_or_stolen_phone": {
+        "messages": 40,
+        "haiku_day1": 35,
+        "haiku_day1_described": 34,
+        "haiku_day1_examples": 29,
+        "sonnet_day1": 38,
+        "sonnet_day1_described": 38,
+        "sonnet_day1_examples": 38,
+        "qwen_k8_day1": 37,
+        "qwen_k32_day1": 37
+      },
+      "order_physical_card": {
+        "messages": 40,
+        "haiku_day1": 8,
+        "haiku_day1_described": 25,
+        "haiku_day1_examples": 18,
+        "sonnet_day1": 20,
+        "sonnet_day1_described": 29,
+        "sonnet_day1_examples": 31,
+        "qwen_k8_day1": 19,
+        "qwen_k32_day1": 32
+      },
+      "passcode_forgotten": {
+        "messages": 40,
+        "haiku_day1": 37,
+        "haiku_day1_described": 37,
+        "haiku_day1_examples": 37,
+        "sonnet_day1": 40,
+        "sonnet_day1_described": 39,
+        "sonnet_day1_examples": 39,
+        "qwen_k8_day1": 39,
+        "qwen_k32_day1": 40
+      },
+      "pending_card_payment": {
+        "messages": 40,
+        "haiku_day1": 37,
+        "haiku_day1_described": 37,
+        "haiku_day1_examples": 29,
+        "sonnet_day1": 34,
+        "sonnet_day1_described": 35,
+        "sonnet_day1_examples": 38,
+        "qwen_k8_day1": 33,
+        "qwen_k32_day1": 34
+      },
+      "pending_cash_withdrawal": {
+        "messages": 40,
+        "haiku_day1": 35,
+        "haiku_day1_described": 34,
+        "haiku_day1_examples": 28,
+        "sonnet_day1": 37,
+        "sonnet_day1_described": 38,
+        "sonnet_day1_examples": 36,
+        "qwen_k8_day1": 32,
+        "qwen_k32_day1": 38
+      },
+      "pending_top_up": {
+        "messages": 40,
+        "haiku_day1": 33,
+        "haiku_day1_described": 30,
+        "haiku_day1_examples": 27,
+        "sonnet_day1": 30,
+        "sonnet_day1_described": 33,
+        "sonnet_day1_examples": 33,
+        "qwen_k8_day1": 31,
+        "qwen_k32_day1": 34
+      },
+      "pending_transfer": {
+        "messages": 40,
+        "haiku_day1": 28,
+        "haiku_day1_described": 27,
+        "haiku_day1_examples": 27,
+        "sonnet_day1": 27,
+        "sonnet_day1_described": 29,
+        "sonnet_day1_examples": 26,
+        "qwen_k8_day1": 27,
+        "qwen_k32_day1": 27
+      },
+      "pin_blocked": {
+        "messages": 40,
+        "haiku_day1": 29,
+        "haiku_day1_described": 34,
+        "haiku_day1_examples": 29,
+        "sonnet_day1": 34,
+        "sonnet_day1_described": 33,
+        "sonnet_day1_examples": 34,
+        "qwen_k8_day1": 31,
+        "qwen_k32_day1": 38
+      },
+      "receiving_money": {
+        "messages": 40,
+        "haiku_day1": 29,
+        "haiku_day1_described": 33,
+        "haiku_day1_examples": 28,
+        "sonnet_day1": 22,
+        "sonnet_day1_described": 34,
+        "sonnet_day1_examples": 31,
+        "qwen_k8_day1": 28,
+        "qwen_k32_day1": 39
+      },
+      "request_refund": {
+        "messages": 40,
+        "haiku_day1": 37,
+        "haiku_day1_described": 37,
+        "haiku_day1_examples": 31,
+        "sonnet_day1": 39,
+        "sonnet_day1_described": 38,
+        "sonnet_day1_examples": 38,
+        "qwen_k8_day1": 33,
+        "qwen_k32_day1": 36
+      },
+      "reverted_card_payment?": {
+        "messages": 40,
+        "haiku_day1": 19,
+        "haiku_day1_described": 27,
+        "haiku_day1_examples": 17,
+        "sonnet_day1": 27,
+        "sonnet_day1_described": 30,
+        "sonnet_day1_examples": 28,
+        "qwen_k8_day1": 28,
+        "qwen_k32_day1": 32
+      },
+      "supported_cards_and_currencies": {
+        "messages": 40,
+        "haiku_day1": 32,
+        "haiku_day1_described": 36,
+        "haiku_day1_examples": 33,
+        "sonnet_day1": 34,
+        "sonnet_day1_described": 38,
+        "sonnet_day1_examples": 39,
+        "qwen_k8_day1": 35,
+        "qwen_k32_day1": 38
+      },
+      "terminate_account": {
+        "messages": 40,
+        "haiku_day1": 40,
+        "haiku_day1_described": 40,
+        "haiku_day1_examples": 36,
+        "sonnet_day1": 40,
+        "sonnet_day1_described": 40,
+        "sonnet_day1_examples": 40,
+        "qwen_k8_day1": 40,
+        "qwen_k32_day1": 40
+      },
+      "top_up_by_bank_transfer_charge": {
+        "messages": 40,
+        "haiku_day1": 10,
+        "haiku_day1_described": 22,
+        "haiku_day1_examples": 10,
+        "sonnet_day1": 10,
+        "sonnet_day1_described": 30,
+        "sonnet_day1_examples": 14,
+        "qwen_k8_day1": 22,
+        "qwen_k32_day1": 29
+      },
+      "top_up_by_card_charge": {
+        "messages": 40,
+        "haiku_day1": 36,
+        "haiku_day1_described": 35,
+        "haiku_day1_examples": 38,
+        "sonnet_day1": 37,
+        "sonnet_day1_described": 35,
+        "sonnet_day1_examples": 38,
+        "qwen_k8_day1": 28,
+        "qwen_k32_day1": 36
+      },
+      "top_up_by_cash_or_cheque": {
+        "messages": 40,
+        "haiku_day1": 34,
+        "haiku_day1_described": 33,
+        "haiku_day1_examples": 34,
+        "sonnet_day1": 37,
+        "sonnet_day1_described": 38,
+        "sonnet_day1_examples": 39,
+        "qwen_k8_day1": 34,
+        "qwen_k32_day1": 34
+      },
+      "top_up_failed": {
+        "messages": 40,
+        "haiku_day1": 34,
+        "haiku_day1_described": 37,
+        "haiku_day1_examples": 34,
+        "sonnet_day1": 37,
+        "sonnet_day1_described": 38,
+        "sonnet_day1_examples": 36,
+        "qwen_k8_day1": 34,
+        "qwen_k32_day1": 36
+      },
+      "top_up_limits": {
+        "messages": 40,
+        "haiku_day1": 38,
+        "haiku_day1_described": 37,
+        "haiku_day1_examples": 37,
+        "sonnet_day1": 40,
+        "sonnet_day1_described": 40,
+        "sonnet_day1_examples": 40,
+        "qwen_k8_day1": 40,
+        "qwen_k32_day1": 40
+      },
+      "top_up_reverted": {
+        "messages": 40,
+        "haiku_day1": 31,
+        "haiku_day1_described": 33,
+        "haiku_day1_examples": 32,
+        "sonnet_day1": 26,
+        "sonnet_day1_described": 34,
+        "sonnet_day1_examples": 34,
+        "qwen_k8_day1": 36,
+        "qwen_k32_day1": 34
+      },
+      "topping_up_by_card": {
+        "messages": 40,
+        "haiku_day1": 17,
+        "haiku_day1_described": 23,
+        "haiku_day1_examples": 22,
+        "sonnet_day1": 10,
+        "sonnet_day1_described": 24,
+        "sonnet_day1_examples": 21,
+        "qwen_k8_day1": 13,
+        "qwen_k32_day1": 14
+      },
+      "transaction_charged_twice": {
+        "messages": 40,
+        "haiku_day1": 38,
+        "haiku_day1_described": 36,
+        "haiku_day1_examples": 37,
+        "sonnet_day1": 40,
+        "sonnet_day1_described": 39,
+        "sonnet_day1_examples": 39,
+        "qwen_k8_day1": 32,
+        "qwen_k32_day1": 40
+      },
+      "transfer_fee_charged": {
+        "messages": 40,
+        "haiku_day1": 28,
+        "haiku_day1_described": 33,
+        "haiku_day1_examples": 28,
+        "sonnet_day1": 34,
+        "sonnet_day1_described": 34,
+        "sonnet_day1_examples": 33,
+        "qwen_k8_day1": 29,
+        "qwen_k32_day1": 33
+      },
+      "transfer_into_account": {
+        "messages": 40,
+        "haiku_day1": 21,
+        "haiku_day1_described": 33,
+        "haiku_day1_examples": 20,
+        "sonnet_day1": 25,
+        "sonnet_day1_described": 34,
+        "sonnet_day1_examples": 36,
+        "qwen_k8_day1": 27,
+        "qwen_k32_day1": 26
+      },
+      "transfer_not_received_by_recipient": {
+        "messages": 40,
+        "haiku_day1": 20,
+        "haiku_day1_described": 22,
+        "haiku_day1_examples": 22,
+        "sonnet_day1": 23,
+        "sonnet_day1_described": 25,
+        "sonnet_day1_examples": 26,
+        "qwen_k8_day1": 10,
+        "qwen_k32_day1": 9
+      },
+      "transfer_timing": {
+        "messages": 40,
+        "haiku_day1": 36,
+        "haiku_day1_described": 36,
+        "haiku_day1_examples": 34,
+        "sonnet_day1": 39,
+        "sonnet_day1_described": 38,
+        "sonnet_day1_examples": 39,
+        "qwen_k8_day1": 32,
+        "qwen_k32_day1": 39
+      },
+      "unable_to_verify_identity": {
+        "messages": 40,
+        "haiku_day1": 29,
+        "haiku_day1_described": 28,
+        "haiku_day1_examples": 28,
+        "sonnet_day1": 33,
+        "sonnet_day1_described": 38,
+        "sonnet_day1_examples": 37,
+        "qwen_k8_day1": 32,
+        "qwen_k32_day1": 32
+      },
+      "verify_my_identity": {
+        "messages": 40,
+        "haiku_day1": 39,
+        "haiku_day1_described": 37,
+        "haiku_day1_examples": 33,
+        "sonnet_day1": 30,
+        "sonnet_day1_described": 38,
+        "sonnet_day1_examples": 36,
+        "qwen_k8_day1": 39,
+        "qwen_k32_day1": 36
+      },
+      "verify_source_of_funds": {
+        "messages": 40,
+        "haiku_day1": 35,
+        "haiku_day1_described": 36,
+        "haiku_day1_examples": 29,
+        "sonnet_day1": 36,
+        "sonnet_day1_described": 40,
+        "sonnet_day1_examples": 40,
+        "qwen_k8_day1": 39,
+        "qwen_k32_day1": 40
+      },
+      "verify_top_up": {
+        "messages": 40,
+        "haiku_day1": 34,
+        "haiku_day1_described": 35,
+        "haiku_day1_examples": 33,
+        "sonnet_day1": 38,
+        "sonnet_day1_described": 40,
+        "sonnet_day1_examples": 40,
+        "qwen_k8_day1": 39,
+        "qwen_k32_day1": 39
+      },
+      "virtual_card_not_working": {
+        "messages": 40,
+        "haiku_day1": 30,
+        "haiku_day1_described": 37,
+        "haiku_day1_examples": 32,
+        "sonnet_day1": 36,
+        "sonnet_day1_described": 37,
+        "sonnet_day1_examples": 39,
+        "qwen_k8_day1": 35,
+        "qwen_k32_day1": 35
+      },
+      "visa_or_mastercard": {
+        "messages": 40,
+        "haiku_day1": 36,
+        "haiku_day1_described": 32,
+        "haiku_day1_examples": 27,
+        "sonnet_day1": 35,
+        "sonnet_day1_described": 38,
+        "sonnet_day1_examples": 37,
+        "qwen_k8_day1": 35,
+        "qwen_k32_day1": 36
+      },
+      "why_verify_identity": {
+        "messages": 40,
+        "haiku_day1": 30,
+        "haiku_day1_described": 36,
+        "haiku_day1_examples": 20,
+        "sonnet_day1": 33,
+        "sonnet_day1_described": 37,
+        "sonnet_day1_examples": 34,
+        "qwen_k8_day1": 26,
+        "qwen_k32_day1": 38
+      },
+      "wrong_amount_of_cash_received": {
+        "messages": 40,
+        "haiku_day1": 35,
+        "haiku_day1_described": 36,
+        "haiku_day1_examples": 32,
+        "sonnet_day1": 36,
+        "sonnet_day1_described": 36,
+        "sonnet_day1_examples": 37,
+        "qwen_k8_day1": 34,
+        "qwen_k32_day1": 36
+      },
+      "wrong_exchange_rate_for_cash_withdrawal": {
+        "messages": 40,
+        "haiku_day1": 23,
+        "haiku_day1_described": 26,
+        "haiku_day1_examples": 27,
+        "sonnet_day1": 26,
+        "sonnet_day1_described": 28,
+        "sonnet_day1_examples": 36,
+        "qwen_k8_day1": 23,
+        "qwen_k32_day1": 32
+      }
     }
   },
   "alarm": {
@@ -510,6 +1814,20 @@
       "output_tokens_per_message": 36.4,
       "list_usd_per_10k_messages": 0.38
     },
+    "haiku_day1_described": {
+      "messages": 2800,
+      "calls": 148,
+      "input_tokens_per_message": 197.5,
+      "output_tokens_per_message": 36.0,
+      "list_usd_per_10k_messages": 0.56
+    },
+    "haiku_day1_examples": {
+      "messages": 2800,
+      "calls": 149,
+      "input_tokens_per_message": 342.7,
+      "output_tokens_per_message": 21.4,
+      "list_usd_per_10k_messages": 0.76
+    },
     "haiku_day1_single": {
       "messages": 200,
       "calls": 201,
@@ -530,6 +1848,20 @@
       "input_tokens_per_message": 97.3,
       "output_tokens_per_message": 10.0,
       "list_usd_per_10k_messages": 4.87
+    },
+    "sonnet_day1_described": {
+      "messages": 2800,
+      "calls": 141,
+      "input_tokens_per_message": 188.2,
+      "output_tokens_per_message": 12.4,
+      "list_usd_per_10k_messages": 8.72
+    },
+    "sonnet_day1_examples": {
+      "messages": 2800,
+      "calls": 143,
+      "input_tokens_per_message": 329.0,
+      "output_tokens_per_message": 10.5,
+      "list_usd_per_10k_messages": 13.97
     },
     "sonnet_day90": {
       "messages": 3080,

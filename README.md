@@ -33,6 +33,10 @@ before any arm was scored.
 | Qwen3.5-0.8B, queue list, untrained | 43.5% |  |  |
 | Claude Haiku 5.5, queue list, low effort | 76.0% | 71.8% | 75.4% |
 | Claude Sonnet 5.5, queue list | 81.5% | 79.5% | 86.8% |
+| Follow-up: Claude Haiku 5.5, a line on each queue | 82.9% |  |  |
+| Follow-up: Claude Sonnet 5.5, a line on each queue | 88.3% |  |  |
+| Follow-up: Claude Haiku 5.5, three examples per queue | 74.4% |  |  |
+| Follow-up: Claude Sonnet 5.5, three examples per queue | 87.5% |  |  |
 | Qwen3.5-0.8B + 8 labels per queue | 80.4% |  |  |
 | Qwen3.5-0.8B + 32 labels per queue | 86.9% |  |  |
 | Qwen3.5-0.8B + every label | 93.1% | 93.1% | 2.1% |
@@ -54,6 +58,26 @@ What the pre-registered questions came to:
    messages, and 69 new-queue answers came with 90% confidence or more, all wrong.
 3. **Eight labels per new queue were not enough.** The retrained model kept the old queues
    (93.2%) but got 60.7% of the new ones, under the 70% bar and under both Claude models.
+
+**Follow-up, 16 October: the arm the article said would flip its verdict.** The draft said
+a frontier model given a one-line description of each queue, or a few examples per queue,
+coming within 2 points of the 32-label model would change its answer. I pre-registered that
+test (the last section of [PREREGISTRATION.md](PREREGISTRATION.md)) and ran it. It flipped,
+for Sonnet:
+
+- With a line on each queue, Sonnet scored 88.3% and Haiku 82.9%. Claude Opus 5.5 wrote the
+  lines from the 2,240 training messages the 32-label model learned from
+  (`data/context/descriptions.json`). Sonnet against the 32-label model: paired test p = 0.04.
+- With three random training messages under each queue, 210 in all, Sonnet scored 87.5%
+  (p = 0.39 against the 32-label model). Haiku scored 74.4%, a little below Haiku with names
+  alone, and invented a queue name 36 times.
+- `get_physical_card`, the queue that really holds PIN questions, went from 0 of 40 for both
+  Claude models to 34 (Sonnet, a line each) and 39 (Sonnet, examples). The 32-label model got 38.
+- The every-label model, at 93.1%, is still ahead of every Claude arm.
+- Longer prompts cost more. At list price per 10,000 messages: Sonnet $8.72 with a line each
+  and $13.97 with examples, Haiku $0.56 and $0.76, against $4.87 and $0.38 with names alone.
+  Writing the lines cost $0.50 once. The CLI writes a fresh cache entry on every call, so a
+  pipeline that caches the queue list would pay less.
 
 The exploratory row was worked out after the results, from saved predictions: Claude reads
 every message with the full list, and its answer is used only when it names a queue the
@@ -93,7 +117,7 @@ uv venv --python 3.12 .venv
 uv pip install --python .venv/bin/python -r requirements.txt
 .venv/bin/python prepare.py
 ./run_local.sh        # trains four adapters and scores six arms; hours on a laptop
-./run_claude.sh       # four Claude arms and a batching check
+./run_claude.sh       # eight Claude arms and a batching check
 .venv/bin/python analyze.py
 ```
 
@@ -114,6 +138,8 @@ Three things that cost me time and might cost you some:
 | --- | --- |
 | `prepare.py` | builds every split in `data/splits/` from `data/raw/` |
 | `route.py` | the two prompts and the queue-name matching |
+| `write_context.py` | the follow-up's queue descriptions and examples, from training data only |
+| `data/context/` | those descriptions and examples, frozen before scoring |
 | `train.py` | LoRA training with fixed settings |
 | `score_local.py`, `score_claude.py` | route the test messages and save every answer |
 | `analyze.py` | accuracy, intervals, McNemar tests, the new-queue alarm, cost |

@@ -1,0 +1,13 @@
+{
+  "arm": "haiku_day1_examples",
+  "n": 2800,
+  "calls": 149,
+  "input": 298,
+  "cache_write": 906218,
+  "cache_read": 53027,
+  "output": 59834,
+  "cost_usd_list": 0.2117,
+  "api_ms": 377705,
+  "retried_batches": 9,
+  "batches_never_complete": 0
+}

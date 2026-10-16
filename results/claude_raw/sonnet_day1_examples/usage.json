@@ -1,0 +1,13 @@
+{
+  "arm": "sonnet_day1_examples",
+  "n": 2800,
+  "calls": 143,
+  "input": 286,
+  "cache_write": 903378,
+  "cache_read": 17644,
+  "output": 29365,
+  "cost_usd_list": 3.9113,
+  "api_ms": 310811,
+  "retried_batches": 2,
+  "batches_never_complete": 0
+}
