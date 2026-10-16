@@ -3,6 +3,10 @@
     python score_claude.py --arm haiku_day1 --model claude-haiku-5-5 --effort low \
         --test test_old.jsonl --day 1
 
+--prompt descriptions or --prompt examples puts a line on each queue, or
+three training messages under each, beside the day-one names; both come
+from data/context/, written by write_context.py from training data only.
+
 Calls go through the Claude Code CLI in print mode (`claude -p`), with
 tools, settings and MCP servers switched off, 20 messages per call
 unless --batch-size says otherwise. Every
@@ -21,6 +25,7 @@ from route import ROOT, SPLITS, normalise, queues, read_jsonl
 
 RAW = ROOT / "results" / "claude_raw"
 PREDS = ROOT / "results" / "preds"
+CONTEXT = ROOT / "data" / "context"
 DEFAULT_BATCH = 20
 SHUFFLE_SEED = 7
 
@@ -30,6 +35,27 @@ USER = (
     "Route each message below to exactly one queue from the list. Reply with a JSON array of "
     "{n} queue names, one per message, in the same order, and nothing else.\n\n{messages}"
 )
+# The follow-up arms change only the queue list and the line that introduces it.
+HEADERS = {
+    "descriptions": "Queues, each with a line on what belongs in it:",
+    "examples": "Queues, each with three past messages that were routed to it:",
+}
+
+
+def queue_block(variant, allowed):
+    if variant == "names":
+        return "\n".join(allowed)
+    context = json.loads((CONTEXT / f"{variant}.json").read_text())[variant]
+    if variant == "descriptions":
+        return "\n".join(f"{q}: {context[q]}" for q in allowed)
+    return "\n".join(q + "".join(f"\n  {json.dumps(t, ensure_ascii=False)}" for t in context[q])
+                     for q in allowed)
+
+
+def build_prompt(variant, allowed, texts):
+    messages = "\n".join(f"{k + 1}. {json.dumps(t, ensure_ascii=False)}" for k, t in enumerate(texts))
+    template = USER if variant == "names" else USER.replace("Queues:", HEADERS[variant], 1)
+    return template.format(queues=queue_block(variant, allowed), n=len(texts), messages=messages)
 
 
 def batches(rows, size):
@@ -38,13 +64,13 @@ def batches(rows, size):
     return [order[i:i + size] for i in range(0, len(order), size)]
 
 
-def call(model, effort, prompt):
-    cmd = ["claude", "-p", "--model", model, "--system-prompt", SYSTEM, "--tools", "",
+def call(model, effort, prompt, system=SYSTEM, timeout=300):
+    cmd = ["claude", "-p", "--model", model, "--system-prompt", system, "--tools", "",
            "--strict-mcp-config", "--setting-sources", "", "--no-session-persistence",
            "--output-format", "json"]
     if effort:
         cmd += ["--effort", effort]
-    out = subprocess.run(cmd + [prompt], capture_output=True, text=True, timeout=300)
+    out = subprocess.run(cmd + [prompt], capture_output=True, text=True, timeout=timeout)
     return json.loads(out.stdout)
 
 
@@ -100,7 +126,10 @@ def main():
     ap.add_argument("--workers", type=int, default=4)
     ap.add_argument("--batch-size", type=int, default=DEFAULT_BATCH)
     ap.add_argument("--limit-batches", type=int, default=None)
+    ap.add_argument("--prompt", default="names", choices=["names", *HEADERS])
     args = ap.parse_args()
+    if args.prompt != "names" and args.day != 1:
+        ap.error("queue context exists for the 70 day-one queues only")
 
     allowed = queues(args.day)
     rows = read_jsonl(SPLITS / args.test)
@@ -110,15 +139,16 @@ def main():
 
     def ask(i):
         idx = plan[i]
-        messages = "\n".join(f"{k + 1}. {json.dumps(rows[j]['text'], ensure_ascii=False)}"
-                             for k, j in enumerate(idx))
-        prompt = USER.format(queues="\n".join(allowed), n=len(idx), messages=messages)
+        prompt = build_prompt(args.prompt, allowed, [rows[j]["text"] for j in idx])
         try:
             response = call(args.model, args.effort, prompt)
         except (subprocess.TimeoutExpired, json.JSONDecodeError) as e:
             print(f"batch {i}: {type(e).__name__}", flush=True)
             return None
-        return {"indices": idx, "model": args.model, "effort": args.effort, "response": response}
+        saved = {"indices": idx, "model": args.model, "effort": args.effort, "response": response}
+        if args.prompt != "names":
+            saved["prompt"] = args.prompt
+        return saved
 
     def run(i):
         # One call per batch, plus up to two retries when a reply does not
@@ -135,7 +165,9 @@ def main():
                 saved = ask(i)
                 if saved is None:
                     return
-                path.write_text(json.dumps(saved, ensure_ascii=False) + "\n")
+                # ASCII-escaped: replies are kept exactly, and a model's em dash
+                # never lands in the repo as a raw character.
+                path.write_text(json.dumps(saved) + "\n")
                 print(f"{args.arm}: batch {i + 1}/{len(plan)}" + (f" retry {k}" if k else ""), flush=True)
             if complete(saved["response"].get("result", ""), n):
                 return

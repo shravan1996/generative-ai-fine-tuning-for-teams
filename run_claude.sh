@@ -9,4 +9,10 @@ $PY score_claude.py --arm haiku_day90 --model claude-haiku-5-5 --effort low --te
 $PY score_claude.py --arm sonnet_day90 --model claude-sonnet-5-5 --test test_all.jsonl --day 90
 # Batching check: the first 200 day-one messages in the same shuffled order, one per call.
 $PY score_claude.py --arm haiku_day1_single --model claude-haiku-5-5 --effort low --test test_old.jsonl --day 1 --batch-size 1 --limit-batches 200
+# Follow-up: a line on each queue, or three training messages per queue (see PREREGISTRATION.md).
+$PY write_context.py
+$PY score_claude.py --arm haiku_day1_described --model claude-haiku-5-5 --effort low --test test_old.jsonl --day 1 --prompt descriptions
+$PY score_claude.py --arm sonnet_day1_described --model claude-sonnet-5-5 --test test_old.jsonl --day 1 --prompt descriptions
+$PY score_claude.py --arm haiku_day1_examples --model claude-haiku-5-5 --effort low --test test_old.jsonl --day 1 --prompt examples
+$PY score_claude.py --arm sonnet_day1_examples --model claude-sonnet-5-5 --test test_old.jsonl --day 1 --prompt examples
 echo "claude trial finished $(date)"

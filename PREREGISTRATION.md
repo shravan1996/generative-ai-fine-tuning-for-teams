@@ -95,3 +95,77 @@ reply without one is asked again, up to twice. Every reply, first or retried, is
 `results/claude_raw/`, and its tokens count toward cost. The change can only raise Claude's
 scores, which works against the fine-tuned arms. `usage.json` for each arm records how many
 batches were retried and how many never produced a complete list.
+
+## Follow-up: queue descriptions and examples
+
+Written on 16 October 2026 at 06:47 IST, after every arm above was scored and the draft
+article was written, and before any arm below touched the test set.
+
+The draft's first condition for changing its verdict is a frontier model, given a one-line
+description of each queue or a few examples per queue, coming within 2 points of the 32-label
+model on the same 2,800 messages. The draft did not test it. These four arms do.
+
+### What I already know
+
+Every result above. In particular, both Claude models routed none of the 40
+`get_physical_card` test messages correctly, and the draft quotes two of those messages,
+which are about PINs. So I do not write the descriptions myself. A model writes them from
+training messages only, with the prompt fixed in `write_context.py`, before any test message
+is scored, and nobody edits them afterwards.
+
+### Arms
+
+| Arm | What it is |
+| --- | --- |
+| `haiku_day1_described` | Claude Haiku 5.5, effort low, each of the 70 queue names followed by a one-line description |
+| `sonnet_day1_described` | Claude Sonnet 5.5, default effort, the same prompt |
+| `haiku_day1_examples` | Claude Haiku 5.5, effort low, each name followed by three training messages from that queue |
+| `sonnet_day1_examples` | Claude Sonnet 5.5, default effort, the same prompt |
+
+Everything else matches `haiku_day1` and `sonnet_day1`: the same system prompt and
+instruction, `test_old.jsonl`, the same shuffled batches of 20 (seed 7), the reply read as
+the last list with one name per message, up to two retries, and every reply kept under
+`results/claude_raw/`. Only the queue list and the line that introduces it change
+(`build_prompt` in `score_claude.py`). The names-only prompt is byte for byte what the first
+arms saw, and a test pins it.
+
+**Descriptions.** Claude Opus 5.5, default effort, in one call through the Claude Code CLI,
+reads the 70 queue names with all 2,240 messages from `data/splits/train_old_k32.jsonl` listed
+under them, and is asked for one line per queue: at most 20 words on what belongs there, and
+what separates queues that look alike. A reply is used if it holds a JSON object with exactly
+the 70 names, every line at most 25 words, and no em dash; otherwise the same prompt is sent
+again, up to twice. If no reply qualifies, the described arms are not run and I say so here.
+The lines go to `data/context/descriptions.json` with the raw replies beside them, and are
+committed before scoring. A model writes them because I have read test messages. A team would
+write its own, and might do better or worse.
+
+**Examples.** For each queue, in the order of `meta.json`, `random.Random(3).sample` picks
+three of that queue's eight messages in `data/splits/train_old_k8.jsonl`: 210 messages, all
+among the 560 the 8-label adapter was trained on. Saved to `data/context/examples.json`. They
+are random, not chosen. Loukas et al. found expert-chosen examples scored about nine points
+higher than random ones for GPT-4 on BANKING77, so this is the cheap version of the arm.
+
+### Threshold
+
+`qwen_k32_day1` routed 2,434 of the 2,800 messages correctly (86.93%). The draft's verdict
+flips if any of the four arms routes at least 2,378 correctly (84.93%), that is, within 2
+points of the 32-label model or above it. All four are reported whichever way it goes. Four
+arms get four tries at the line, which slightly favours a flip; I note that rather than
+correct for it, because the draft named both kinds of context.
+
+Reported beside each arm, not gated:
+
+- an exact paired McNemar test against `qwen_k32_day1`, and against the same model's
+  names-only arm;
+- right answers out of 40 for every queue, next to the names-only arms and the 32-label
+  model, with `get_physical_card` called out;
+- list-price cost per 10,000 messages from each arm's `usage.json`, and the cost of the call
+  that wrote the descriptions.
+
+The caution about BANKING77 sitting in training data applies to Opus as the writer too.
+
+### Before scoring
+
+One plumbing check: one batch of 20 messages from `dev_old.jsonl` per new arm, to see that
+the prompts run and the replies parse. Its outputs are deleted and not reported. Nothing
+touches `test_old.jsonl` until the descriptions and examples are committed.
