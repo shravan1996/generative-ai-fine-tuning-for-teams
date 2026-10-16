@@ -117,6 +117,8 @@ def result_figure(s):
         ("Qwen 0.8B + every label", "qwen_all_day1"),
         ("Claude Haiku 5.5, queue list", "haiku_day1"),
         ("Claude Sonnet 5.5, queue list", "sonnet_day1"),
+        ("Claude Haiku 5.5, a line per queue †", "haiku_day1_described"),
+        ("Claude Sonnet 5.5, a line per queue †", "sonnet_day1_described"),
     ]
     rows90 = [
         ("Claude Haiku 5.5, 77 names", "haiku_day90"),

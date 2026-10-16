@@ -9,7 +9,7 @@
     "rows": [
       [
         "What did the big model get to see?",
-        "Names, examples, or hand-picked examples. GPT-4 scored 74.2% with three random examples per intent and 83.1% with three an expert chose (Loukas et al., 2023)."
+        "Names, examples, or hand-picked examples. GPT-4 scored 74.2% with three random examples per intent and 83.1% with three an expert chose (Loukas et al., 2023). In my trial, one written line per queue took Sonnet from 81.5% to 88.3%."
       ],
       [
         "How many labels did the small one get?",
@@ -26,6 +26,7 @@
     ]
   },
   "result_foot": [
+    "† Follow-up, pre-registered on 16 October after the first results.",
     "* Exploratory, not pre-registered: Sonnet reads every message with the 77 names,",
     "and its answer is used only when it names one of the seven new queues."
   ],
@@ -37,12 +38,16 @@
     "left_w": 180,
     "rows": [
       [
-        "Queues that rarely change",
-        "A fine-tuned small open model you store yourself, trained on at least 32 closed tickets per queue. Its answer must be a name on the live queue list."
+        "Every queue",
+        "Write one line on what belongs there, from closed tickets, and give the list to the frontier model. Keep it current like any routing rule."
+      ],
+      [
+        "Queues with hundreds of past tickets",
+        "A fine-tuned small open model you store yourself. Its answer must be a name on the live queue list."
       ],
       [
         "A queue added or renamed",
-        "Add the name to the frontier model's list the same day. Its answer wins whenever it names a queue the small model was never trained on."
+        "Add its line to the frontier model's list the same day. That model's answer wins whenever it names a queue the small model was never trained on."
       ],
       [
         "Unsure answers",
